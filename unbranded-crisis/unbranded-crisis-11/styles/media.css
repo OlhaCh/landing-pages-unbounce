@@ -1,0 +1,239 @@
+@media (max-width: 1350px) {
+    .care__boxes{
+        justify-content: center;
+    }
+}
+@media (max-width: 1100px) {
+    .care__boxes, .explore__boxes{
+        justify-content: center;
+    }
+    .welcome__inner {
+        flex-direction: column;
+    }
+    .welcome__content {
+        margin-top: 23px;
+    }
+    .why__image{
+        position: relative;
+        left: 0;
+    }
+    .why__inner{
+        flex-direction: column;
+    }
+    .why__content{
+        margin-top: 23px;
+    }
+    .start__boxes{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer__inner{
+        flex-direction: column;
+    }
+    .footer__box{
+        height: 300px;
+        padding-right: 0;
+    }
+    .footer__image{
+        width: 100%;
+        object-fit: cover;
+        object-position: left;
+    }
+    .footer__box-head{
+        bottom: -64px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: auto;
+    }
+    .footer__form{
+        padding-top: 98px;
+    }
+}
+@media (max-width: 768px) {
+    .hear__box-star{
+        width: 15px;
+        height: 15px;
+    }
+    .footer__title{
+        font-size: 24px;
+    }
+    .footer__form-submit{
+        display: block;
+        margin: 0 auto;
+    }
+    .faq{
+        padding: 40px 0;
+    }
+    .start__box{
+        margin-right: 0;
+    }
+    .faq__box-title{
+        font-size: 14px;
+    }
+    .faq__box{
+        padding: 9px;
+    }
+    .faq__box-text{
+        font-size: 12px;
+    }
+    .faq__box-top.--active{
+        margin-bottom: 9px;
+    }
+    .start__boxes{
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .start__inner > .text{
+        margin-bottom: 25px;
+    }
+    .start__box-text{
+        font-size: 22px;
+        margin-top: 36px;
+    }
+    .why__image{
+        max-width: 618px;
+        width: 100%;
+    }
+    .why__box-number{
+        font-size: 28px;
+        margin-left: 9px;
+        margin-right: 21px;
+    }
+    .why__box{
+        margin-bottom: 29px;
+    }
+    .why__content{
+        max-width: none;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .welcome__image {
+        max-width: 298px;
+        width: 100%;
+    }
+    .header {
+        padding: 16px 0;
+        background-position: top right;
+        background-image: url(../content/header-mobile.png);
+    }
+    .header__title {
+        font-size: 20px;
+        margin-bottom: 7px;
+    }
+    .header__subtitle {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    .button {
+        font-size: 16px;
+        padding: 12px 17px;
+    }
+    .title {
+        font-size: 22px;
+    }
+    .text {
+        font-size: 16px;
+    }
+    .welcome__content > .text {
+        margin: 12px 0 25px;
+    }
+    .welcome {
+        padding: 40px 0;
+    }
+    .care__boxes {
+        flex-direction: column;
+        padding: 0 10px;
+    }
+    .care__box {
+        margin-right: 0px;
+    }
+    .description {
+        margin-bottom: 11px;
+    }
+    .description > span {
+        font-size: 16px;
+    }
+    .care__inner > .text {
+        margin: 7px auto 24px;
+    }
+    .care__box-rect {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .care__box-text {
+        font-size: 21px;
+    }
+    .care__box-image {
+        max-width: 325px;
+        width: 100%;
+    }
+    .care__box-arrow {
+        display: block;
+    }
+    .explore {
+        padding: 44px 0;
+    }
+    .explore__boxes {
+        flex-direction: column;
+        margin-bottom: 38px;
+    }
+    .explore__box-icon {
+        width: 71px;
+        height: 67px;
+    }
+    .explore__box-text {
+        font-size: 20px;
+    }
+    .explore__box-image{
+        max-width: 357px;
+        width: 100%;
+    }
+    .hear{
+        padding: 17px 0 43px;
+    }
+    .hear__boxes{
+        flex-direction: column;
+    }
+    .hear__box{
+        margin-right: 0;
+        margin-bottom: 10px;
+        padding: 14px 21px;
+    }
+    .hear__inner > .title{
+        margin-bottom: 25px;
+    }
+    .hear__box-name{
+        font-size: 12px;
+        margin-bottom: 23px;
+    }
+    .hear__box-text{
+        font-size: 13px;
+    }
+    .hear__box-quote{
+        width: 43px;
+        height: 43px;
+        left: 34px;
+    }
+    .hear__box-image{
+        width: 68px;
+        height: 68px;
+        margin-right: 7px;
+    }
+    .why__box-text{
+        font-size: 13px;
+    }
+    .why__content > form{
+        width: 100%;
+    }
+    .why__content > form > button{
+        padding: 19px 29px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1100px) {
+}

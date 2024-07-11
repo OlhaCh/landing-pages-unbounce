@@ -1,0 +1,255 @@
+@media (max-width: 1250px) {
+    .header__image{
+        width: 50%;
+        margin-left: 10px;
+    }
+    .help__image, .team__image{
+        width: 50%;
+        margin-right: 10px;
+    }
+    .program__boxes{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .program__box{
+        margin: 10px;
+    }
+    .care__boxes{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .care__box{
+        margin: 10px;
+    }
+    .feedback__boxes {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .feedback__box {
+        margin: 10px;
+    }
+    .feedback__box:last-of-type {
+        margin: 10px;
+    }
+    .journey__boxes {
+        flex-direction: column;
+    }
+    .journey__boxes > svg {
+        transform: rotate(90deg);
+    }
+}
+@media (max-width: 930px) {
+    
+}
+@media (max-width: 800px) {
+    
+}
+@media (max-width: 768px) {
+    .journey__boxes > svg{
+        width: 60px;
+        height: 60px;
+        margin: 15px 0;
+    }
+    .footer__title{
+        font-size: 24px;
+    }
+    .footer__subtitle{
+        font-size: 14px;
+    }
+    .footer{
+        padding: 40px 0;
+    }
+    .footer__link{
+        margin-bottom: 40px;
+    }
+    .footer__bottom{
+        font-size: 13px;
+    }
+    .why__inner > .title{
+        margin-bottom: 24px;
+    }
+    
+    .why__box-title{
+        font-size: 20px;
+    }
+    .why__box-text{
+        font-size: 14px;
+    }
+    .feedback {
+        padding: 40px 0;
+    }
+    .feedback__boxes {
+        margin-top: 24px;
+    }
+    .feedback__box-user {
+        font-size: 14px;
+    }
+    .feedback__box-days {
+        font-size: 11px;
+    }
+    .feedback__box-text {
+        font-size: 14px;
+    }
+    .feedback__box {
+        min-height: 276px;
+    }
+    .program__inner > .subtitle{
+        margin: 20px 0;
+    }
+    .program__box{
+        padding: 36px 50px;
+        min-height: 146px;
+    }
+    .program__paragraph{
+        font-size: 14px;
+        margin: 20px 0;
+    }
+    .program{
+        padding: 40px 0;
+    }
+    .program__box-title{
+        font-size: 20px;
+    }
+    .program__box-text{
+        font-size: 14px;
+    }
+    .care__paragraph{
+        font-size: 14px;
+        text-align: center;
+    }
+    .care{
+        padding: 40px 0;
+    }
+    .care__boxes{
+        margin-bottom: 20px;
+    }
+    .care__box{
+        padding: 60px 40px 40px 40px;
+        min-height: 166px;
+    }
+    .care__box-number{
+        width: 60px;
+        height: 60px;
+        font-size: 28px;
+    }
+    .care__box-title{
+        font-size: 20px;
+    }
+    .care__box-text{
+        font-size: 14px;
+    }
+    .care__inner > .subtitle{
+        margin: 20px 0;
+    }
+    .title{
+        font-size: 24px;
+        text-align: center;
+    }
+    .help__content > .subtitle{
+        margin: 20px 0;
+    }
+    a{
+        font-size: 14px;
+    }
+    .help__link{
+        margin: 0 auto;
+    }
+    .subtitle{
+        text-align: center;
+        font-size: 14px;
+    }
+    .help{
+        padding: 40px 0;
+    }
+    .help__inner{
+        flex-direction: column;
+    }
+    .help__image, .team__image{
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .team__inner{
+        flex-direction: column;
+    }
+    .team__content > .subtitle{
+        margin: 20px 0;
+    }
+    .team__link{
+        margin: 0 auto;
+    }
+    .header{
+        padding: 24px 0 40px;
+    }
+    .header__title{
+        font-size: 35px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .header__subtitle{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .header__link{
+        margin: 0 auto;
+    }
+    .container{
+        padding: 0 20px;
+    }
+    .header__inner{
+        flex-direction: column;
+    }
+    .header__image{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 24px;
+    }
+    .why__box{
+        padding: 40px 30px;
+    }
+    .team__content{
+        margin-left: 0;
+        padding: 0 20px 40px;
+    }
+    .why{
+        padding-bottom: 40px;
+    }
+    .why__link{
+        margin-top: 24px;
+    }
+    .journey__link{
+        margin-top: 24px;
+    }
+    .journey {
+        padding: 40px 0;
+    }
+    .journey__boxes {
+        margin-top: 24px;
+    }
+    .journey__box-number {
+        font-size: 24px;
+        width: 60px;
+        height: 60px;
+    }
+    .journey__box-text{
+        font-size: 14px;
+    }
+    .journey__inner > .subtitle{
+        margin: 16px 0 24px;
+    }
+    .journey__box{
+        max-width: 320px;
+        min-height: auto;
+        height: 220px;
+        padding: 70px 30px;
+    }
+    .journey__box-title {
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
+}
+
+@media (max-width: 400px) {
+    
+}
+

@@ -1,0 +1,225 @@
+@media (max-width: 1600px) {
+    .header__content {
+        margin: 0;
+    }
+    .header__image {
+        width: 60%;
+    }
+    .care__box,
+    .programs__box {
+        margin: 10px;
+    }
+}
+@media (max-width: 1150px) {
+    .care__boxes,
+    .programs__boxes {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .header__inner {
+        flex-direction: column-reverse;
+    }
+    .header__image {
+        width: 100%;
+    }
+    .header__content {
+        max-width: 100%;
+    }
+    .header__title,
+    .header__subtitle {
+        text-align: center;
+    }
+    .header__link {
+        margin: 0 auto;
+    }
+    .feedback__boxes {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .feedback__box {
+        margin: 10px;
+    }
+    .feedback__box:last-of-type {
+        margin: 10px;
+    }
+    .team__image {
+        width: 100%;
+    }.start__boxes{
+        flex-direction: column;
+    }
+    .start__boxes > svg{
+        transform: rotate(90deg);
+        margin: 20px 0 40px;
+    }
+}
+@media (max-width: 800px) {
+}
+@media (max-width: 768px) {
+    .start__boxes > svg{
+        height: 60px;
+    }
+    .start{
+        padding: 40px 0;
+    }
+    .start__inner > .text{
+        margin: 16px 0 40px;
+    }
+    .start__box-title{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .start__box-number{
+        font-size: 30px;
+        width: 60px;
+        height: 60px;
+        border-radius: 20px;
+        top: -30px;
+    }
+    .start__box-title > br{
+        display: none;
+    }
+    .start__box{
+        padding: 40px 30px;
+        min-height: 144px;
+    }
+    .start__boxes{
+        margin-bottom: 40px;
+    }
+    .team__content {
+        max-width: 342px;
+        padding: 24px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: auto;
+    }
+    .team__title {
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .team__link{
+        margin: 0 auto;
+    }
+    .team__text {
+        font-size: 14px;
+        text-align: center;
+    }
+    .why__box {
+        min-height: 220px;
+    }
+    .why {
+        padding: 40px 0;
+    }
+    .feedback {
+        padding: 40px 0;
+    }
+    .feedback__boxes {
+        margin-top: 24px;
+    }
+    .feedback__box-user {
+        font-size: 14px;
+    }
+    .feedback__box-days {
+        font-size: 11px;
+    }
+    .feedback__box-text {
+        font-size: 14px;
+    }
+    .feedback__box {
+        min-height: 276px;
+    }
+    .programs__box {
+        padding: 20px;
+    }
+    .programs__link {
+        margin-top: 16px;
+    }
+    .programs__boxes {
+        margin: 20px 0;
+    }
+    .programs {
+        padding: 40px 0;
+    }
+    .care {
+        padding: 40px 0;
+    }
+    .care__boxes {
+        margin: 20px 0;
+    }
+    .care__box-title,
+    .programs__box-title {
+        font-size: 20px;
+        margin: 16px 0;
+    }
+    .care__box-image {
+        width: 60px;
+        height: 60px;
+    }
+    .care__box-image > svg{
+        width: 36px;
+        height: 36px;
+    }
+    .care__box-text,
+    .programs__box-text {
+        font-size: 14px;
+    }
+    .care__box {
+        padding: 24px;
+    }
+    a {
+        font-size: 14px;
+    }
+    .response {
+        padding: 40px 0;
+    }
+    .title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .text {
+        font-size: 14px;
+    }
+    .response__link {
+        margin: 20px auto 0;
+    }
+    .header__title {
+        font-size: 36px;
+    }
+    .header__subtitle {
+        font-size: 18px;
+        margin: 20px;
+    }
+    .footer__title{
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+    .footer{
+        padding-top: 40px;
+    }
+    .footer__link{
+        margin: 20px auto 40px;
+    }
+    .footer__bottom{
+        font-size: 13px;
+        padding: 16px;
+    }
+}
+@media (max-width: 500px) {
+    .team > .container{
+        padding: 0;
+    }
+    .team{
+        padding-bottom: 0;
+    }
+    .team__content {
+        bottom: auto;
+        top: 30%;
+    }
+}
+
+@media (max-width: 340px) {
+    .start__box{
+        width: 100%;
+    }
+}

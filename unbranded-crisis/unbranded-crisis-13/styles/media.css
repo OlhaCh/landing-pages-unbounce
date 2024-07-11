@@ -1,0 +1,231 @@
+@media (max-width: 1600px) {
+    .header__image {
+        width: 50%;
+    }
+    .header {
+        padding: 40px 0;
+    }
+    .header__content{
+        padding: 0 20px;
+    }
+}
+@media (max-width: 1200px) {
+    .care__boxes, .trust__boxes{
+        justify-content: center;
+    }
+}
+@media (max-width: 1150px) {
+    .trust__boxes, .programs__boxes{
+        justify-content: center;
+    }
+    .meet {
+        padding: 40px 0;
+    }
+    .meet__content {
+        margin-left: 0;
+        margin-bottom: 40px;
+    }
+    .meet__inner {
+        flex-direction: column-reverse;
+    }
+    .feedback__boxes {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .journey__boxes {
+        flex-direction: column;
+    }
+    .journey__boxes > svg {
+        transform: rotate(90deg);
+        margin: 55px 0;
+    }
+}
+@media (max-width: 768px) {
+    .header{
+        background-image: none;
+    }
+    .footer__form-submit{
+        margin: 0 auto;
+        display: block;
+    }
+    .bottom{
+        padding: 20px 25px;
+    }
+    .bottom__text{
+        font-size: 14px;
+    }
+    .bottom__text > b{
+        font-size: 14px;
+    }
+    .footer__title{
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .footer__text{
+        text-align: center;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .footer__content > form > button{
+        margin: 0 auto 20px;
+    }
+    .footer__inner {
+        flex-direction: column;
+        align-items: center;
+    }
+    .journey__number {
+        font-size: 32px;
+        width: 60px;
+        height: 60px;
+        top: -31px;
+    }
+    .journey__boxes {
+        margin-top: 50px;
+    }
+    .journey__inner > form > button {
+        margin-top: 24px;
+    }
+    .journey__title {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+    .journey__boxes > svg {
+        height: 60px;
+        margin: 35px 0;
+    }
+    .journey__box {
+        padding: 54px 32px 32px;
+        min-height: 150px;
+    }
+    .journey__text {
+        font-size: 20px;
+        font-size: 14px;
+    }
+    .meet__content > .title {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .meet__content > .text {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .meet__image {
+        max-width: 636px;
+        width: 100%;
+    }
+    .meet__content > form > button {
+        margin: 0 auto;
+    }
+    .feedback {
+        padding: 40px 0;
+    }
+    .feedback__boxes {
+        margin-top: 24px;
+    }
+    .feedback__box-user {
+        font-size: 14px;
+    }
+    .feedback__box-days {
+        font-size: 11px;
+    }
+    .feedback__box-text {
+        font-size: 14px;
+    }
+    .feedback__box {
+        min-height: 206px;
+    }
+    .header__inner {
+        flex-direction: column;
+    }
+    .header__image {
+        width: 100%;
+    }
+    .header__title {
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+    .header__subtitle {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+    .header__content {
+        margin-left: 0;
+    }
+    .header__content > form > button {
+        margin: 0 auto 40px;
+    }
+    .button {
+        font-size: 14px;
+    }
+    .header__image {
+        display: none;
+    }
+    .header__image.mobile {
+        display: block;
+    }
+    .title {
+        font-size: 24px;
+    }
+    .help__inner > .title,
+    .help__inner > .text {
+        margin-bottom: 20px;
+    }
+    .text {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .help,
+    .care,
+    .programs,
+    .trust,
+    .journey,
+    .footer {
+        padding: 40px 0;
+    }
+    .trust__boxes {
+        margin-top: 24px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .trust__box {
+        min-height: 152px;
+    }
+    .trust__box-title {
+        font-size: 20px;
+        margin: 16px 0;
+    }
+    .trust__box-text {
+        font-size: 14px;
+    }
+    .care__boxes,
+    .programs__boxes {
+        flex-direction: column;
+        margin: 24px 0;
+    }
+    .care__box {
+        max-width: 342px;
+        margin-bottom: 24px;
+    }
+    .care__box-image {
+        width: 72px;
+    }
+    .care__box-title,
+    .programs__box-title {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+    .care__box-text,
+    .programs__box-text {
+        font-size: 14px;
+    }
+    .programs__box {
+        padding: 20px;
+        min-height: 120px;
+    }
+}
+
+@media (max-width: 1100px) {
+}

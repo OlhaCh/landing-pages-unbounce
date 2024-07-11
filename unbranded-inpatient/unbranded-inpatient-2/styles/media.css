@@ -1,0 +1,218 @@
+@media (max-width: 1600px) {
+    .header__background {
+        top: -100px;
+    }
+    .top__circle {
+        z-index: -1;
+    }
+}
+@media (max-width: 1300px) {
+    .top__circle {
+        top: 0;
+        bottom: auto;
+        height: 190px;
+        left: -180px;
+    }
+    .faq__boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+    .faq__subtitle {
+        margin: 14px auto 24px;
+    }
+    .faq__inner > .title {
+        text-align: center;
+    }
+    .faq__box {
+        margin-right: 0;
+    }
+    .faq__link {
+        text-align: center;
+    }
+}
+@media (max-width: 1100px) {
+    .teams__inner {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .teams__text {
+        margin-top: 20px;
+    }
+    .care__inner {
+        flex-direction: column-reverse;
+    }
+    .care__image {
+        margin-bottom: 30px;
+    }
+    .header {
+        overflow-x: hidden;
+    }
+    .header__image {
+        width: 100%;
+    }
+    .header__background {
+        width: 1100px;
+        top: 0;
+    }
+    .programs > svg {
+        display: none;
+    }
+    .stories__boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+    .stories__box {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .start__main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .start__image {
+        display: none;
+    }
+    .start__top-link {
+        display: none;
+    }
+    .start__top {
+        justify-content: center;
+    }
+    .start__top-link.--mobile{
+        display: block;
+        margin: 41px auto;
+    }
+    .header{
+        overflow: hidden;
+        padding: 75px 10px 111px;
+    }
+}
+@media (max-width: 650px) {
+    .top__inner{
+        padding-bottom: 90px;
+    }
+    .care{
+        padding: 40px 0;
+    }
+    .footer__title{
+        font-size: 30px;
+    }
+    .start__box-number {
+        max-width: 100px;
+        width: 100%;
+    }
+    .start__title {
+        text-align: center;
+    }
+    .stories__box-stars > svg > path {
+        fill: #7f56d9;
+    }
+    .stories__box-text {
+        font-size: 14px;
+        height: initial;
+    }
+    .stories__box-author {
+        font-size: 13px;
+    }
+    .title {
+        font-size: 32px;
+    }
+    .start{
+        padding: 70px 10px 40px;
+    }
+    .start__box-title{
+        font-size: 20px;
+    }
+    .start__box-paragraph{
+        font-size: 14px;
+    }
+    .start__top{
+        margin-bottom: 40px;
+    }
+    .footer{
+        padding: 60px 0;
+    }
+    .programs__item-title {
+        font-size: 18px;
+    }
+    .teams {
+      background-color: white;
+    }
+    .teams__link {
+      margin: 0 auto;
+    }
+    .teams__paragraph{
+        margin: 9px auto 24px;
+    }
+    .programs__item:last-of-type{
+        display: none;
+    }
+    .stories, .programs, .teams{
+        padding: 40px 0;
+    }
+    .faq__inner > .title{
+        text-align: start;
+    }
+    .programs__item-text {
+        font-size: 16px;
+    }
+    .care__title {
+        font-size: 32px;
+    }
+    .care__paragraph {
+        font-size: 16px;
+    }
+    .care__link {
+        font-size: 16px;
+    }
+    .care__image {
+        width: 100%;
+    }
+    .header__title {
+        font-size: 48px;
+        margin-bottom: 12px;
+    }
+    .header__subtitle {
+        font-size: 16px;
+        margin-bottom: 36px;
+    }
+    .header__link {
+        margin: 0 auto 40px;
+    }
+    .top__link {
+        max-width: 315px;
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+        margin: 0 auto;
+    }
+    .top {
+        overflow-x: hidden;
+    }
+    .top__text {
+        font-size: 16px;
+    }
+}
+@media (max-width: 500px) {
+    .teams__image {
+        width: 100%;
+    }
+}
+@media (max-width: 350px) {
+    .footer__link{
+        width: 100%;
+    }
+    .start__box{
+        flex-direction: column;
+    }
+    .start__box-number{
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
+    .start__box-title, .start__box-paragraph{
+        text-align: center;
+    }
+
+}
+@media (max-width: 810px) {
+}

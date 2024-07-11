@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>inpatient-mental-health-2</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.min.css" />
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+	<div class="header__container">
+		<p class="header__text">GET HELP NOW</p>
+		<form id="conversionForm" action="/convert" method="post">
+			<input type="hidden" name="user_type" value="{{ user_type }}" />
+			<input type="hidden" name="template" value="template1.html" />
+			<input type="hidden" name="unique_id" value="{{ unique_id }}">
+			<button type="submit" class="header__button button" onclick="handleSubmit(event)">Start Now</button>
+		</form>
+	</div>
+</header>
+		<main class="page">
+			<section class="page__hero hero">
+	<div class="hero__container">
+		<div class="hero__content content">
+			<h1 class="content__title content__title_big">Transform Your Life with Comprehensive Mental Health Treatment</h1>
+			<div class="content__text text">
+				<p>Discover our inpatient and outpatient programs designed to support your journey to wellness.</p>
+			</div>
+			<form id="conversionForm" action="/convert" method="post">
+				<input type="hidden" name="user_type" value="{{ user_type }}" />
+				<input type="hidden" name="template" value="template1.html" />
+				<input type="hidden" name="unique_id" value="{{ unique_id }}">
+				<button type="submit" class="button" onclick="handleSubmit(event)">Get Started Today</button>
+			</form>
+		</div>
+		<div class="hero__image-wrapper">
+			<div class="hero__image">
+				<img src="./img/female-doctors-checking-results-digital-tablet.png" alt="female doctors checking results digital tablet">
+			</div>
+		</div>
+		<img class="hero__bg" data-da=".hero__image-wrapper, 767.98" src="./img/blur-hospital.jpg" alt="hospital">
+	</div>
+</section>
+			<section class="page__about about">
+	<div class="about__container">
+
+		<div class="about__content content content_white">
+			<h2 class="content__title content__title_big">Find Care for You</h2>
+			<div class="content__text text">
+				<p>We offer specialized inpatient and outpatient mental health treatment programs to help you or your loved one achieve long-term recovery. Our compassionate and experienced team is dedicated to providing personalized care in a
+					supportive environment.</p>
+			</div>
+
+		</div>
+		<div class="about__image ibg">
+			<img src="./img/doctor-helping-patient-rehabilitation.jpg" alt="doctor helping patient rehabilitation">
+		</div>
+	</div>
+</section>
+			<section class="page__advantages advantages">
+	<div class="advantages__container">
+		<div class="advantages__content content">
+			<h2 class="content__title">Why Choose Our Mental Health Treatment Programs?</h2>
+			<div class="content__text text">
+				<p>
+					Our comprehensive mental health treatment programs are designed to address your unique needs and provide the best possible care. Here's what sets us apart:
+
+				</p>
+			</div>
+		</div>
+		<ul class="advantages__list">
+			<li class="advantages__item item-advantage">
+	<div class="item-advantage__icon">
+		<img src="./img/advantages/personalization.png" alt="Personalized Treatment Plans">
+	</div>
+	<div class="item-advantage__body">
+		<h3 class="item-advantage__title">Personalized Treatment Plans</h3>
+		<p class="item-advantage__text">Tailored to meet your specific needs.</p>
+	</div>
+</li><li class="advantages__item item-advantage">
+	<div class="item-advantage__icon">
+		<img src="./img/advantages/expertise.png" alt="Expert Clinical Team">
+	</div>
+	<div class="item-advantage__body">
+		<h3 class="item-advantage__title">Expert Clinical Team</h3>
+		<p class="item-advantage__text">Experienced professionals dedicated to your recovery</p>
+	</div>
+</li><li class="advantages__item item-advantage">
+	<div class="item-advantage__icon">
+		<img src="./img/advantages/holistic.png" alt="Holistic Approach">
+	</div>
+	<div class="item-advantage__body">
+		<h3 class="item-advantage__title">Holistic Approach</h3>
+		<p class="item-advantage__text">Integrating various therapies for a well-rounded treatment</p>
+	</div>
+</li>
+		</ul>
+	</div>
+</section>
+			<section class="page__programs programs">
+	<div class="programs__container">
+		<div class="programs__content content content_center">
+			<h2 class="content__title">In-Depth Look at Our Treatment Programs</h2>
+		</div>
+		<ul class="programs__list">
+			<li class="programs__item item-program">
+				<div class="item-program__picture ibg ibg_contain">
+					<img src="./img/programs/inpatient.png" alt="inpatient">
+				</div>
+				<form id="conversionForm" action="/convert" method="post">
+					<input type="hidden" name="user_type" value="{{ user_type }}" />
+					<input type="hidden" name="template" value="template1.html" />
+					<input type="hidden" name="unique_id" value="{{ unique_id }}">
+					<button type="submit" class="button button_no-border" onclick="handleSubmit(event)">Inpatient</button>
+				</form>
+			</li>
+			<li class="programs__item item-program">
+				<div class="item-program__picture ibg ibg_contain">
+					<img src="./img/programs/outpatient-programs.png" alt="outpatient">
+				</div>
+				<form id="conversionForm" action="/convert" method="post">
+					<input type="hidden" name="user_type" value="{{ user_type }}" />
+					<input type="hidden" name="template" value="template1.html" />
+					<input type="hidden" name="unique_id" value="{{ unique_id }}">
+					<button type="submit" class="button button_no-border" onclick="handleSubmit(event)">Outpatient</button>
+				</form>
+			</li>
+		</ul>
+		<div class="programs__text text">
+			<p>
+				Our inpatient and outpatient programs offer a structured and supportive environment for individuals dealing with mental health challenges. Inpatient treatment provides intensive, round-the- clock care, while outpatient programs offer
+				flexibility for those who need to balance treatment with daily responsibilities.
+			</p>
+		</div>
+	</div>
+</section>
+			<section class="page__outpatient-treatment outpatient-treatment">
+	<div class="outpatient-treatment__container">
+		<div class="outpatient-treatment__header content">
+			<h2 class="content__title">Choosing Between Inpatient and Outpatient Treatment</h2>
+		</div>
+		<div class="table">
+			<table>
+				<thead>
+					<tr>
+						<th>No.</th>
+						<th>Feature</th>
+						<th>Inpatient Treatment</th>
+						<th>Outpatient Treatment</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>01</td>
+						<td>Level of Care</td>
+						<td>24/7 intensive care</td>
+						<td>Scheduled sessions, flexible hours</td>
+					</tr>
+					<tr>
+						<td>02</td>
+						<td>Environment</td>
+						<td>Controlled, supportive setting</td>
+						<td>Home and community integration</td>
+					</tr>
+					<tr>
+						<td>03</td>
+						<td>Ideal For</td>
+						<td>Severe or complex conditions</td>
+						<td>Mild to moderate conditions</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="outpatient-treatment__content content">
+			<div class="content__text text">
+				<p>
+					Understanding the differences between inpatient and outpatient treatment is crucial in making the right choice for your mental health journey. Our comparison table highlights the key aspects of each option.
+				</p>
+			</div>
+			<form id="conversionForm" action="/convert" method="post">
+				<input type="hidden" name="user_type" value="{{ user_type }}" />
+				<input type="hidden" name="template" value="template1.html" />
+				<input type="hidden" name="unique_id" value="{{ unique_id }}">
+				<button type="submit" class="button " onclick="handleSubmit(event)">Compare Now</button>
+			</form>
+		</div>
+	</div>
+</section>
+			<section class="page__testimonials testimonials">
+	<div class="testimonials__container">
+		<div class="testimonials__content content">
+			<h2 class="content__title">Hear from Our Patients</h2>
+			<div class="content__text text">
+				<p>
+					Our patients' success stories speak volumes about the effectiveness of our programs. Here are a few testimonials from individuals who have transformed their lives with our help.
+				</p>
+			</div>
+		</div>
+		<div class="testimonials__body">
+			<div class="testimonials__slider swiper">
+				<div class="testimonials__wrapper swiper-wrapper">
+					<div class="testimonials__slide testimonial-slide swiper-slide">
+	<div class="testimonial-slide__rating rating">
+		<div class="rating__item">
+			<img src="./img/icons/star.svg" alt="star">
+		</div>
+		<div class="rating__item">
+			<img src="./img/icons/star.svg" alt="star">
+		</div>
+		<div class="rating__item">
+			<img src="./img/icons/star.svg" alt="star">
+		</div>
+		<div class="rating__item">
+			<img src="./img/icons/star.svg" alt="star">
+		</div>
+		<div class="rating__item">
+			<img src="./img/icons/star.svg" alt="star">
+		</div>
+	</div>
+	<blockquote class="testimonial-slide__quote">
+		This program helped me regain control of my life. The support I received was invaluable.
+	</blockquote>
+	<div class="testimonial-slide__profile profile">
+		<div class="profile__avatar ibg">
+			<img src="./img/testimonials/smiley-businesswoman-posing-city-with-arms-crossed.jpg" alt="Sarah S.">
+		</div>
+		<span class="profile__name">Sarah S.</span>
+	</div>
+</div><div class="testimonials__slide testimonial-slide swiper-slide">
+	<div class="testimonial-slide__rating rating">
+		<div class="rating__item">
+			<img src="./img/icons/star.svg" alt="star">
+		</div>
+		<div class="rating__item">
+			<img src="./img/icons/star.svg" alt="star">
+		</div>
+		<div class="rating__item">
+			<img src="./img/icons/star.svg" alt="star">
+		</div>
+		<div class="rating__item">
+			<img src="./img/icons/star.svg" alt="star">
+		</div>
+		<div class="rating__item">
+			<img src="./img/icons/star.svg" alt="star">
+		</div>
+	</div>
+	<blockquote class="testimonial-slide__quote">
+		This program helped me regain control of my life. The support I received was invaluable.
+	</blockquote>
+	<div class="testimonial-slide__profile profile">
+		<div class="profile__avatar ibg">
+			<img src="./img/testimonials/elegant-man-with-folded-arms.jpg" alt="John M.">
+		</div>
+		<span class="profile__name">John M.</span>
+	</div>
+</div>
+					<details class="spollers__item">
+	<summary class="spollers__title">
+		What is the length of the mental health treatment program?
+		<i class="spollers__icon"></i>
+	</summary>
+	<div class="spollers__body">The length of stay varies depending on individual needs but typically ranges from 30 to 90 days.</div>
+</details><details class="spollers__item">
+	<summary class="spollers__title">
+		Will I be able to contact my family during treatment?
+		<i class="spollers__icon"></i>
+	</summary>
+	<div class="spollers__body">Yes, we encourage family involvement and provide scheduled times for family visits and communication.</div>
+</details><details class="spollers__item">
+	<summary class="spollers__title">
+		What types of therapies are offered?
+		<i class="spollers__icon"></i>
+	</summary>
+	<div class="spollers__body">Answer: We offer a variety of therapies including individual counseling, group therapy, cognitive-behavioral therapy, art therapy, and mindfulness practices.</div>
+</details>
+				</div>
+			</div>
+			<div class="testimonials__pagination pagination"></div>
+		</div>
+	</div>
+</section>
+			<section class="page__faq faq">
+	<div class="faq__container">
+		<div class="faq__body">
+			<div class="faq__content content">
+				<h2 class="content__title">Frequently Asked Questions</h2>
+				<div class="content__text text">
+					<p>We understand you may have questions about our programs. Here are answers to some of the most common inquiries.</p>
+				</div>
+			</div>
+			<div data-spollers class="faq__spollers spollers">
+				<details class="spollers__item">
+	<summary class="spollers__title">
+		What is the length of the mental health treatment program?
+		<i class="spollers__icon"></i>
+	</summary>
+	<div class="spollers__body">The length of stay varies depending on individual needs but typically ranges from 30 to 90 days.</div>
+</details><details class="spollers__item">
+	<summary class="spollers__title">
+		Will I be able to contact my family during treatment?
+		<i class="spollers__icon"></i>
+	</summary>
+	<div class="spollers__body">Yes, we encourage family involvement and provide scheduled times for family visits and communication.</div>
+</details><details class="spollers__item">
+	<summary class="spollers__title">
+		What types of therapies are offered?
+		<i class="spollers__icon"></i>
+	</summary>
+	<div class="spollers__body">Answer: We offer a variety of therapies including individual counseling, group therapy, cognitive-behavioral therapy, art therapy, and mindfulness practices.</div>
+</details>
+			</div>
+		</div>
+		<div class="faq__image ibg ibg_contain" data-da=".faq__body, 767.98,1">
+			<img src="./img/beautiful-young-female-doctor-looking-camera-office.png" alt="beautiful young female doctor looking camera office">
+		</div>
+	</div>
+</section>
+		</main>
+		<footer class="footer">
+	<div class="footer__container">
+		<div class="footer__content content">
+			<h2 class="content__title">Ready to Take the First Step?</h2>
+			<div class="content__text text">
+				<p>Our team is here to help you start your journey to recovery. Contact us today for a consultation and take the first step towards a healthier, happier life.</p>
+			</div>
+			<form id="conversionForm" action="/convert" method="post">
+				<input type="hidden" name="user_type" value="{{ user_type }}" />
+				<input type="hidden" name="template" value="template1.html" />
+				<input type="hidden" name="unique_id" value="{{ unique_id }}">
+				<button type="submit" class="button button_white" onclick="handleSubmit(event)">Call Now Today</button>
+			</form>
+		</div>
+		<div class="footer__form">
+			<form class="form">
+	<div class="form__row">
+		<div class="form__line">
+			<span class="form__label">Full name</span>
+			<label class="sr-only" for="name">Name</label>
+			<input id="name" autocomplete="off" type="text" name="name" placeholder="First Name" class="form__input input">
+		</div>
+		<div class="form__line">
+			<label class="sr-only" for="lastName">Last name</label>
+			<input id="lastName" autocomplete="off" type="text" name="last_name" placeholder="Last Name" class="form__input input">
+		</div>
+	</div>
+	<div class="form__row form__row_wide">
+		<div class="form__line">
+			<label class="form__label" for="email">Email</label>
+			<input id="email" autocomplete="off" type="email" name="email" placeholder="Email" class="form__input input">
+		</div>
+		<div class="form__line">
+			<label class="form__label" for="phone">Phone</label>
+			<input id="phone" autocomplete="off" type="tel" name="phone" placeholder="Phone" class="form__input input">
+		</div>
+	</div>
+	<div class="form__line">
+		<label class="form__label" for="message">Message</label>
+		<textarea id="message" autocomplete="off" name="message" placeholder="Message" class="form__input input"></textarea>
+	</div>
+	<button class="form__send button button_white" type="submit">Submit</button>
+</form>
+		</div>
+	</div>
+</footer>
+	</div>
+	<script src="./js/app.js"></script>
+</body>
+
+</html>

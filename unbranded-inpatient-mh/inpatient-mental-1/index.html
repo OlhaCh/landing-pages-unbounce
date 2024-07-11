@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+   <title>Home page</title>
+
+   <link rel="apple-touch-icon" sizes="180x180" href="files/favicons/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="files/favicons/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="files/favicons/favicon-16x16.png">
+   <link rel="manifest" href="files/favicons/site.webmanifest">
+   <link rel="mask-icon" href="files/favicons/safari-pinned-tab.svg" color="#5bbad5">
+   <meta name="msapplication-TileColor" content="#2b5797">
+   <meta name="theme-color" content="#ffffff">
+
+   <link rel="stylesheet" type="text/css" href="./css/style.css" />
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+	<div class="header__container">
+		<p class="header__text">GET HELP NOW</p>
+		<form id="conversionForm" action="/convert" method="post">
+			<input type="hidden" name="user_type" value="{{ user_type }}" />
+			<input type="hidden" name="template" value="template1.html" />
+			<input type="hidden" name="unique_id" value="{{ unique_id }}">
+			<button type="submit" class="button button_blue" onclick="handleSubmit(event)">Start Now</button>
+		</form>
+	</div>
+</header>
+		<main class="page">
+			<section class="page__hero hero">
+	<div class="hero__container">
+		<div class="hero__content content">
+			<h1 class="content__title content__title_big">Find Healing and Wholeness - Mental Health Treatment Tailored to You</h1>
+			<div class="content__text text">
+				<p>Inpatient and Outpatient Programs - Get the Support You Need</p>
+			</div>
+			<form id="conversionForm" action="/convert" method="post">
+				<input type="hidden" name="user_type" value="{{ user_type }}" />
+				<input type="hidden" name="template" value="template1.html" />
+				<input type="hidden" name="unique_id" value="{{ unique_id }}">
+				<button type="submit" class="button button_blue" onclick="handleSubmit(event)">Get Started Today</button>
+			</form>
+		</div>
+		<div class="hero__image">
+			<div class="hero__image-path">
+				<picture>
+					<source srcset="@img/mask-mobile.png" media="(max-width: 479.98px)">
+					<img src="./img/smiling-woman-exercising-yoga-meditating-with-her-eyes-closed-rock-by-sea-copy-space.jpg" alt="smiling woman exercising yoga meditating with her eyes closed rock by sea copy space">
+				</picture>
+			</div>
+		</div>
+	</div>
+</section>
+			<section class="page__about-us about-us">
+	<div class="about-us__container">
+		<div class="about-us__content content content_center">
+			<h2 class="content__title">Taking Care of Your Mental Health Matters</h2>
+			<div class="content__text text">
+				<p>
+					Struggling with <i class="icon-text icon-text_fear"><img src="./img/icons/fear.png" alt="fear"></i> depression, <i class="icon-text icon-text_brain"><img src="./img/icons/brain.png" alt="brain"></i> anxiety, or other <i
+						class="icon-text icon-text_schizophrenia"><img src="./img/icons/schizophrenia.png" alt="schizophrenia"></i>
+					mental health challenges
+					can feel overwhelming. You don't have to go
+					through this <i class="icon-text icon-text_alone"><img src="./img/icons/alone.png" alt="alone"></i> alone. We offer
+					comprehensive inpatient and outpatient
+					treatment
+					programs
+					designed
+					to <i class="icon-text icon-text_help"><img src="./img/icons/help.png" alt="heart"></i> help
+					you find healing and create a path towards a brighter future.
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+			<section class="page__journey journey">
+	<div class="journey__container">
+		<div class="journey__content content content_center">
+			<h2 class="content__title">Why Choose Us for Your Mental Health Journey?</h2>
+			<div class="content__text text">
+				<p>We provide individualized treatment plans delivered by a team of experienced and compassionate professionals.</p>
+			</div>
+		</div>
+		<div class="journey__list">
+			<figure class="journey__item item-journey">
+				<div class="item-journey__image ibg">
+					<img src="./img/journey/male-patient.jpg" alt="male patient bed talking nurse">
+				</div>
+				<figcaption class="item-journey__title">Inpatient and Outpatient Care Options</figcaption>
+			</figure>
+			<figure class="journey__item item-journey">
+				<div class="item-journey__image ibg">
+					<img src="./img/journey/woman-waiting-doctor.jpg"
+						alt="woman waiting doctor- sitting chair neurological research laboratory while researchers team discussing background health status patient brain functions nervous system tomography scan">
+				</div>
+				<figcaption class="item-journey__title">Evidence-Based Treatment Approaches</figcaption>
+			</figure>
+			<figure class="journey__item item-journey">
+				<div class="item-journey__image ibg">
+					<img src="./img/journey/close-up-team.jpg" alt="close up team students teamwork stack hands together startup success concept">
+				</div>
+				<figcaption class="item-journey__title">Supportive and Caring Environment</figcaption>
+			</figure>
+		</div>
+	</div>
+</section>
+			<section class="page__programs programs">
+	<div class="programs__container">
+		<div class="programs__content content content_center">
+			<h2 class="content__title">What to Expect From Our Inpatient and Outpatient Programs</h2>
+		</div>
+		<ul class="programs__list">
+			<li class="programs__item item-program">
+				<div class="item-program__picture item-program__picture_dark-bg ibg ibg_contain">
+					<img src="./img/decor-images/inpatient.svg" alt="inpatient">
+				</div>
+				<form id="conversionForm" action="/convert" method="post">
+					<input type="hidden" name="user_type" value="{{ user_type }}" />
+					<input type="hidden" name="template" value="template1.html" />
+					<input type="hidden" name="unique_id" value="{{ unique_id }}">
+					<button type="submit" class="button button_no-border" onclick="handleSubmit(event)">Inpatient</button>
+				</form>
+			</li>
+			<li class="programs__item item-program">
+				<div class="item-program__picture item-program__picture_light-bg ibg ibg_contain">
+					<img src="./img/decor-images/outpatient.svg" alt="outpatient">
+				</div>
+				<form id="conversionForm" action="/convert" method="post">
+					<input type="hidden" name="user_type" value="{{ user_type }}" />
+					<input type="hidden" name="template" value="template1.html" />
+					<input type="hidden" name="unique_id" value="{{ unique_id }}">
+					<button type="submit" class="button button_no-border" onclick="handleSubmit(event)">Outpatient</button>
+				</form>
+			</li>
+		</ul>
+		<div class="programs__text text">
+			<p>
+				Our inpatient program offers 24/7 care in a safe and secure environment, ideal for those needing intensive support. Our outpatient program provides flexible scheduling for ongoing therapy and support while living at home.
+			</p>
+		</div>
+	</div>
+</section>
+			<section class="page__care care">
+	<div class="care__container">
+		<div class="care__content content content_center">
+			<h2 class="content__title">Find the Right Level of Care</h2>
+			<div class="content__text text">
+				<p>We understand that everyone's needs are different. This table compares the key features of our inpatient and outpatient programs to help you choose the best fit.</p>
+			</div>
+		</div>
+		<table>
+			<thead>
+				<tr>
+					<th>SL</th>
+					<th>Feature</th>
+					<th>Inpatient Treatment</th>
+					<th>Outpatient Treatment</th>
+				</tr>
+			</thead>
+			<tr>
+				<td>1.</td>
+				<td>Level of Support</td>
+				<td>24/7 supervision and medical care</td>
+				<td>Flexible scheduling, with regular therapy sessions</td>
+			</tr>
+			<tr>
+				<td>2.</td>
+				<td>Living Arrangements</td>
+				<td>Live at the treatment facility</td>
+				<td>Live at home</td>
+			</tr>
+			<tr>
+				<td>3.</td>
+				<td>Program Duration</td>
+				<td>Varies, typically 3-7 days to several weeks</td>
+				<td>Varies, can be ongoing or short-term</td>
+			</tr>
+			<tr>
+				<td>4.</td>
+				<td>Ideal For</td>
+				<td>Individuals in crisis, needing Intensive stabilization, or with high-risk factors</td>
+				<td>Individuals with mild to moderate symptoms who can function at home and attend appointments</td>
+			</tr>
+		</table>
+		<form id="conversionForm" action="/convert" method="post">
+			<input type="hidden" name="user_type" value="{{ user_type }}" />
+			<input type="hidden" name="template" value="template1.html" />
+			<input type="hidden" name="unique_id" value="{{ unique_id }}">
+			<button type="submit" class="button" onclick="handleSubmit(event)">Schedule a Consultation</button>
+		</form>
+	</div>
+</section>
+			<section class="page__testimonials testimonials">
+	<div class="testimonials__container">
+		<div class="testimonials__content content content_center">
+			<h2 class="content__title">Hear What Others Are Saying</h2>
+		</div>
+		<div class="testimonials__body">
+			<div class="testimonials__slider swiper">
+				<div class="testimonials__wrapper swiper-wrapper">
+					<div class="testimonials__slide slide-testimonial swiper-slide">
+						<div class="slide-testimonial__image ibg">
+							<img src="./img/testimonials/girl-with-smile-nature.jpg" alt="girl with smile nature">
+						</div>
+						<div class="slide-testimonial__content">
+							<blockquote class="slide-testimonial__quote">
+								This program helped me regain control of my life. The support I received was invaluable.
+							</blockquote>
+							<div class="slide-testimonial__profile profile">
+								<span class="profile__name">Sarah S.</span>
+								<div class="profile__rating rating">
+									<div class="rating__item">
+										<img src="./img/icons/star.svg" alt="star">
+									</div>
+									<div class="rating__item">
+										<img src="./img/icons/star.svg" alt="star">
+									</div>
+									<div class="rating__item">
+										<img src="./img/icons/star.svg" alt="star">
+									</div>
+									<div class="rating__item">
+										<img src="./img/icons/star.svg" alt="star">
+									</div>
+									<div class="rating__item">
+										<img src="./img/icons/star.svg" alt="star">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="testimonials__slide slide-testimonial swiper-slide">
+						<div class="slide-testimonial__image ibg">
+							<img src="./img/testimonials/portrait-happy-smiley-man.jpg" alt="portrait happy smiley man">
+						</div>
+						<div class="slide-testimonial__content">
+							<blockquote class="slide-testimonial__quote">
+								The flexibility of the outpatient program allowed me to continue working while getting the therapy I needed.
+							</blockquote>
+							<div class="slide-testimonial__profile profile">
+								<span class="profile__name">John M.</span>
+								<div class="profile__rating rating">
+									<div class="rating__item">
+										<img src="./img/icons/star.svg" alt="star">
+									</div>
+									<div class="rating__item">
+										<img src="./img/icons/star.svg" alt="star">
+									</div>
+									<div class="rating__item">
+										<img src="./img/icons/star.svg" alt="star">
+									</div>
+									<div class="rating__item">
+										<img src="./img/icons/star.svg" alt="star">
+									</div>
+									<div class="rating__item">
+										<img src="./img/icons/star.svg" alt="star">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="testimonials__navigation navigation">
+				<button class="navigation__btn navigation__btn_prev" type="button" aria-label="Next slide with a testimonial">
+					<img src="./img/icons/arrow-slide.png" alt="arrow slide button">
+				</button>
+				<button class="navigation__btn navigation__btn_next" type="button" aria-label="Previous slide with a testimonial">
+					<img src="./img/icons/arrow-slide.png" alt="arrow slide button">
+				</button>
+			</div>
+		</div>
+
+	</div>
+</section>
+			<section class="page__faq faq">
+	<div class="faq__container">
+		<div class="faq__content content content_center">
+			<h2 class="content__title">Frequently Asked Questions</h2>
+		</div>
+		<div data-spollers class="faq__spollers spollers">
+			<details class="spollers__item">
+	<summary class="spollers__title">
+		What insurance plans do you accept?
+		<i>
+			<img src="./img/icons/arrow.png" alt="arrow">
+		</i>
+	</summary>
+	<div class="spollers__body">
+		<p>We accept a variety of insurance plans. Please contact our admissions team to verify coverage for your specific plan.</p>
+	</div>
+</details><details class="spollers__item">
+	<summary class="spollers__title">
+		What are the qualifications of your therapists?
+		<i>
+			<img src="./img/icons/arrow.png" alt="arrow">
+		</i>
+	</summary>
+	<div class="spollers__body">
+		<p>Answer: All our therapists are licensed mental health professionals with extensive experience treating various mental health conditions.</p>
+	</div>
+</details><details class="spollers__item">
+	<summary class="spollers__title">
+		What happens during a consultation?
+		<i>
+			<img src="./img/icons/arrow.png" alt="arrow">
+		</i>
+	</summary>
+	<div class="spollers__body">
+		<p>A consultation is a free and confidential meeting to discuss your needs and goals for treatment. We will assess your situation and recommend the most appropriate program for you.</p>
+	</div>
+</details><details class="spollers__item">
+	<summary class="spollers__title">
+		Is medication-assisted treatment available?
+		<i>
+			<img src="./img/icons/arrow.png" alt="arrow">
+		</i>
+	</summary>
+	<div class="spollers__body">
+		<p>Yes, medication-assisted treatment (MAT) may be integrated into your treatment plan if deemed necessary by a qualified healthcare professional.</p>
+	</div>
+</details><details class="spollers__item">
+	<summary class="spollers__title">
+		What happens after I complete the program?
+		<i>
+			<img src="./img/icons/arrow.png" alt="arrow">
+		</i>
+	</summary>
+	<div class="spollers__body">
+		<p>We offer aftercare planning to help you transition back to daily life and maintain your progress. This may include recommendations for ongoing therapy, support groups, or other resources.</p>
+	</div>
+</details>
+		</div>
+	</div>
+</section>
+		</main>
+		<footer class="footer">
+	<div class="footer__container">
+		<div class="footer__content content">
+			<h2 class="content__title">Ready to Take the First Step?</h2>
+			<div class="content__text text">
+				<p>Schedule a free confidential consultation to discuss your needs and learn how we can help.</p>
+			</div>
+			<form id="conversionForm" action="/convert" method="post">
+				<input type="hidden" name="user_type" value="{{ user_type }}" />
+				<input type="hidden" name="template" value="template1.html" />
+				<input type="hidden" name="unique_id" value="{{ unique_id }}">
+				<button type="submit" class="button button_white" onclick="handleSubmit(event)">Call Now Today</button>
+			</form>
+		</div>
+		<div class="footer__form">
+			<form class="form">
+	<div class="form__row">
+		<div class="form__line">
+			<span class="form__label">Full name</span>
+			<label class="sr-only" for="name">Name</label>
+			<input id="name" autocomplete="off" type="text" name="name" placeholder="First Name" class="form__input input">
+		</div>
+		<div class="form__line">
+			<label class="sr-only" for="name">Last name</label>
+			<input id="lastName" autocomplete="off" type="text" name="last_name" placeholder="Last Name" class="form__input input">
+		</div>
+	</div>
+	<div class="form__row form__row_wide">
+		<div class="form__line">
+			<label class="form__label" for="email">Email</label>
+			<input id="email" autocomplete="off" type="email" name="email" placeholder="Email" class="form__input input">
+		</div>
+		<div class="form__line">
+			<label class="form__label" for="phone">Phone Number</label>
+			<input id="phone" autocomplete="off" type="tel" name="phone" placeholder="Phone Number" class="form__input input">
+		</div>
+	</div>
+	<div class="form__line">
+		<label class="form__label" for="message">Message</label>
+		<textarea id="message" autocomplete="off" name="message" placeholder="Message" class="form__input input"></textarea>
+	</div>
+	<button class="form__send button button_white" type="submit">
+		Schedule Consultation
+		<i>
+			<img src="./img/icons/arrow.svg" alt="arrow">
+		</i>
+	</button>
+</form>
+		</div>
+	</div>
+</footer>
+	</div>
+	<script src="./js/app.js"></script>
+</body>
+
+</html>

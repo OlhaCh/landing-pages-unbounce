@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unbranded Crisis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Vesper+Libre:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/media.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <h1 class="header__title">Take the First Step Toward a New Life</h1>
+                <p class="header__subtitle">Reclaim your life & find lasting recovery in our supportive, inpatient
+                    setting.</p>
+                <form id="conversionForm" action="/convert" method="post">
+                    <input type="hidden" name="user_type" value="{{ user_type }}" />
+                    <input type="hidden" name="template" value="template1.html" />
+                    <input type="hidden" name="unique_id" value="{{ unique_id }}">
+                    <button type="submit" class="button" onclick="handleSubmit(event)">Get Start Today</button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <section class="welcome">
+        <div class="container">
+            <div class="welcome__inner">
+                <img src="./content/welcome.png" alt="" class="welcome__image">
+                <div class="welcome__content">
+                    <h2 class="title">Welcome to Your Path to Recovery</h2>
+                    <p class="text">Feeling overwhelmed by addiction and mental health challenges? You’re not alone.
+                        When you’re in crisis, taking the first step toward recovery is brave and essential. Welcome to
+                        a place where healing begins, and hope thrives.</p>
+                    <form id="conversionForm" action="/convert" method="post">
+                        <input type="hidden" name="user_type" value="{{ user_type }}" />
+                        <input type="hidden" name="template" value="template1.html" />
+                        <input type="hidden" name="unique_id" value="{{ unique_id }}">
+                        <button type="submit" class="button" onclick="handleSubmit(event)">Learn More</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="care">
+        <div class="care__inner">
+            <p class="description">
+                <svg width="25" height="8" viewBox="0 0 25 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="4" cy="4" r="4" transform="matrix(-1 0 0 1 25 0)" fill="#4A2461" />
+                    <path
+                        d="M2 5.5C1.17157 5.5 0.5 4.82843 0.5 4C0.5 3.17157 1.17157 2.5 2 2.5V5.5ZM18 5.5H2V2.5H18V5.5Z"
+                        fill="url(#paint0_linear_53_4445)" />
+                    <defs>
+                        <linearGradient id="paint0_linear_53_4445" x1="18" y1="4.5" x2="2" y2="4.5"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#4A2461" />
+                            <stop offset="1" stop-color="#4A2461" stop-opacity="0.25" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span>Our Services</span>
+                <svg width="25" height="8" viewBox="0 0 25 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="4" cy="4" r="4" fill="#4A2461" />
+                    <path
+                        d="M23 5.5C23.8284 5.5 24.5 4.82843 24.5 4C24.5 3.17157 23.8284 2.5 23 2.5V5.5ZM7 5.5H23V2.5H7V5.5Z"
+                        fill="url(#paint0_linear_53_4442)" />
+                    <defs>
+                        <linearGradient id="paint0_linear_53_4442" x1="7" y1="4.5" x2="23" y2="4.5"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#4A2461" />
+                            <stop offset="1" stop-color="#4A2461" stop-opacity="0.25" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </p>
+            <h2 class="title">Comprehensive, Holistic Care</h2>
+            <p class="text">We treat the whole person, addressing mind, body, and spirit.</p>
+            <div class="care__boxes">
+                <div class="care__box">
+                    <img src="./content/care1.png" alt="" class="care__box-image">
+                    <div class="care__box-content">
+                        <h3 class="care__box-text">Individual Therapy</h3>
+                        <div class="care__box-rect"><img src="./content/arrow.png" alt="" class="care__box-arrow"></div>
+                    </div>
+                </div>
+                <div class="care__box">
+                    <img src="./content/care2.png" alt="" class="care__box-image">
+                    <div class="care__box-content">
+                        <h3 class="care__box-text">Group Therapy</h3>
+                        <div class="care__box-rect"><img src="./content/arrow.png" alt="" class="care__box-arrow"></div>
+                    </div>
+                </div>
+                <div class="care__box">
+                    <img src="./content/care3.png" alt="" class="care__box-image">
+                    <div class="care__box-content">
+                        <h3 class="care__box-text">Holistic Therapy</h3>
+                        <div class="care__box-rect"><img src="./content/arrow.png" alt="" class="care__box-arrow"></div>
+                    </div>
+                </div>
+                <div class="care__box">
+                    <img src="./content/care4.png" alt="" class="care__box-image">
+                    <div class="care__box-content">
+                        <h3 class="care__box-text">Medical Support</h3>
+                        <div class="care__box-rect"><img src="./content/arrow.png" alt="" class="care__box-arrow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="explore">
+        <div class="container">
+            <div class="explore__inner">
+                <p class="description">
+                    <svg width="25" height="8" viewBox="0 0 25 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="4" transform="matrix(-1 0 0 1 25 0)" fill="#4A2461" />
+                        <path
+                            d="M2 5.5C1.17157 5.5 0.5 4.82843 0.5 4C0.5 3.17157 1.17157 2.5 2 2.5V5.5ZM18 5.5H2V2.5H18V5.5Z"
+                            fill="url(#paint0_linear_53_4445)" />
+                        <defs>
+                            <linearGradient id="paint0_linear_53_4445" x1="18" y1="4.5" x2="2" y2="4.5"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#4A2461" />
+                                <stop offset="1" stop-color="#4A2461" stop-opacity="0.25" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <span>What We Offer</span>
+                    <svg width="25" height="8" viewBox="0 0 25 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="4" fill="#4A2461" />
+                        <path
+                            d="M23 5.5C23.8284 5.5 24.5 4.82843 24.5 4C24.5 3.17157 23.8284 2.5 23 2.5V5.5ZM7 5.5H23V2.5H7V5.5Z"
+                            fill="url(#paint0_linear_53_4442)" />
+                        <defs>
+                            <linearGradient id="paint0_linear_53_4442" x1="7" y1="4.5" x2="23" y2="4.5"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#4A2461" />
+                                <stop offset="1" stop-color="#4A2461" stop-opacity="0.25" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </p>
+                <h2 class="title">Explore Our Treatment Options</h2>
+                <p class="text">Our programs are tailored to your unique needs. We offer a full range of services to
+                    support your journey</p>
+                <div class="explore__boxes">
+                    <div class="explore__box">
+                        <img src="./content/explore1.png" alt="" class="explore__box-image">
+                        <p class="explore__box-text">Inpatient Treatment</p>
+                        <img src="./content/ex-th1.png" alt="" class="explore__box-icon">
+                    </div>
+                    <div class="explore__box">
+                        <img src="./content/explore2.png" alt="" class="explore__box-image">
+                        <p class="explore__box-text">Dual Diagnosis</p>
+                        <img src="./content/ex-th2.png" alt="" class="explore__box-icon">
+                    </div>
+                    <div class="explore__box">
+                        <img src="./content/explore3.png" alt="" class="explore__box-image">
+                        <p class="explore__box-text">Family Therapy</p>
+                        <img src="./content/ex-th3.png" alt="" class="explore__box-icon">
+                    </div>
+                </div>
+                <form id="conversionForm" action="/convert" method="post">
+                    <input type="hidden" name="user_type" value="{{ user_type }}" />
+                    <input type="hidden" name="template" value="template1.html" />
+                    <input type="hidden" name="unique_id" value="{{ unique_id }}">
+                    <button type="submit" class="button" onclick="handleSubmit(event)">Discover Our Programs</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="hear">
+        <div class="container">
+            <div class="hear__inner">
+                <p class="description">
+                    <svg width="25" height="8" viewBox="0 0 25 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="4" transform="matrix(-1 0 0 1 25 0)" fill="#4A2461" />
+                        <path
+                            d="M2 5.5C1.17157 5.5 0.5 4.82843 0.5 4C0.5 3.17157 1.17157 2.5 2 2.5V5.5ZM18 5.5H2V2.5H18V5.5Z"
+                            fill="url(#paint0_linear_53_4445)" />
+                        <defs>
+                            <linearGradient id="paint0_linear_53_4445" x1="18" y1="4.5" x2="2" y2="4.5"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#4A2461" />
+                                <stop offset="1" stop-color="#4A2461" stop-opacity="0.25" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <span>Our Testimonials</span>
+                    <svg width="25" height="8" viewBox="0 0 25 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="4" fill="#4A2461" />
+                        <path
+                            d="M23 5.5C23.8284 5.5 24.5 4.82843 24.5 4C24.5 3.17157 23.8284 2.5 23 2.5V5.5ZM7 5.5H23V2.5H7V5.5Z"
+                            fill="url(#paint0_linear_53_4442)" />
+                        <defs>
+                            <linearGradient id="paint0_linear_53_4442" x1="7" y1="4.5" x2="23" y2="4.5"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#4A2461" />
+                                <stop offset="1" stop-color="#4A2461" stop-opacity="0.25" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </p>
+                <h2 class="title">Hear From Those Who've Been There</h2>
+                <div class="hear__boxes">
+                    <div class="hear__box">
+                        <img src="./content/user1.png" alt="" class="hear__box-image">
+                        <div class="hear__box-content">
+                            <div class="hear__box-stars">
+                                <img src="./content/star.png" alt="" class="hear__box-star">
+                                <img src="./content/star.png" alt="" class="hear__box-star">
+                                <img src="./content/star.png" alt="" class="hear__box-star">
+                                <img src="./content/star.png" alt="" class="hear__box-star">
+                                <img src="./content/star.png" alt="" class="hear__box-star">
+                            </div>
+                            <h3 class="hear__box-name">Evelyn K.</h3>
+                            <p class="hear__box-text">Opening up about my depression and drug use was terrifying, but
+                                the staff at the outpatient clinic created a safe space. They provided therapy,
+                                medication management, and support groups. Slowly, I'm rediscovering myself and my
+                                strength.</p>
+                        </div>
+                        <img src="./content/quote.png" alt="" class="hear__box-quote">
+                    </div>
+                    <div class="hear__box">
+                        <img src="./content/user2.png" alt="" class="hear__box-image">
+                        <div class="hear__box-content">
+                            <div class="hear__box-stars">
+                                <img src="./content/star.png" alt="" class="hear__box-star">
+                                <img src="./content/star.png" alt="" class="hear__box-star">
+                                <img src="./content/star.png" alt="" class="hear__box-star">
+                                <img src="./content/star.png" alt="" class="hear__box-star">
+                                <img src="./content/star.png" alt="" class="hear__box-star">
+                            </div>
+                            <h3 class="hear__box-name">Liam M.</h3>
+                            <p class="hear__box-text">Lost in a spiral of anxiety and alcohol, I didn't know where to
+                                turn. The rehab program here wasn't just about detox, it helped me understand the root
+                                of my problems. Today, I'm free from substances and building a healthier life. Thank
+                                you!</p>
+                        </div>
+                        <img src="./content/quote.png" alt="" class="hear__box-quote">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="why">
+        <div class="container">
+            <div class="why__inner">
+                <img src="./content/why.png" alt="" class="why__image">
+                <div class="why__content">
+                    <h2 class="title">Why Choose Us?</h2>
+                    <div class="why__boxes">
+                        <div class="why__box">
+                            <p class="why__box-number">01</p>
+                            <h3 class="why__box-text">Compassionate and experienced staff</h3>
+                        </div>
+                        <div class="why__box">
+                            <p class="why__box-number">02</p>
+                            <h3 class="why__box-text">Personalized treatment plans</h3>
+                        </div>
+                        <div class="why__box">
+                            <p class="why__box-number">03</p>
+                            <h3 class="why__box-text">Safe and tranquil environment</h3>
+                        </div>
+                        <div class="why__box">
+                            <p class="why__box-number">04</p>
+                            <h3 class="why__box-text">Proven, evidence-based practices</h3>
+                        </div>
+                        <div class="why__box">
+                            <p class="why__box-number">05</p>
+                            <h3 class="why__box-text">Ongoing aftercare support</h3>
+                        </div>
+                    </div>
+                    <form id="conversionForm" action="/convert" method="post">
+                        <input type="hidden" name="user_type" value="{{ user_type }}" />
+                        <input type="hidden" name="template" value="template1.html" />
+                        <input type="hidden" name="unique_id" value="{{ unique_id }}">
+                        <button type="submit" class="button" onclick="handleSubmit(event)">Find Out More</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="start">
+        <div class="container">
+            <div class="start__inner">
+                <h2 class="title">Start Your Recovery Journey</h2>
+                <p class="text">Starting your recovery journey is straightforward. Here’s what to expect from our
+                    admissions process</p>
+                <div class="start__boxes">
+                    <div class="start__box">
+                        <img src="./content/start1.png" alt="" class="start__box-image">
+                        <h3 class="start__box-text">Confidential Assessment</h3>
+                    </div>
+                    <div class="start__box">
+                        <img src="./content/start2.png" alt="" class="start__box-image">
+                        <h3 class="start__box-text">Personalized Treatment Plan</h3>
+                    </div>
+                    <div class="start__box">
+                        <img src="./content/start3.png" alt="" class="start__box-image">
+                        <h3 class="start__box-text">Insurance Verification</h3>
+                    </div>
+                    <div class="start__box">
+                        <img src="./content/start4.png" alt="" class="start__box-image">
+                        <h3 class="start__box-text">Admission Scheduling</h3>
+                    </div>
+                </div>
+                <form id="conversionForm" action="/convert" method="post">
+                    <input type="hidden" name="user_type" value="{{ user_type }}" />
+                    <input type="hidden" name="template" value="template1.html" />
+                    <input type="hidden" name="unique_id" value="{{ unique_id }}">
+                    <button type="submit" class="button" onclick="handleSubmit(event)">Start Your Journey</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="faq">
+        <div class="container">
+            <div class="faq__inner">
+                <h2 class="title">Frequently Asked Questions</h2>
+                <div class="faq__boxes">
+                    <div class="faq__box">
+                        <div class="faq__box-top">
+                            <h3 class="faq__box-title">What types of conditions do you treat?</h3>
+                            <button class="faq__box-button"><span>+</span></button>
+                        </div>
+                        <p class="faq__box-text">We treat a wide range of mental health conditions and substance use
+                            disorders, including depression, anxiety, bipolar disorder, PTSD, and addiction to drugs or
+                            alcohol.</p>
+                    </div>
+                    <div class="faq__box">
+                        <div class="faq__box-top">
+                            <h3 class="faq__box-title">What is the duration of the treatment programs?</h3>
+                            <button class="faq__box-button"><span>+</span></button>
+                        </div>
+                        <p class="faq__box-text">Treatment duration varies based on individual needs, typically ranging from 30 to 90 days, with some requiring longer stays.</p>
+                    </div>
+                    <div class="faq__box">
+                        <div class="faq__box-top">
+                            <h3 class="faq__box-title">What is included in the treatment program?</h3>
+                            <button class="faq__box-button"><span>+</span></button>
+                        </div>
+                        <p class="faq__box-text">Our programs include individual and group therapy, holistic therapies, medical support, family therapy, and aftercare planning.</p>
+                    </div>
+                    <div class="faq__box">
+                        <div class="faq__box-top">
+                            <h3 class="faq__box-title">How does the admissions process work?</h3>
+                            <button class="faq__box-button"><span>+</span></button>
+                        </div>
+                        <p class="faq__box-text">The process starts with a confidential assessment, followed by insurance verification and admission scheduling.</p>
+                    </div>
+                    <div class="faq__box">
+                        <div class="faq__box-top">
+                            <h3 class="faq__box-title">Do you accept insurance?</h3>
+                            <button class="faq__box-button"><span>+</span></button>
+                        </div>
+                        <p class="faq__box-text">Yes, we accept various insurance plans and offer financial assistance for those who qualify.</p>
+                    </div>
+                    <div class="faq__box">
+                        <div class="faq__box-top">
+                            <h3 class="faq__box-title">What is a typical day like in the inpatient program?</h3>
+                            <button class="faq__box-button"><span>+</span></button>
+                        </div>
+                        <p class="faq__box-text">A typical day includes therapy sessions, holistic activities, meals, and recreational activities.</p>
+                    </div>
+                    <div class="faq__box">
+                        <div class="faq__box-top">
+                            <h3 class="faq__box-title">Is family involvement part of the treatment?</h3>
+                            <button class="faq__box-button"><span>+</span></button>
+                        </div>
+                        <p class="faq__box-text">Yes, we offer family therapy sessions to help repair and strengthen family relationships.</p>
+                    </div>
+                    <div class="faq__box">
+                        <div class="faq__box-top">
+                            <h3 class="faq__box-title">What kind of support is available after I leave the program?</h3>
+                            <button class="faq__box-button"><span>+</span></button>
+                        </div>
+                        <p class="faq__box-text">We provide aftercare planning and support to help you maintain your recovery.</p>
+                    </div>
+                    <div class="faq__box">
+                        <div class="faq__box-top">
+                            <h3 class="faq__box-title">How do I know if inpatient treatment is right for me?</h3>
+                            <button class="faq__box-button"><span>+</span></button>
+                        </div>
+                        <p class="faq__box-text">Inpatient treatment is ideal for those needing intensive, round-the-clock support in a structured environment.</p>
+                    </div>
+                    <div class="faq__box">
+                        <div class="faq__box-top">
+                            <h3 class="faq__box-title">How can I contact you if I have more questions?</h3>
+                            <button class="faq__box-button"><span>+</span></button>
+                        </div>
+                        <p class="faq__box-text">Reach out via our contact form, call our admissions hotline, or email us directly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__box">
+                <img src="./content/footer.png" alt="" class="footer__image">
+                <img src="./content/footer_head.png" alt="" class="footer__box-head">
+            </div>
+            
+            <form action="" class="footer__form">
+                <h2 class="footer__title">Get in Touch Today and Start Your Recovery</h2>
+                <input type="text" name="" id="" class="footer__form-input" placeholder="Full Name">
+                <input type="text" name="" id="" class="footer__form-input" placeholder="Your Phone">
+                <input type="text" name="" id="" class="footer__form-input" placeholder="Your Email">
+                <textarea class="footer__form-input msg" placeholder="Message" name="" id=""></textarea>
+                <input type="submit" value="Submit" class="footer__form-submit">
+            </form>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $('.faq__box-button').on('click', function () {
+            if ($(this).hasClass('--active')) {
+                $(this).children('span').text('+');
+                $(this).css('background-color', '#4a2461');
+            }
+            else {
+                $(this).children('span').text('-');
+                $(this).css('background-color', '#f2a588');
+            }
+            $(this).toggleClass('--active');
+            $(this).parent('.faq__box-top').siblings('.faq__box-text').slideToggle();
+            $(this).parent('.faq__box-top').toggleClass('--active');
+        })
+    </script>
+</body>
+
+</html>

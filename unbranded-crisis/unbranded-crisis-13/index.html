@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unbranded Crisis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Prata&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/media.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__content">
+                    <h1 class="header__title">Emergency Support for Mental Health and Addiction Crises</h1>
+                    <p class="header__subtitle">Are you in crisis? Our team provides immediate care and support to help
+                        you
+                        regain stability and start your recovery.</p>
+                    <form id="conversionForm" action="/convert" method="post">
+                        <input type="hidden" name="user_type" value="{{ user_type }}" />
+                        <input type="hidden" name="template" value="template1.html" />
+                        <input type="hidden" name="unique_id" value="{{ unique_id }}">
+                        <button type="submit" class="button" onclick="handleSubmit(event)">Get Immediate
+                            Help</button>
+                    </form>
+                </div>
+                <img src="./content/header-new.png" alt="" class="header__image">
+                <img src="./content/header-m.png" alt="" class="header__image mobile">
+            </div>
+        </div>
+    </header>
+    <section class="help">
+        <div class="container">
+            <div class="help__inner">
+                <h2 class="title">Immediate Help for Critical Moments</h2>
+                <p class="text">Experiencing a mental health or addiction crisis can be overwhelming. Our team is here
+                    to provide urgent, compassionate care to help you through this challenging time. We understand the
+                    urgency and are committed to helping you regain control and start your path to recovery.</p>
+                <form id="conversionForm" action="/convert" method="post">
+                    <input type="hidden" name="user_type" value="{{ user_type }}" />
+                    <input type="hidden" name="template" value="template1.html" />
+                    <input type="hidden" name="unique_id" value="{{ unique_id }}">
+                    <button type="submit" class="button" onclick="handleSubmit(event)">Learn More About Our Crisis
+                        Intervention</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="care">
+        <div class="container">
+            <div class="care__inner">
+                <h2 class="title">Rapid and Compassionate Care</h2>
+                <p class="text">Our focus is on stabilizing your crisis quickly and effectively. We offer:</p>
+                <div class="care__boxes">
+                    <div class="care__box">
+                        <img src="./content/care1.png" alt="" class="care__box-image">
+                        <div class="care__box-content">
+                            <h3 class="care__box-title">24/7 Crisis Response</h3>
+                            <p class="care__box-text">Immediate support for those in need.</p>
+                        </div>
+                    </div>
+                    <div class="care__box">
+                        <img src="./content/care2.png" alt="" class="care__box-image">
+                        <div class="care__box-content">
+                            <h3 class="care__box-title">Safe Environment</h3>
+                            <p class="care__box-text">A secure place to regain stability.</p>
+                        </div>
+                    </div>
+                    <div class="care__box">
+                        <img src="./content/care3.png" alt="" class="care__box-image">
+                        <div class="care__box-content">
+                            <h3 class="care__box-title">Expert Treatment</h3>
+                            <p class="care__box-text">Compassionate professionals ready to help.</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">Your well-being is our top priority. We provide a nurturing environment where you can
+                    begin your recovery journey.</p>
+            </div>
+        </div>
+    </section>
+    <section class="programs">
+        <div class="container">
+            <div class="programs__inner">
+                <h2 class="title">Our Crisis Treatment Programs</h2>
+                <p class="text">Our specialized programs are designed to address immediate crises and support long-term
+                    recovery:</p>
+                <div class="programs__boxes">
+                    <div class="programs__box">
+                        <h3 class="programs__box-title">Emergency Response</h3>
+                        <p class="programs__box-text">Immediate intervention to stabilize your condition.</p>
+                    </div>
+                    <div class="programs__box">
+                        <h3 class="programs__box-title">Inpatient Treatment</h3>
+                        <p class="programs__box-text">Intensive care for severe cases.</p>
+                    </div>
+                    <div class="programs__box">
+                        <h3 class="programs__box-title">Therapeutic Support</h3>
+                        <p class="programs__box-text">Ongoing counseling to help you manage your crisis.</p>
+                    </div>
+                </div>
+                <p class="text">Our programs are tailored to provide immediate relief and help you find stability and
+                    peace.</p>
+                <form id="conversionForm" action="/convert" method="post">
+                    <input type="hidden" name="user_type" value="{{ user_type }}" />
+                    <input type="hidden" name="template" value="template1.html" />
+                    <input type="hidden" name="unique_id" value="{{ unique_id }}">
+                    <button type="submit" class="button" onclick="handleSubmit(event)">Discover Our Programs</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="feedback">
+        <div class="container">
+            <div class="feedback__inner">
+                <h2 class="title">Real Stories of Recovery</h2>
+                <div class="feedback__boxes">
+                    <div class="feedback__box">
+                        <div class="feedback__box-title">
+                            <div class="feedback__box-comment">
+                                <img src="./content/user1.png" alt="" class="feedback__box-thumbnail">
+                                <p class="feedback__box-user">
+                                    Jessica R.
+                                </p>
+                            </div>
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M37.6 20.4167C37.6 19.1167 37.4833 17.8667 37.2667 16.6667H20V23.7667H29.8667C29.4333 26.05 28.1333 27.9833 26.1833 29.2833V33.9H32.1333C35.6 30.7 37.6 26 37.6 20.4167Z"
+                                    fill="#4285F4" />
+                                <path
+                                    d="M20 38.3333C24.95 38.3333 29.1 36.7 32.1333 33.9L26.1833 29.2833C24.55 30.3833 22.4667 31.05 20 31.05C15.2333 31.05 11.1833 27.8333 9.73333 23.5H3.63333V28.2333C6.65 34.2167 12.8333 38.3333 20 38.3333Z"
+                                    fill="#34A853" />
+                                <path
+                                    d="M9.73332 23.4833C9.36665 22.3833 9.14998 21.2167 9.14998 20C9.14998 18.7833 9.36665 17.6167 9.73332 16.5167V11.7833H3.63332C2.38332 14.25 1.66666 17.0333 1.66666 20C1.66666 22.9667 2.38332 25.75 3.63332 28.2167L8.38332 24.5167L9.73332 23.4833Z"
+                                    fill="#FBBC05" />
+                                <path
+                                    d="M20 8.96666C22.7 8.96666 25.1 9.9 27.0167 11.7L32.2667 6.45C29.0833 3.48333 24.95 1.66666 20 1.66666C12.8333 1.66666 6.65 5.78333 3.63333 11.7833L9.73333 16.5167C11.1833 12.1833 15.2333 8.96666 20 8.96666Z"
+                                    fill="#EA4335" />
+                            </svg>
+                        </div>
+                        <div class="feedback__box-starts">
+                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.5 12.8589L13.753 16L12.359 10.08L17 6.09684L10.8885 5.57474L8.5 0L6.1115 5.57474L0 6.09684L4.6325 10.08L3.247 16L8.5 12.8589Z"
+                                    fill="#FCD34D" />
+                            </svg>
+                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.5 12.8589L13.753 16L12.359 10.08L17 6.09684L10.8885 5.57474L8.5 0L6.1115 5.57474L0 6.09684L4.6325 10.08L3.247 16L8.5 12.8589Z"
+                                    fill="#FCD34D" />
+                            </svg>
+                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.5 12.8589L13.753 16L12.359 10.08L17 6.09684L10.8885 5.57474L8.5 0L6.1115 5.57474L0 6.09684L4.6325 10.08L3.247 16L8.5 12.8589Z"
+                                    fill="#FCD34D" />
+                            </svg>
+                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.5 12.8589L13.753 16L12.359 10.08L17 6.09684L10.8885 5.57474L8.5 0L6.1115 5.57474L0 6.09684L4.6325 10.08L3.247 16L8.5 12.8589Z"
+                                    fill="#FCD34D" />
+                            </svg>
+                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.5 12.8589L13.753 16L12.359 10.08L17 6.09684L10.8885 5.57474L8.5 0L6.1115 5.57474L0 6.09684L4.6325 10.08L3.247 16L8.5 12.8589Z"
+                                    fill="#FCD34D" />
+                            </svg>
+                        </div>
+                        <p class="feedback__box-text">Saved my life! Immediate support and compassionate care during my
+                            substance use crisis. Highly recommend their services.</p>
+                    </div>
+                    <div class="feedback__box">
+                        <div class="feedback__box-title">
+                            <div class="feedback__box-comment">
+                                <img src="./content/user2.png" alt="" class="feedback__box-thumbnail">
+                                <p class="feedback__box-user">
+                                    Mark L.
+                                </p>
+                            </div>
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M37.6 20.4167C37.6 19.1167 37.4833 17.8667 37.2667 16.6667H20V23.7667H29.8667C29.4333 26.05 28.1333 27.9833 26.1833 29.2833V33.9H32.1333C35.6 30.7 37.6 26 37.6 20.4167Z"
+                                    fill="#4285F4" />
+                                <path
+                                    d="M20 38.3333C24.95 38.3333 29.1 36.7 32.1333 33.9L26.1833 29.2833C24.55 30.3833 22.4667 31.05 20 31.05C15.2333 31.05 11.1833 27.8333 9.73333 23.5H3.63333V28.2333C6.65 34.2167 12.8333 38.3333 20 38.3333Z"
+                                    fill="#34A853" />
+                                <path
+                                    d="M9.73332 23.4833C9.36665 22.3833 9.14998 21.2167 9.14998 20C9.14998 18.7833 9.36665 17.6167 9.73332 16.5167V11.7833H3.63332C2.38332 14.25 1.66666 17.0333 1.66666 20C1.66666 22.9667 2.38332 25.75 3.63332 28.2167L8.38332 24.5167L9.73332 23.4833Z"
+                                    fill="#FBBC05" />
+                                <path
+                                    d="M20 8.96666C22.7 8.96666 25.1 9.9 27.0167 11.7L32.2667 6.45C29.0833 3.48333 24.95 1.66666 20 1.66666C12.8333 1.66666 6.65 5.78333 3.63333 11.7833L9.73333 16.5167C11.1833 12.1833 15.2333 8.96666 20 8.96666Z"
+                                    fill="#EA4335" />
+                            </svg>
+                        </div>
+                        <div class="feedback__box-starts">
+                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.5 12.8589L13.753 16L12.359 10.08L17 6.09684L10.8885 5.57474L8.5 0L6.1115 5.57474L0 6.09684L4.6325 10.08L3.247 16L8.5 12.8589Z"
+                                    fill="#FCD34D" />
+                            </svg>
+                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.5 12.8589L13.753 16L12.359 10.08L17 6.09684L10.8885 5.57474L8.5 0L6.1115 5.57474L0 6.09684L4.6325 10.08L3.247 16L8.5 12.8589Z"
+                                    fill="#FCD34D" />
+                            </svg>
+                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.5 12.8589L13.753 16L12.359 10.08L17 6.09684L10.8885 5.57474L8.5 0L6.1115 5.57474L0 6.09684L4.6325 10.08L3.247 16L8.5 12.8589Z"
+                                    fill="#FCD34D" />
+                            </svg>
+                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.5 12.8589L13.753 16L12.359 10.08L17 6.09684L10.8885 5.57474L8.5 0L6.1115 5.57474L0 6.09684L4.6325 10.08L3.247 16L8.5 12.8589Z"
+                                    fill="#FCD34D" />
+                            </svg>
+                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.5 12.8589L13.753 16L12.359 10.08L17 6.09684L10.8885 5.57474L8.5 0L6.1115 5.57474L0 6.09684L4.6325 10.08L3.247 16L8.5 12.8589Z"
+                                    fill="#FCD34D" />
+                            </svg>
+                        </div>
+                        <p class="feedback__box-text">Incredible team! They helped me regain control during a mental
+                            health crisis. Forever grateful for their swift intervention.</p>
+                    </div>
+                    <div class="feedback__box">
+                        <div class="feedback__box-title">
+                            <div class="feedback__box-comment">
+                                <img src="./content/user3.png" alt="" class="feedback__box-thumbnail">
+                                <p class="feedback__box-user">
+                                    Emily T.
+                                </p>
+                            </div>
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M37.6 20.4167C37.6 19.1167 37.4833 17.8667 37.2667 16.6667H20V23.7667H29.8667C29.4333 26.05 28.1333 27.9833 26.1833 29.2833V33.9H32.1333C35.6 30.7 37.6 26 37.6 20.4167Z"
+                                    fill="#4285F4" />
+                                <path
+                                    d="M20 38.3333C24.95 38.3333 29.1 36.7 32.1333 33.9L26.1833 29.2833C24.55 30.3833 22.4667 31.05 20 31.05C15.2333 31.05 11.1833 27.8333 9.73333 23.5H3.63333V28.2333C6.65 34.2167 12.8333 38.3333 20 38.3333Z"
+                                    fill="#34A853" />
+                                <path
+                                    d="M9.73332 23.4833C9.36665 22.3833 9.14998 21.2167 9.14998 20C9.14998 18.7833 9.36665 17.6167 9.73332 16.5167V11.7833H3.63332C2.38332 14.25 1.66666 17.0333 1.66666 20C1.66666 22.9667 2.38332 25.75 3.63332 28.2167L8.38332 24.5167L9.73332 23.4833Z"
+                                    fill="#FBBC05" />
+                                <path
+                                    d="M20 8.96666C22.7 8.96666 25.1 9.9 27.0167 11.7L32.2667 6.45C29.0833 3.48333 24.95 1.66666 20 1.66666C12.8333 1.66666 6.65 5.78333 3.63333 11.7833L9.73333 16.5167C11.1833 12.1833 15.2333 8.96666 20 8.96666Z"
+                                    fill="#EA4335" />
+                            </svg>
+                        </div>
+                        <div class="feedback__box-starts">
+                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.5 12.8589L13.753 16L12.359 10.08L17 6.09684L10.8885 5.57474L8.5 0L6.1115 5.57474L0 6.09684L4.6325 10.08L3.247 16L8.5 12.8589Z"
+                                    fill="#FCD34D" />
+                            </svg>
+                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.5 12.8589L13.753 16L12.359 10.08L17 6.09684L10.8885 5.57474L8.5 0L6.1115 5.57474L0 6.09684L4.6325 10.08L3.247 16L8.5 12.8589Z"
+                                    fill="#FCD34D" />
+                            </svg>
+                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.5 12.8589L13.753 16L12.359 10.08L17 6.09684L10.8885 5.57474L8.5 0L6.1115 5.57474L0 6.09684L4.6325 10.08L3.247 16L8.5 12.8589Z"
+                                    fill="#FCD34D" />
+                            </svg>
+                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.5 12.8589L13.753 16L12.359 10.08L17 6.09684L10.8885 5.57474L8.5 0L6.1115 5.57474L0 6.09684L4.6325 10.08L3.247 16L8.5 12.8589Z"
+                                    fill="#FCD34D" />
+                            </svg>
+                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.5 12.8589L13.753 16L12.359 10.08L17 6.09684L10.8885 5.57474L8.5 0L6.1115 5.57474L0 6.09684L4.6325 10.08L3.247 16L8.5 12.8589Z"
+                                    fill="#FCD34D" />
+                            </svg>
+                        </div>
+                        <p class="feedback__box-text">Professional and caring. Got the help I needed right when I needed
+                            it. Truly life-changing support.</p>
+                    </div>
+                    <div class="feedback__box">
+                        <div class="feedback__box-title">
+                            <div class="feedback__box-comment">
+                                <img src="./content/user4.png" alt="" class="feedback__box-thumbnail">
+                                <p class="feedback__box-user">
+                                    David M.
+                                </p>
+                            </div>
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M37.6 20.4167C37.6 19.1167 37.4833 17.8667 37.2667 16.6667H20V23.7667H29.8667C29.4333 26.05 28.1333 27.9833 26.1833 29.2833V33.9H32.1333C35.6 30.7 37.6 26 37.6 20.4167Z"
+                                    fill="#4285F4" />
+                                <path
+                                    d="M20 38.3333C24.95 38.3333 29.1 36.7 32.1333 33.9L26.1833 29.2833C24.55 30.3833 22.4667 31.05 20 31.05C15.2333 31.05 11.1833 27.8333 9.73333 23.5H3.63333V28.2333C6.65 34.2167 12.8333 38.3333 20 38.3333Z"
+                                    fill="#34A853" />
+                                <path
+                                    d="M9.73332 23.4833C9.36665 22.3833 9.14998 21.2167 9.14998 20C9.14998 18.7833 9.36665 17.6167 9.73332 16.5167V11.7833H3.63332C2.38332 14.25 1.66666 17.0333 1.66666 20C1.66666 22.9667 2.38332 25.75 3.63332 28.2167L8.38332 24.5167L9.73332 23.4833Z"
+                                    fill="#FBBC05" />
+                                <path
+                                    d="M20 8.96666C22.7 8.96666 25.1 9.9 27.0167 11.7L32.2667 6.45C29.0833 3.48333 24.95 1.66666 20 1.66666C12.8333 1.66666 6.65 5.78333 3.63333 11.7833L9.73333 16.5167C11.1833 12.1833 15.2333 8.96666 20 8.96666Z"
+                                    fill="#EA4335" />
+                            </svg>
+                        </div>
+                        <div class="feedback__box-starts">
+                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.5 12.8589L13.753 16L12.359 10.08L17 6.09684L10.8885 5.57474L8.5 0L6.1115 5.57474L0 6.09684L4.6325 10.08L3.247 16L8.5 12.8589Z"
+                                    fill="#FCD34D" />
+                            </svg>
+                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.5 12.8589L13.753 16L12.359 10.08L17 6.09684L10.8885 5.57474L8.5 0L6.1115 5.57474L0 6.09684L4.6325 10.08L3.247 16L8.5 12.8589Z"
+                                    fill="#FCD34D" />
+                            </svg>
+                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.5 12.8589L13.753 16L12.359 10.08L17 6.09684L10.8885 5.57474L8.5 0L6.1115 5.57474L0 6.09684L4.6325 10.08L3.247 16L8.5 12.8589Z"
+                                    fill="#FCD34D" />
+                            </svg>
+                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.5 12.8589L13.753 16L12.359 10.08L17 6.09684L10.8885 5.57474L8.5 0L6.1115 5.57474L0 6.09684L4.6325 10.08L3.247 16L8.5 12.8589Z"
+                                    fill="#FCD34D" />
+                            </svg>
+                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.5 12.8589L13.753 16L12.359 10.08L17 6.09684L10.8885 5.57474L8.5 0L6.1115 5.57474L0 6.09684L4.6325 10.08L3.247 16L8.5 12.8589Z"
+                                    fill="#FCD34D" />
+                            </svg>
+                        </div>
+                        <p class="feedback__box-text">Quick, effective, and empathetic. Their crisis care made all the
+                            difference in my recovery journey. Thank you!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="trust">
+        <div class="container">
+            <div class="trust__inner">
+                <h2 class="title">Why Trust Our Care?</h2>
+                <div class="trust__boxes">
+                    <div class="trust__box">
+                        <img src="./content/trust1.png" alt="" class="trust__box-image">
+                        <h3 class="trust__box-title">24/7 Availability</h3>
+                        <p class="trust__box-text">Always here when you need us most.</p>
+                    </div>
+                    <div class="trust__box">
+                        <img src="./content/trust2.png" alt="" class="trust__box-image">
+                        <h3 class="trust__box-title">Immediate Admission</h3>
+                        <p class="trust__box-text">No waiting, just help.</p>
+                    </div>
+                    <div class="trust__box">
+                        <img src="./content/trust3.png" alt="" class="trust__box-image">
+                        <h3 class="trust__box-title">Compassionate Staff</h3>
+                        <p class="trust__box-text">Experts who care deeply about your recovery.</p>
+                    </div>
+                    <div class="trust__box">
+                        <img src="./content/trust4.png" alt="" class="trust__box-image">
+                        <h3 class="trust__box-title">Safe and Secure Environment</h3>
+                        <p class="trust__box-text">A place to heal without judgment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="meet">
+        <div class="container">
+            <div class="meet__inner">
+                <img src="./content/meet.png" alt="" class="meet__image">
+                <div class="meet__content">
+                    <h2 class="title">Meet Our Crisis Experts</h2>
+                    <p class="text">Our team of professionals is trained to handle crises with compassion and expertise.
+                        Meet the dedicated individuals who will support you through this challenging time.</p>
+                    <form id="conversionForm" action="/convert" method="post">
+                        <input type="hidden" name="user_type" value="{{ user_type }}" />
+                        <input type="hidden" name="template" value="template1.html" />
+                        <input type="hidden" name="unique_id" value="{{ unique_id }}">
+                        <button type="submit" class="button" onclick="handleSubmit(event)">Meet Our Team</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="journey">
+        <div class="container">
+            <div class="journey__inner">
+                <h2 class="title">Start Your Recovery Journey</h2>
+                <p class="text">Don’t wait to get the help you need. Our admissions process is simple and designed to
+                    get you into care quickly:</p>
+                <div class="journey__boxes">
+                    <div class="journey__box">
+                        <p class="journey__number">1</p>
+                        <h3 class="journey__title">Confidential Assessment</h3>
+                        <p class="journey__text">We assess your needs immediately.</p>
+                    </div>
+                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M45.5457 37.2244L18.4804 10.1594C16.9512 8.63021 14.4627 8.63005 12.9332 10.1594L6.2368 16.8557C5.49586 17.5966 5.08789 18.5816 5.08789 19.6293C5.08789 20.6769 5.49586 21.6621 6.2368 22.4029L23.832 39.998L6.23617 57.5974C4.70711 59.1268 4.70711 61.6152 6.23633 63.1443L12.9327 69.8407C13.6737 70.5816 14.6587 70.9897 15.7065 70.9896C16.7543 70.9896 17.7393 70.5814 18.4801 69.8405L45.5457 42.7715C47.0748 41.2422 47.0748 38.7538 45.5457 37.2244ZM43.8884 41.1143L16.823 68.1835C16.5249 68.4816 16.1284 68.6458 15.7066 68.6458C15.2849 68.6458 14.8885 68.4816 14.5902 68.1835L7.89367 61.4871C7.2782 60.8716 7.2782 59.87 7.89367 59.2544L26.3177 40.8266C26.3185 40.8258 26.3193 40.8249 26.3201 40.824C26.321 40.823 26.3221 40.8222 26.323 40.8213C27.4568 39.6729 28.6362 38.491 29.8282 37.3086C30.2877 36.8529 30.2907 36.1108 29.8349 35.6515C29.3791 35.1919 28.6371 35.189 28.1777 35.6447C27.2679 36.5472 26.3657 37.4493 25.4851 38.3368L7.89398 20.7457C7.5957 20.4474 7.43164 20.051 7.43164 19.6293C7.43164 19.2075 7.59586 18.8111 7.89398 18.5129L14.5904 11.8165C14.8982 11.5086 15.3024 11.3547 15.7068 11.3547C16.111 11.3547 16.5154 11.5086 16.8232 11.8165L34.4135 29.4068C33.5029 30.31 32.6299 31.186 31.6741 32.1557C31.2198 32.6166 31.2251 33.3585 31.686 33.8129C31.9143 34.038 32.2115 34.1502 32.5087 34.1502C32.8115 34.1502 33.114 34.0336 33.3432 33.801C34.2951 32.8355 35.164 31.9635 36.0709 31.0641L43.8884 38.8816C44.5038 39.4971 44.5038 40.4986 43.8884 41.1143Z"
+                            fill="#1DBFCC" />
+                        <path
+                            d="M77.1895 76.3411C76.5421 76.3411 76.0176 76.8658 76.0176 77.5129V78.8281C76.0176 79.4753 76.5421 80 77.1895 80C77.8368 80 78.3613 79.4753 78.3613 78.8281V77.5129C78.3613 76.8658 77.8368 76.3411 77.1895 76.3411Z"
+                            fill="#1DBFCC" />
+                        <path
+                            d="M70.2716 76.3411C69.6242 76.3411 69.0997 76.8658 69.0997 77.5129V78.8281C69.0997 79.4753 69.6242 80 70.2716 80C70.9189 80 71.4434 79.4753 71.4434 78.8281V77.5129C71.4434 76.8658 70.9189 76.3411 70.2716 76.3411Z"
+                            fill="#1DBFCC" />
+                        <path
+                            d="M63.3545 76.3411C62.7071 76.3411 62.1826 76.8658 62.1826 77.5129V78.8281C62.1826 79.4753 62.7071 80 63.3545 80C64.0018 80 64.5264 79.4753 64.5264 78.8281V77.5129C64.5264 76.8658 64.0017 76.3411 63.3545 76.3411Z"
+                            fill="#1DBFCC" />
+                        <path
+                            d="M16.6455 0C15.9983 0 15.4736 0.524687 15.4736 1.17188V2.48703C15.4736 3.13422 15.9983 3.65891 16.6455 3.65891C17.2927 3.65891 17.8174 3.13422 17.8174 2.48703V1.17188C17.8174 0.524687 17.2927 0 16.6455 0Z"
+                            fill="#1DBFCC" />
+                        <path
+                            d="M9.72844 0C9.08125 0 8.55656 0.524687 8.55656 1.17188V2.48703C8.55656 3.13422 9.08125 3.65891 9.72844 3.65891C10.3756 3.65891 10.9003 3.13422 10.9003 2.48703V1.17188C10.9003 0.524687 10.3756 0 9.72844 0Z"
+                            fill="#1DBFCC" />
+                        <path
+                            d="M2.81055 0C2.16336 0 1.63867 0.524687 1.63867 1.17188V2.48703C1.63867 3.13422 2.16336 3.65891 2.81055 3.65891C3.45773 3.65891 3.98242 3.13422 3.98242 2.48703V1.17188C3.98242 0.524687 3.45773 0 2.81055 0Z"
+                            fill="#1DBFCC" />
+                        <path
+                            d="M73.7598 37.2244L46.6944 10.1594C45.1652 8.63021 42.6767 8.63005 41.1472 10.1594L34.4508 16.8557C33.7098 17.5966 33.3019 18.5816 33.3019 19.6293C33.3019 20.6769 33.7098 21.6621 34.4508 22.4029L52.0459 39.998L34.4503 57.5974C32.9212 59.1268 32.9212 61.6152 34.4505 63.1443L41.1469 69.8407C41.8878 70.5816 42.8728 70.9897 43.9206 70.9896C44.9684 70.9896 45.9534 70.5814 46.6942 69.8405L73.7595 42.7715C75.2889 41.2422 75.2889 38.7538 73.7598 37.2244ZM72.1023 41.1143L45.037 68.1835C44.7389 68.4816 44.3423 68.6458 43.9206 68.6458C43.4989 68.6458 43.1025 68.4816 42.8042 68.1835L36.1077 61.4871C35.4922 60.8716 35.4922 59.87 36.1077 59.2544L54.5319 40.8266C54.5327 40.8258 54.5334 40.8249 54.5342 40.824C54.5352 40.823 54.5362 40.8222 54.5372 40.8213C55.6709 39.6729 56.8503 38.491 58.0423 37.3086C58.5019 36.8529 58.5048 36.1108 58.0491 35.6515C57.5933 35.1919 56.8512 35.189 56.3919 35.6447C55.482 36.5472 54.5798 37.4493 53.6992 38.3368L36.108 20.7457C35.8097 20.4474 35.6456 20.051 35.6456 19.6293C35.6456 19.2075 35.8098 18.8111 36.108 18.5129L42.8044 11.8165C43.1122 11.5086 43.5164 11.3547 43.9208 11.3547C44.325 11.3547 44.7294 11.5086 45.0372 11.8165L62.6275 29.4068C61.7169 30.31 60.8439 31.186 59.8881 32.1557C59.4337 32.6166 59.4391 33.3585 59.9 33.8129C60.1283 34.038 60.4255 34.1502 60.7227 34.1502C61.0255 34.1502 61.328 34.0336 61.5572 33.801C62.5091 32.8355 63.378 31.9635 64.2848 31.0641L72.1023 38.8816C72.7178 39.4971 72.7178 40.4986 72.1023 41.1143Z"
+                            fill="#1DBFCC" />
+                    </svg>
+                    <div class="journey__box">
+                        <p class="journey__number">2</p>
+                        <h3 class="journey__title">Immediate Admission</h3>
+                        <p class="journey__text">Quick access to our care facilities.</p>
+                    </div>
+                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M45.5457 37.2244L18.4804 10.1594C16.9512 8.63021 14.4627 8.63005 12.9332 10.1594L6.2368 16.8557C5.49586 17.5966 5.08789 18.5816 5.08789 19.6293C5.08789 20.6769 5.49586 21.6621 6.2368 22.4029L23.832 39.998L6.23617 57.5974C4.70711 59.1268 4.70711 61.6152 6.23633 63.1443L12.9327 69.8407C13.6737 70.5816 14.6587 70.9897 15.7065 70.9896C16.7543 70.9896 17.7393 70.5814 18.4801 69.8405L45.5457 42.7715C47.0748 41.2422 47.0748 38.7538 45.5457 37.2244ZM43.8884 41.1143L16.823 68.1835C16.5249 68.4816 16.1284 68.6458 15.7066 68.6458C15.2849 68.6458 14.8885 68.4816 14.5902 68.1835L7.89367 61.4871C7.2782 60.8716 7.2782 59.87 7.89367 59.2544L26.3177 40.8266C26.3185 40.8258 26.3193 40.8249 26.3201 40.824C26.321 40.823 26.3221 40.8222 26.323 40.8213C27.4568 39.6729 28.6362 38.491 29.8282 37.3086C30.2877 36.8529 30.2907 36.1108 29.8349 35.6515C29.3791 35.1919 28.6371 35.189 28.1777 35.6447C27.2679 36.5472 26.3657 37.4493 25.4851 38.3368L7.89398 20.7457C7.5957 20.4474 7.43164 20.051 7.43164 19.6293C7.43164 19.2075 7.59586 18.8111 7.89398 18.5129L14.5904 11.8165C14.8982 11.5086 15.3024 11.3547 15.7068 11.3547C16.111 11.3547 16.5154 11.5086 16.8232 11.8165L34.4135 29.4068C33.5029 30.31 32.6299 31.186 31.6741 32.1557C31.2198 32.6166 31.2251 33.3585 31.686 33.8129C31.9143 34.038 32.2115 34.1502 32.5087 34.1502C32.8115 34.1502 33.114 34.0336 33.3432 33.801C34.2951 32.8355 35.164 31.9635 36.0709 31.0641L43.8884 38.8816C44.5038 39.4971 44.5038 40.4986 43.8884 41.1143Z"
+                            fill="#1DBFCC" />
+                        <path
+                            d="M77.1895 76.3411C76.5421 76.3411 76.0176 76.8658 76.0176 77.5129V78.8281C76.0176 79.4753 76.5421 80 77.1895 80C77.8368 80 78.3613 79.4753 78.3613 78.8281V77.5129C78.3613 76.8658 77.8368 76.3411 77.1895 76.3411Z"
+                            fill="#1DBFCC" />
+                        <path
+                            d="M70.2716 76.3411C69.6242 76.3411 69.0997 76.8658 69.0997 77.5129V78.8281C69.0997 79.4753 69.6242 80 70.2716 80C70.9189 80 71.4434 79.4753 71.4434 78.8281V77.5129C71.4434 76.8658 70.9189 76.3411 70.2716 76.3411Z"
+                            fill="#1DBFCC" />
+                        <path
+                            d="M63.3545 76.3411C62.7071 76.3411 62.1826 76.8658 62.1826 77.5129V78.8281C62.1826 79.4753 62.7071 80 63.3545 80C64.0018 80 64.5264 79.4753 64.5264 78.8281V77.5129C64.5264 76.8658 64.0017 76.3411 63.3545 76.3411Z"
+                            fill="#1DBFCC" />
+                        <path
+                            d="M16.6455 0C15.9983 0 15.4736 0.524687 15.4736 1.17188V2.48703C15.4736 3.13422 15.9983 3.65891 16.6455 3.65891C17.2927 3.65891 17.8174 3.13422 17.8174 2.48703V1.17188C17.8174 0.524687 17.2927 0 16.6455 0Z"
+                            fill="#1DBFCC" />
+                        <path
+                            d="M9.72844 0C9.08125 0 8.55656 0.524687 8.55656 1.17188V2.48703C8.55656 3.13422 9.08125 3.65891 9.72844 3.65891C10.3756 3.65891 10.9003 3.13422 10.9003 2.48703V1.17188C10.9003 0.524687 10.3756 0 9.72844 0Z"
+                            fill="#1DBFCC" />
+                        <path
+                            d="M2.81055 0C2.16336 0 1.63867 0.524687 1.63867 1.17188V2.48703C1.63867 3.13422 2.16336 3.65891 2.81055 3.65891C3.45773 3.65891 3.98242 3.13422 3.98242 2.48703V1.17188C3.98242 0.524687 3.45773 0 2.81055 0Z"
+                            fill="#1DBFCC" />
+                        <path
+                            d="M73.7598 37.2244L46.6944 10.1594C45.1652 8.63021 42.6767 8.63005 41.1472 10.1594L34.4508 16.8557C33.7098 17.5966 33.3019 18.5816 33.3019 19.6293C33.3019 20.6769 33.7098 21.6621 34.4508 22.4029L52.0459 39.998L34.4503 57.5974C32.9212 59.1268 32.9212 61.6152 34.4505 63.1443L41.1469 69.8407C41.8878 70.5816 42.8728 70.9897 43.9206 70.9896C44.9684 70.9896 45.9534 70.5814 46.6942 69.8405L73.7595 42.7715C75.2889 41.2422 75.2889 38.7538 73.7598 37.2244ZM72.1023 41.1143L45.037 68.1835C44.7389 68.4816 44.3423 68.6458 43.9206 68.6458C43.4989 68.6458 43.1025 68.4816 42.8042 68.1835L36.1077 61.4871C35.4922 60.8716 35.4922 59.87 36.1077 59.2544L54.5319 40.8266C54.5327 40.8258 54.5334 40.8249 54.5342 40.824C54.5352 40.823 54.5362 40.8222 54.5372 40.8213C55.6709 39.6729 56.8503 38.491 58.0423 37.3086C58.5019 36.8529 58.5048 36.1108 58.0491 35.6515C57.5933 35.1919 56.8512 35.189 56.3919 35.6447C55.482 36.5472 54.5798 37.4493 53.6992 38.3368L36.108 20.7457C35.8097 20.4474 35.6456 20.051 35.6456 19.6293C35.6456 19.2075 35.8098 18.8111 36.108 18.5129L42.8044 11.8165C43.1122 11.5086 43.5164 11.3547 43.9208 11.3547C44.325 11.3547 44.7294 11.5086 45.0372 11.8165L62.6275 29.4068C61.7169 30.31 60.8439 31.186 59.8881 32.1557C59.4337 32.6166 59.4391 33.3585 59.9 33.8129C60.1283 34.038 60.4255 34.1502 60.7227 34.1502C61.0255 34.1502 61.328 34.0336 61.5572 33.801C62.5091 32.8355 63.378 31.9635 64.2848 31.0641L72.1023 38.8816C72.7178 39.4971 72.7178 40.4986 72.1023 41.1143Z"
+                            fill="#1DBFCC" />
+                    </svg>
+                    <div class="journey__box">
+                        <p class="journey__number">3</p>
+                        <h3 class="journey__title">Start <br>
+                            Treatment</h3>
+                        <p class="journey__text">Begin your path to recovery immediately.</p>
+                    </div>
+                </div>
+                <form id="conversionForm" action="/convert" method="post">
+                    <input type="hidden" name="user_type" value="{{ user_type }}" />
+                    <input type="hidden" name="template" value="template1.html" />
+                    <input type="hidden" name="unique_id" value="{{ unique_id }}">
+                    <button type="submit" class="button" onclick="handleSubmit(event)">Meet Our Team</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__content">
+                    <h2 class="footer__title">Contact Us</h2>
+                    <p class="footer__text">If you or a loved one is in crisis, contact us immediately. We’re here to
+                        help you find safety and start the path to recovery.</p>
+                    <form id="conversionForm" action="/convert" method="post">
+                        <input type="hidden" name="user_type" value="{{ user_type }}" />
+                        <input type="hidden" name="template" value="template1.html" />
+                        <input type="hidden" name="unique_id" value="{{ unique_id }}">
+                        <button type="submit" class="button" onclick="handleSubmit(event)">Call Now
+                            Today</button>
+                    </form>
+                </div>
+                <form action="" class="footer__form">
+                    <input type="text" name="" id="" class="footer__form-input" placeholder="Full Name">
+                    <input type="text" name="" id="" class="footer__form-input" placeholder="Your Phone">
+                    <input type="text" name="" id="" class="footer__form-input" placeholder="Your Email">
+                    <textarea class="footer__form-input msg" placeholder="Message" name="" id=""></textarea>
+                    <input type="submit" value="Submit" class="footer__form-submit">
+                </form>
+            </div>
+        </div>
+    </footer>
+    <section class="bottom">
+        <p class="bottom__text"><b>Haven Health Management</b> © 2024 All rights reserved.</p>
+    </section>
+</body>
+
+</html>

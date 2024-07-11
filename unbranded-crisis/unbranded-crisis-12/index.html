@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unbranded Crisis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/media.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <h1 class="header__title">Help Your Loved One Start Anew</h1>
+            <p class="header__text">Empower them to reclaim their life and find lasting recovery in our supportive,
+                inpatient setting.</p>
+            <form id="conversionForm" action="/convert" method="post">
+                <input type="hidden" name="user_type" value="{{ user_type }}" />
+                <input type="hidden" name="template" value="template1.html" />
+                <input type="hidden" name="unique_id" value="{{ unique_id }}">
+                <button type="submit" class="button" onclick="handleSubmit(event)"><span>Get Started
+                        Today</span></button>
+            </form>
+        </div>
+    </header>
+    <section class="begin">
+        <div class="container">
+            <div class="begin__inner">
+                <img src="./content/begin.png" alt="" class="begin__image">
+                <div class="begin__content">
+                    <h2 class="title">Begin Their Path to Healing</h2>
+                    <p class="text">Watching a loved one struggle with addiction and mental health issues is
+                        heartbreaking. When they’re in crisis, helping them take the first step towards recovery is
+                        crucial. Welcome to a place where healing begins, and hope thrives.</p>
+                    <form id="conversionForm" action="/convert" method="post">
+                        <input type="hidden" name="user_type" value="{{ user_type }}" />
+                        <input type="hidden" name="template" value="template1.html" />
+                        <input type="hidden" name="unique_id" value="{{ unique_id }}">
+                        <button type="submit" class="button" onclick="handleSubmit(event)"><span>Learn
+                                More</span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="care">
+        <div class="container">
+            <div class="care__inner">
+                <div class="care__content">
+                    <h2 class="title">Whole-Person,<br> Holistic Care</h2>
+                    <p class="text">Our holistic approach addresses the mind, body, and spirit.</p>
+                </div>
+                <div class="care__boxes">
+                    <div class="care__box">
+                        <img src="./content/care1.png" alt="" class="care__box-image">
+                        <p class="care__box-text">Individual Therapy</p>
+                    </div>
+                    <div class="care__box">
+                        <img src="./content/care2.png" alt="" class="care__box-image">
+                        <p class="care__box-text">Group Therapy</p>
+                    </div>
+                    <div class="care__box">
+                        <img src="./content/care3.png" alt="" class="care__box-image">
+                        <p class="care__box-text">Holistic Therapy</p>
+                    </div>
+                    <div class="care__box">
+                        <img src="./content/care4.png" alt="" class="care__box-image">
+                        <p class="care__box-text">Medical Support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="options">
+        <div class="container">
+            <div class="options__inner">
+                <h2 class="title">Discover Our Treatment Options</h2>
+                <p class="text">Our programs are tailored to your loved one’s unique needs. We offer a full range of
+                    services to support their journey</p>
+                <div class="options__boxes">
+                    <div class="options__box">
+                        <h3 class="options__box-text">Inpatient Treatment</h3>
+                    </div>
+                    <div class="options__box">
+                        <h3 class="options__box-text">Dual Diagnosis</h3>
+                    </div>
+                    <div class="options__box">
+                        <h3 class="options__box-text">Family Therapy</h3>
+                    </div>
+                </div>
+                <form id="conversionForm" action="/convert" method="post">
+                    <input type="hidden" name="user_type" value="{{ user_type }}" />
+                    <input type="hidden" name="template" value="template1.html" />
+                    <input type="hidden" name="unique_id" value="{{ unique_id }}">
+                    <button type="submit" class="button" onclick="handleSubmit(event)"><span>Discover Our
+                            Programs</span></button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="feedback">
+        <div class="container">
+            <div class="feedback__inner">
+                <h2 class="title mobile">Testimonials</h2>
+                <img src="./content/feedback.png" alt="" class="feedback__image">
+                <div class="feedback__content">
+                    <div class="feedback__content-top">
+                        <h2 class="title">Testimonials</h2>
+                        <div class="feedback__content-line"></div>
+                    </div>
+                    <div class="feedback__message">
+                        <p class="feedback__message-text">The staff’s compassion and expertise made all the difference
+                            in my recovery journey. The comprehensive treatment and serene environment gave me the
+                            strength to heal and thrive. I'm incredibly grateful for the support and care I received.
+                            Highly recommend!</p>
+                        <div class="feedback__message-user">
+                            <img src="./content/user.png" alt="" class="feedback__message-thumbnail">
+                            <p class="feedback__message-name">A.L.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="discover">
+        <div class="container">
+            <h2 class="discover__title">Discover Our Treatment Options</h2>
+            <div class="discover__inner">
+                <img src="./content/discover.png" alt="" class="discover__image">
+                <div class="discover__boxes">
+                    <div class="discover__box">
+                        <div class="discover__box-number">
+                            <div><span>01</span></div>
+                        </div>
+                        <h3 class="discover__box-text">Compassionate and experienced staff</h3>
+                    </div>
+                    <div class="discover__box">
+                        <div class="discover__box-number">
+                            <div><span>02</span></div>
+                        </div>
+                        <h3 class="discover__box-text">Personalized treatment plans</h3>
+                    </div>
+                    <div class="discover__box">
+                        <div class="discover__box-number">
+                            <div><span>03</span></div>
+                        </div>
+                        <h3 class="discover__box-text">Safe and tranquil environment</h3>
+                    </div>
+                    <div class="discover__box">
+                        <div class="discover__box-number">
+                            <div><span>04</span></div>
+                        </div>
+                        <h3 class="discover__box-text">Proven, evidence-based practices</h3>
+                    </div>
+                    <div class="discover__box">
+                        <div class="discover__box-number">
+                            <div><span>05</span></div>
+                        </div>
+                        <h3 class="discover__box-text">Ongoing aftercare support</h3>
+                    </div>
+                </div>
+            </div>
+            <form id="conversionForm" action="/convert" method="post">
+                <input type="hidden" name="user_type" value="{{ user_type }}" />
+                <input type="hidden" name="template" value="template1.html" />
+                <input type="hidden" name="unique_id" value="{{ unique_id }}">
+                <button type="submit" class="button" onclick="handleSubmit(event)"><span>Discover Our
+                        Programs</span></button>
+            </form>
+        </div>
+    </section>
+    <section class="guide">
+        <div class="container">
+            <div class="guide__inner">
+                <h2 class="title">Guide Them to Recovery</h2>
+                <p class="text">Helping your loved one start their recovery journey is straightforward. Here’s what to
+                    expect from our admissions process</p>
+                <div class="guide__boxes">
+                    <div class="guide__box">
+                        <img src="./content/guide1.png" alt="" class="guide__box-image">
+                        <p class="guide__box-text">Confidential Assessment</p>
+                    </div>
+                    <div class="guide__box">
+                        <img src="./content/guide1.png" alt="" class="guide__box-image">
+                        <p class="guide__box-text">Personalized treatment plan</p>
+                    </div>
+                    <div class="guide__box">
+                        <img src="./content/guide1.png" alt="" class="guide__box-image">
+                        <p class="guide__box-text">Insurance Verification</p>
+                    </div>
+                    <div class="guide__box">
+                        <img src="./content/guide1.png" alt="" class="guide__box-image">
+                        <p class="guide__box-text">Admission Scheduling</p>
+                    </div>
+                </div>
+                <form id="conversionForm" action="/convert" method="post">
+                    <input type="hidden" name="user_type" value="{{ user_type }}" />
+                    <input type="hidden" name="template" value="template1.html" />
+                    <input type="hidden" name="unique_id" value="{{ unique_id }}">
+                    <button type="submit" class="button" onclick="handleSubmit(event)"><span>Start Their Journey</span></button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="faq">
+        <div class="container">
+            <div class="faq__inner">
+                <h2 class="title">Frequently Asked Questions</h2>
+                <div class="faq__boxes">
+                    <div class="faq__box">
+                        <div class="faq__box-top">
+                            <h3 class="faq__box-title">What types of conditions do you treat?</h3>
+                            <button class="faq__box-button">+</button>
+                        </div>
+                        <p class="faq__box-text">We treat a wide range of mental health conditions and substance use
+                            disorders, including depression, anxiety, bipolar disorder, PTSD, and addiction to drugs or
+                            alcohol.</p>
+                    </div>
+                    <div class="faq__box">
+                        <div class="faq__box-top">
+                            <h3 class="faq__box-title">What is the duration of the treatment programs?</h3>
+                            <button class="faq__box-button">+</button>
+                        </div>
+                        <p class="faq__box-text">Treatment duration varies based on individual needs, typically ranging from 30 to 90 days, with some requiring longer stays.</p>
+                    </div>
+                    <div class="faq__box">
+                        <div class="faq__box-top">
+                            <h3 class="faq__box-title">What is included in the treatment program?</h3>
+                            <button class="faq__box-button">+</button>
+                        </div>
+                        <p class="faq__box-text">Our programs include individual and group therapy, holistic therapies, medical support, family therapy, and aftercare planning.</p>
+                    </div>
+                    <div class="faq__box">
+                        <div class="faq__box-top">
+                            <h3 class="faq__box-title">How does the admissions process work?</h3>
+                            <button class="faq__box-button">+</button>
+                        </div>
+                        <p class="faq__box-text">The process starts with a confidential assessment, followed by insurance verification and admission scheduling.</p>
+                    </div>
+                    <div class="faq__box">
+                        <div class="faq__box-top">
+                            <h3 class="faq__box-title">Do you accept insurance?</h3>
+                            <button class="faq__box-button">+</button>
+                        </div>
+                        <p class="faq__box-text">Yes, we accept various insurance plans and offer financial assistance for those who qualify.</p>
+                    </div>
+                    <div class="faq__box">
+                        <div class="faq__box-top">
+                            <h3 class="faq__box-title">What is a typical day like in the inpatient program?</h3>
+                            <button class="faq__box-button">+</button>
+                        </div>
+                        <p class="faq__box-text">A typical day includes therapy sessions, holistic activities, meals, and recreational activities.</p>
+                    </div>
+                    <div class="faq__box">
+                        <div class="faq__box-top">
+                            <h3 class="faq__box-title">Is family involvement part of the treatment?</h3>
+                            <button class="faq__box-button">+</button>
+                        </div>
+                        <p class="faq__box-text">Yes, we offer family therapy sessions to help repair and strengthen family relationships.</p>
+                    </div>
+                    <div class="faq__box">
+                        <div class="faq__box-top">
+                            <h3 class="faq__box-title">What kind of support is available after they leave the program?
+                            </h3>
+                            <button class="faq__box-button">+</button>
+                        </div>
+                        <p class="faq__box-text">We provide aftercare planning and support to help you maintain your recovery.</p>
+                    </div>
+                    <div class="faq__box">
+                        <div class="faq__box-top">
+                            <h3 class="faq__box-title">How do I know if inpatient treatment is right for them?</h3>
+                            <button class="faq__box-button">+</button>
+                        </div>
+                        <p class="faq__box-text">Inpatient treatment is ideal for those needing intensive, round-the-clock support in a structured environment.</p>
+                    </div>
+                    <div class="faq__box">
+                        <div class="faq__box-top">
+                            <h3 class="faq__box-title">How can I contact you if I have more questions?</h3>
+                            <button class="faq__box-button">+</button>
+                        </div>
+                        <p class="faq__box-text">Reach out via our contact form, call our admissions hotline, or email us directly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__content">
+                    <h2 class="footer__title">Help Your Loved One Start Anew</h2>
+                    <p class="footer__text">Empower them to reclaim their life and find lasting recovery in our
+                        supportive, inpatient setting.</p>
+                    <form id="conversionForm" action="/convert" method="post">
+                        <input type="hidden" name="user_type" value="{{ user_type }}" />
+                        <input type="hidden" name="template" value="template1.html" />
+                        <input type="hidden" name="unique_id" value="{{ unique_id }}">
+                        <button type="submit" class="button footerBtn" onclick="handleSubmit(event)">Call Now Today</button>
+                    </form>
+                </div>
+                <form action="" class="footer__form">
+                    <input type="text" name="" id="" class="footer__form-input" placeholder="Full Name">
+                    <input type="text" name="" id="" class="footer__form-input" placeholder="Your Phone">
+                    <input type="text" name="" id="" class="footer__form-input" placeholder="Your Email">
+                    <textarea class="footer__form-input msg" placeholder="Message" name="" id=""></textarea>
+                    <input type="submit" value="Submit" class="footer__form-submit">
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $('.faq__box-button').on('click', function () {
+            if ($(this).hasClass('--active')) {
+                $(this).text('+');
+            }
+            else {
+                $(this).text('-');
+            }
+            $(this).toggleClass('--active');
+            $(this).parent('.faq__box-top').siblings('.faq__box-text').slideToggle();
+            $(this).parent('.faq__box-top').toggleClass('--active');
+        })
+    </script>
+</body>
+
+</html>

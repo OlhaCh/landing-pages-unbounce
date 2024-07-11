@@ -1,0 +1,152 @@
+@media (max-width: 1200px) {
+    .care__images {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .care__image {
+        margin: 42px 10px;
+    }
+    .stories__inner {
+        padding: 0 10px;
+    }
+    .stories__boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+    .stories__box {
+        margin: 24px 0;
+    }
+    .stories__box-stars > svg > path {
+        fill: #7f56d9;
+    }
+    .stories__box-author {
+        display: none;
+    }
+    .stories__box-author.--mobile {
+        display: flex;
+        align-items: center;
+    }
+    .start__image {
+        width: 60%;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 850px) {
+    /* .header__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #f2f4f7;
+    } */
+    .care__images{
+        border-bottom: none;
+    }
+    .header {
+        padding: 60px 0;
+    }
+    .start__image {
+        width: 100%;
+        margin-left: 0;
+    }
+    .start__body {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .start__boxes {
+        grid-template: repeat(3, 1fr) / 1fr;
+    }
+    .start__box:nth-of-type(3) {
+        grid-column: 1/1;
+    }
+    .faq__box-icon {
+        background: #ffe6ed;
+        border: 8px solid #fff2f6;
+    }
+    .faq__box-icon > svg path {
+        fill: #ff9fb8;
+    }
+    .faq__link {
+        display: none;
+    }
+}
+@media (max-width: 650px) {
+    .care__images{
+        padding-bottom: 0;
+    }
+    .here {
+        background: #f9fafb;
+    }
+    .header__title {
+        font-size: 36px;
+    }
+    .header__link {
+        font-size: 16px;
+    }
+    .here,
+    .care,
+    .faq,
+    .footer {
+        padding: 50px 0;
+    }
+    .programs,
+    .start {
+        padding: 10px 0 50px;
+    }
+    .start__image {
+        margin-top: 30px;
+    }
+    .stories__boxes {
+        margin-bottom: 0;
+    }
+    .care__image {
+        margin-bottom: 42px;
+        margin-top: 0;
+    }
+    .programs__text {
+        display: none;
+    }
+    .stories {
+        padding-top: 50px;
+    }
+    .stories__link {
+        display: none;
+    }
+    .faq__box {
+        padding: 0 20px;
+        margin-bottom: 20px;
+    }
+    .faq__boxes {
+        margin-bottom: 0;
+    }
+}
+@media (max-width: 450px) {
+    .footer__link {
+        width: 100%;
+    }
+    .header__link {
+        width: 100%;
+        height: 48px;
+    }
+    .header__title {
+        font-size: 36px;
+    }
+    .here__link {
+        display: none;
+    }
+    .title {
+        font-size: 30px;
+    }
+    .programs__link {
+        max-width: 242px;
+        width: 100%;
+    }
+}
+@media (max-width: 350px) {
+    .stories__box {
+        padding: 20px;
+    }
+    .care__image {
+        width: 100%;
+    }
+}

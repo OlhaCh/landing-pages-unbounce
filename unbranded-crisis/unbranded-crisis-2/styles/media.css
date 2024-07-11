@@ -1,0 +1,129 @@
+@media (max-width: 900px) {
+    .faq__inner{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .faq__boxes{
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .why__image{
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .faq__link{
+        display: none;
+    }
+    .faq__link.--mobile{
+        display: block;
+        margin: 15px auto 0;
+    }
+    .why{
+        padding: 40px 0;
+    }
+    .why__title{
+        width: fit-content;
+        font-size: 24px;
+    }
+    .why__subtitle{
+        font-size: 14px;
+    }
+    .why__list{
+        margin-bottom: 30px;
+    }
+    .why__item{
+        font-size: 10px;
+    }
+    .why__image{
+        display: none;
+        width: 100%;
+    }
+    .why__bottom-title{
+        font-size: 16px;
+    }
+    .why__bottom-paragraph{
+        font-size: 10px;
+        margin-bottom: 15px;
+    }
+    .why__link{
+        font-size: 10px;
+    }
+    .why__image.--mobile{
+        display: block;
+    }
+    .header__top-text{
+        font-size: 18px;
+    }
+    .header__inner{
+        padding-top: 113px;
+    }
+    .header__title{
+        font-size: 30px;
+    }
+    .header__subtitle{
+        font-size: 12px;
+    }
+    .header__link{
+        font-size: 10px;
+    }
+    .header__link:last-of-type{
+        font-size: 10px;
+    }
+    .header{
+        height: 425px;
+    }
+    .about__image{
+        display: none;
+    }
+    .about{
+        padding: 40px 0;
+    }
+    .about__title{
+        font-size: 24px;
+        padding-bottom: 0;
+        border: none;
+        margin-bottom: 1px;
+    }
+    .about__paragraph{
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .about__link{
+        font-size: 10px;
+    }
+    .container{
+        padding: 0 20px;
+    }
+    .faq__inner{
+        align-items: flex-start;
+    }
+    .faq__boxes{
+        margin-left: 0;
+        margin-top: 20px;
+        grid-template: repeat(4, 1fr)/ 1fr;
+        justify-items: center;
+    }
+    .faq{
+        padding: 40px 0 19px;
+        background-position: 31% 0;
+    }
+    .faq__title{
+        font-size: 24px;
+        width: fit-content;
+    }
+    .faq__paragraph{
+        font-size: 14px;
+    }
+    .faq__box-link{
+        display: none;
+    }
+    /* .faq__link{
+        display: block;
+        margin-top: 15px;
+    } */
+}
+
+

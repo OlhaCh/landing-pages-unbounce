@@ -1,0 +1,173 @@
+@media(max-width: 1200px){
+    .header__image, .care__image, .explore__image, .journey__image{
+        width: 50%;
+    }
+    .stories__inner{
+        padding: 0 15px;
+    }
+    .paragraph{
+        margin-right: 20px;
+    }
+    .meet__content{
+        margin-left: 20px;
+    }
+    .explore__content{
+        margin-left: 20px;
+    }
+    .explore__box-check{
+        margin-right: 15px;
+    }
+    
+}
+@media(max-width: 850px) {
+    .header{
+        padding: 40px 0px 20px;
+    }
+    .care, .footer, .journey, .faq, .explore, .meet{
+        padding: 30px 0;
+    }
+    .title, .paragraph{
+        padding: 0 16px;
+    }
+    .journey{
+        background: #FFF;
+    }
+    .journey__inner{
+        flex-direction: column;
+    }
+    .faq__boxes{
+        flex-direction: column;
+        padding: 0 15px;
+    }
+    .faq__box{
+        margin: 0;
+        margin-bottom: 40px;
+    }
+    .stories{
+        display: none;
+    }
+    .explore__content{
+        margin-left: 0;
+    }
+    .meet__inner{
+        flex-direction: column-reverse;
+    }
+    .meet__images{
+        max-width: 445px;
+        width: 100%;
+    }
+    .care{
+        background-color: #FFF;
+    }
+    .care__inner{
+        flex-direction: column;
+    }
+    .paragraph{
+        margin-right: 0;
+    }
+    .care__content{
+        max-width: none;
+    }
+    .care__content > *{
+        text-align: center;
+    }
+    .care__link{
+        margin: 24px auto;
+        max-width: 413px;
+        width: 100%;
+        height: fit-content;
+        padding: 15px 32px;
+        font-size: 16px;
+    }
+    .journey__image{    
+        margin-left: 0;
+    }
+    .header__inner{
+        flex-direction: column;
+
+    }
+    .header__title, .header__text{
+        text-align: center;
+    }
+    .header__link{
+        margin: 0 auto 62px;
+    }
+    .header__image, .care__image, .journey__image{
+        width: 100%;
+    }
+    .journey__content{
+        margin-bottom: 72px;
+    }
+    .explore__image{
+        display: none;
+    }
+    .explore__inner{
+        justify-content: center;
+    }
+    .meet__content{
+        margin-left: 0;
+    }
+    .title, .explore__text, .explore__text-bold{
+        text-align: center;
+    }
+    .header__title{
+        margin-bottom: 16px;
+    }
+    .header__text{
+        max-width: 339px;
+        width: 100%;
+        margin: 0 auto 16px;
+    }
+    .header__link{
+        margin: 0 auto 32px;
+    }
+    .care{
+        padding-top: 10px;
+    }
+    .title{
+        font-size: 32px;
+    }
+    .paragraph{
+        font-size: 16px;
+    }
+    .care__link{
+        max-width: 297px;
+    }
+    .meet__content > .title, .explore__content > .title{
+        font-size: 48px;
+        text-transform: none;
+    }
+    .meet__content > .paragraph, .explore__text{
+        font-size: 20px;
+    }
+    .explore__content > .explore__text, .explore__text-bold{
+        text-align: start;
+    }
+    .faq__inner > .title{
+        font-size: 24px;
+    }
+    .faq__box{
+       max-width: 275px;
+       width: 100%;
+    }
+}
+@media(max-width: 450px) {
+
+    .faq__link{
+        display: none;
+    }
+    .meet__images{
+        height: 590px;
+    }
+    .meet__image:nth-of-type(2n-1){
+        width: 172px;
+    }
+    .meet__image:nth-of-type(2n){
+        width: 205px;
+    }
+}
+@media(max-width: 350px) {
+    .header__title{
+        font-size: 32px;
+    }
+}

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unbranded Crisis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/media.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__content">
+                    <form id="conversionForm" action="/convert" method="post">
+                        <input type="hidden" name="user_type" value="{{ user_type }}" />
+                        <input type="hidden" name="template" value="template1.html" />
+                        <input type="hidden" name="unique_id" value="{{ unique_id }}">
+                        <button type="submit" class="button mobile" onclick="handleSubmit(event)">(844) 722-7147</button>
+                    </form>
+                    <h1 class="header__title">Urgent Care for Mental Health and Addiction Crises</h1>
+                    <p class="header__text">In crisis? We provide immediate support and expert care to help you regain
+                        control and start your recovery.</p>
+                    <form id="conversionForm" action="/convert" method="post">
+                        <input type="hidden" name="user_type" value="{{ user_type }}" />
+                        <input type="hidden" name="template" value="template1.html" />
+                        <input type="hidden" name="unique_id" value="{{ unique_id }}">
+                        <button type="submit" class="button" onclick="handleSubmit(event)">Get Immediate Help</button>
+                    </form>
+                </div>
+                <form action="" class="header__form">
+                    <h2 class="header__form-title">Get Your Free Consultation</h2>
+                    <input type="text" class="header__form-input" placeholder="Name">
+                    <input type="text" class="header__form-input" placeholder="Email">
+                    <input type="text" class="header__form-input" placeholder="Phone Number">
+                    <input type="submit" value="Send" class="header__form-submit">
+                </form>
+            </div>
+        </div>
+    </header>
+    <section class="header__hidden">
+        <div class="container">
+            <div class="header__hidden-inner">
+                <form action="" class="header__form">
+                    <h2 class="header__form-title">Get Your Free Consultation</h2>
+                    <input type="text" class="header__form-input" placeholder="Name">
+                    <input type="text" class="header__form-input" placeholder="Email">
+                    <input type="text" class="header__form-input" placeholder="Phone Number">
+                    <input type="submit" value="Send" class="header__form-submit">
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="most">
+        <div class="container">
+            <div class="most__inner">
+                <div class="most__content">
+                    <h2 class="title">Support When You Need It Most</h2>
+                    <p class="text">Are you or a loved one in a mental health or addiction crisis? Our team understands
+                        the urgency and is here to provide immediate, compassionate care. We’re dedicated to helping you
+                        through this critical time with professionalism and empathy.</p>
+                    <form id="conversionForm" action="/convert" method="post">
+                        <input type="hidden" name="user_type" value="{{ user_type }}" />
+                        <input type="hidden" name="template" value="template1.html" />
+                        <input type="hidden" name="unique_id" value="{{ unique_id }}">
+                        <button type="submit" class="button" onclick="handleSubmit(event)">Learn More</button>
+                    </form>
+                </div>
+                <img src="./content/most.png" alt="" class="most__image">
+            </div>
+        </div>
+    </section>
+    <section class="support">
+        <div class="support__inner">
+            <h2 class="title">Immediate Crisis Support</h2>
+            <p class="text">Our approach focuses on providing urgent care to stabilize your crisis. We offer</p>
+            <div class="support__boxes">
+                <div class="support__box">
+                    <img src="./content/sup1.png" alt="" class="support__box-image">
+                    <div class="support__box-content">
+                        <h3 class="support__box-title">24/7 Crisis Intervention</h3>
+                        <p class="support__box-text">Immediate support for those in need.</p>
+                    </div>
+                </div>
+                <div class="support__box">
+                    <img src="./content/sup2.png" alt="" class="support__box-image">
+                    <div class="support__box-content">
+                        <h3 class="support__box-title">Safe Haven</h3>
+                        <p class="support__box-text">A secure and calming environment to begin your recovery.</p>
+                    </div>
+                </div>
+                <div class="support__box">
+                    <img src="./content/sup3.png" alt="" class="support__box-image">
+                    <div class="support__box-content">
+                        <h3 class="support__box-title">Expert Care</h3>
+                        <p class="support__box-text">Professional treatment tailored to your urgent needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="program">
+        <div class="container">
+            <div class="program__inner">
+                <h2 class="title">Our Crisis Treatment Programs</h2>
+                <p class="text">We provide specialized programs to address immediate crises and support long-term
+                    recovery:</p>
+                <div class="program__boxes">
+                    <div class="program__box">
+                        <img src="./content/pr1.png" alt="" class="program__box-image">
+                        <h3 class="program__box-title">Emergency Response</h3>
+                        <p class="program__box-text">Immediate intervention to stabilize your condition.</p>
+                    </div>
+                    <div class="program__box">
+                        <img src="./content/pr2.png" alt="" class="program__box-image">
+                        <h3 class="program__box-title">Inpatient Treatment</h3>
+                        <p class="program__box-text">Comprehensive care for severe cases.</p>
+                    </div>
+                    <div class="program__box">
+                        <img src="./content/pr3.png" alt="" class="program__box-image">
+                        <h3 class="program__box-title">Therapeutic Support</h3>
+                        <p class="program__box-text">Ongoing counseling to help you navigate your crisis.</p>
+                    </div>
+                </div>
+                <form id="conversionForm" action="/convert" method="post">
+                    <input type="hidden" name="user_type" value="{{ user_type }}" />
+                    <input type="hidden" name="template" value="template1.html" />
+                    <input type="hidden" name="unique_id" value="{{ unique_id }}">
+                    <button type="submit" class="button" onclick="handleSubmit(event)">Discover Our Programs</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="stories">
+        <div class="container">
+            <div class="stories__inner">
+                <p class="description">Testimonials</p>
+                <h2 class="title">Stories of Hope</h2>
+                <div class="stories__comment">
+                    <img src="./content/stories.png" alt="" class="stories__image">
+                    <div class="stories__content">
+                        <div class="stories__content-wrapper">
+                            <div class="stories__quotes">
+                                <span>“</span>
+                                <span>“</span>
+                            </div>
+                            <img src="./content/stories_name.png" alt="" class="stories__thumbnail">
+                            <p class="stories__name">Isabella F.</p>
+                            <p class="stories__text">I felt like I was drowning when I reached out for help. Sarah (my
+                                therapist) and the team at the crisis center were the life raft I clung to. They
+                                listened without judgment and provided the support I desperately needed. Now, I'm
+                                learning to swim again.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="why">
+        <div class="container">
+            <div class="why__inner">
+                <div class="why__content">
+                    <p class="description">Why Choose Us</p>
+                    <h2 class="title">Why Choose Our Services?</h2>
+                    <img src="./content/why_main.png" alt="" class="why__image mobile">
+                    <div class="why__boxes">
+                        <div class="why__box">
+                            <img src="./content/why.png" alt="" class="why__box-image">
+                            <div class="why__box-content">
+                                <h3 class="why__box-title">24/7 Availability</h3>
+                                <p class="why__box-text">We're here whenever you need us.</p>
+                            </div>
+                        </div>
+                        <div class="why__box">
+                            <img src="./content/why.png" alt="" class="why__box-image">
+                            <div class="why__box-content">
+                                <h3 class="why__box-title">Rapid Admission</h3>
+                                <p class="why__box-text">No delays in getting the help you need.</p>
+                            </div>
+                        </div>
+                        <div class="why__box">
+                            <img src="./content/why.png" alt="" class="why__box-image">
+                            <div class="why__box-content">
+                                <h3 class="why__box-title">Skilled Professionals</h3>
+                                <p class="why__box-text">Our team is trained in crisis management and care.</p>
+                            </div>
+                        </div>
+                        <div class="why__box">
+                            <img src="./content/why.png" alt="" class="why__box-image">
+                            <div class="why__box-content">
+                                <h3 class="why__box-title">Secure Setting</h3>
+                                <p class="why__box-text">A safe place to heal and recover.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <form id="conversionForm" action="/convert" method="post">
+                        <input type="hidden" name="user_type" value="{{ user_type }}" />
+                        <input type="hidden" name="template" value="template1.html" />
+                        <input type="hidden" name="unique_id" value="{{ unique_id }}">
+                        <button type="submit" class="button" onclick="handleSubmit(event)">Find Out More</button>
+                    </form>
+                </div>
+                <img src="./content/why_main.png" alt="" class="why__image">
+            </div>
+        </div>
+    </section>
+    <section class="team">
+        <div class="container">
+            <div class="team__inner">
+                <h2 class="title">Meet Our Crisis Team</h2>
+                <p class="text">Our team of crisis intervention experts is dedicated to providing compassionate care and
+                    immediate support. Get to know the professionals who will help you through this challenging time.
+                </p>
+                <form id="conversionForm" action="/convert" method="post">
+                    <input type="hidden" name="user_type" value="{{ user_type }}" />
+                    <input type="hidden" name="template" value="template1.html" />
+                    <input type="hidden" name="unique_id" value="{{ unique_id }}">
+                    <button type="submit" class="button" onclick="handleSubmit(event)">Meet Our Team</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="placeholder"></section>
+    <section class="start">
+        <div class="container">
+            <div class="start__inner">
+                <h2 class="title">Start Your Recovery Now</h2>
+                <p class="text">Our admissions process ensures you get help quickly</p>
+                <div class="start__boxes">
+                    <div class="start__box">
+                        <p class="start__box-number">
+                            01
+                        </p>
+                        <h3 class="start__box-title">Confidential Assessment</h3>
+                        <p class="start__box-text">We assess your needs immediately.</p>
+                    </div>
+                    <div class="start__box">
+                        <p class="start__box-number">
+                            02
+                        </p>
+                        <h3 class="start__box-title">Immediate Admission</h3>
+                        <p class="start__box-text">Fast access to our care facilities.</p>
+                    </div>
+                    <div class="start__box">
+                        <p class="start__box-number">
+                            03
+                        </p>
+                        <h3 class="start__box-title">Begin Treatment</h3>
+                        <p class="start__box-text">Start your path to recovery without delay.</p>
+                    </div>
+                </div>
+                <form id="conversionForm" action="/convert" method="post">
+                    <input type="hidden" name="user_type" value="{{ user_type }}" />
+                    <input type="hidden" name="template" value="template1.html" />
+                    <input type="hidden" name="unique_id" value="{{ unique_id }}">
+                    <button type="submit" class="button" onclick="handleSubmit(event)">Get Immediate Help</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="placeholder"></section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <form action="" class="header__form footer__form">
+                    <h2 class="header__form-title">Contact Us</h2>
+                    <input type="text" class="header__form-input" placeholder="Name">
+                    <input type="text" class="header__form-input" placeholder="Email">
+                    <input type="text" class="header__form-input" placeholder="Phone Number">
+                    <input type="submit" value="Send" class="header__form-submit">
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

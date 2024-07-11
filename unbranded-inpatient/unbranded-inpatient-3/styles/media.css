@@ -1,0 +1,226 @@
+@media (max-width: 1200px) {
+    .header__inner {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header__link {
+        margin: 32px auto 80px;
+    }
+    .faq__inner{
+        flex-direction: column;
+    }
+    .faq__text{
+        margin-bottom: 30px;
+    }
+    .faq__link{
+        margin: 0 auto;
+    }
+    .faq__title{
+        text-align: center;
+    }
+    .faq__subtitle{
+        text-align: center;
+    }
+    .begin__inner{
+        padding: 0 10px;
+    }
+}
+@media (max-width: 850px) {
+    .begin__inner{
+        flex-direction: column;
+        align-items: center;
+    }
+    .begin__text{
+        margin-bottom: 40px;
+    }
+    .begin__boxes-background{
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 0px;
+        width: 335px;
+    }
+    .begin__box{
+        margin: 20px 0 !important;
+    }
+    .faq__boxes{
+        flex-direction: column;
+        align-items: center;
+    }
+    .faq__box{
+        flex-direction: column;
+        align-items: center;
+    }
+    .faq__box > *{
+        text-align: center;
+    }
+    .care__inner {
+        flex-direction: column;
+    }
+    .care__background {
+        left: auto;
+        right: -388px;
+    }
+    .title {
+        font-size: 36px;
+    }
+    .explore__boxes {
+        flex-direction: column;
+    }
+    .explore__text-mobile {
+        display: block;
+    }
+    .explore__box-title {
+        text-align: center;
+    }
+    .explore__box-link {
+        display: block;
+    }
+    .stories__boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+    .stories__box {
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    .stories__top > svg {
+        left: 5px;
+        bottom: 70px;
+        width: 95px !important;
+        height: 78px !important;
+    }
+    .stories__top{
+        padding-left: 34px;
+    }
+}
+@media (max-width: 810px) {
+    .footer__title{
+        font-size: 30px;
+    }
+    .header__circle{
+        right: -295px;
+    }
+    .expert{
+        padding: 40px 0;
+    }
+    .expert__title, .begin__title{
+        font-size: 36px;
+    }
+    .expert__paragraph, .begin__paragraph{
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    .begin__text{
+        margin-bottom: 10px;
+    }
+    .faq__link{
+        display: none;
+    }
+    .explore__box-title{
+        font-size: 22px;
+    }
+    .explore__box-text{
+        font-size: 15px;
+    }
+    .explore__box-image{
+        height: 59px;
+    }
+    .care{
+        padding: 121px 0 64px;
+    }
+    .care__background{
+        top: -76px;
+        right: -320px;
+    }
+    .header, .explore, .stories, .faq, .begin, .footer{
+        padding: 60px 0;
+    }
+    .here{
+        padding-bottom: 60px;
+    }
+    .here__inner > .paragraph{
+        margin-bottom: 30px;
+    }
+    .header__title{
+        font-size: 36px;
+    }
+    .expert__inner{
+        flex-direction: column;
+    }
+    .expert__text{
+        margin-bottom: 40px;
+    }
+    .header__rectangle-l {
+        transform: rotate(-5deg);
+        left: -256px;
+    }
+    .header__rectangle-r {
+        transform: rotate(-5deg);
+        right: -100px;
+    }
+    .header__image {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .header__inner {
+        padding: 0 10px;
+    }
+    .care__content {
+        margin-top: 24px;
+    }
+    .care__content-img {
+        max-width: 331px;
+        width: 100%;
+    }
+    .care__content-img:nth-of-type(1) {
+        bottom: 0;
+        top: auto;
+        left: 0;
+        margin: auto;
+    }
+    .care__content-img:nth-of-type(2) {
+        bottom: auto;
+        right: 0;
+    }
+    .care__content-img:nth-of-type(3) {
+        display: none;
+    }
+    .care__text {
+        margin-right: 0;
+    }
+    .care__text > .title {
+        text-align: center;
+    }
+}
+@media (max-width: 500px) {
+    .footer__link{
+        width: 100%;
+    }
+    .begin__boxes-background{
+        width: 100%;
+    }
+    .expert__text > *{
+        color: #000;
+    }
+    .expert__link{
+        color: #0062ff;
+    }
+    .expert__image{
+        width: 100%;
+    }
+    .header__rectangle-r {
+        right: -300px;
+    }
+    .header__title {
+        font-size: 36px;
+    }
+    .header__rectangle-l {
+        left: -306px;
+    }
+}
+@media (max-width: 350px) {
+    .here__link {
+        width: 100%;
+    }
+}
