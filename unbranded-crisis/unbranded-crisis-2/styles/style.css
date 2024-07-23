@@ -30,7 +30,8 @@ p {
     margin: 0;
     padding: 0;
 }
-a {
+a,
+button {
     transition: .4s all linear;
     border-radius: 27px;
     padding: 12px 24px;
@@ -43,9 +44,10 @@ a {
     display: block;
     width: fit-content;
 }
-a:hover{
-    background: #ffee00!important;
-    color: #000!important;
+a:hover, 
+button:hover{
+    background: #ffee00;
+    color: #000;
 }
 .header {
     height: 100vh;
@@ -89,11 +91,16 @@ a:hover{
 .header__link {
     margin-right: 10px;
 }
-.header__link:last-of-type {
+.header__link.header__link-secondary{
     font-size: 14px;
     border: 1px solid #fff;
     color: #fff;
     background: transparent;
+}
+
+.header__link.header__link-secondary:hover{
+  background: #ffee00;
+  color: #000;
 }
 .about {
     padding: 50px 0;
@@ -184,7 +191,7 @@ a:hover{
     color: #000;
     margin-bottom: 12px;
 }
-.faq__box-link {
+.faq__box .faq__box-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 107%;
@@ -196,11 +203,23 @@ a:hover{
     align-items: center;
     background: none;
     padding: 0;
+    transition: all .35s;
 }
 
-.faq__box-link > svg {
+.faq__box .faq__box-link > svg {
     margin-left: 10px;
+    transition: all .35s;
 }
+
+button.faq__box-link:hover {
+  color: black;
+  background-color: transparent;
+}
+
+button.faq__box-link:hover > svg path {
+  fill: black;
+}
+
 .faq__boxes {
     max-width: 686px;
     width: 100%;

@@ -441,6 +441,7 @@ button:hover, input[type="submit"]:hover, .button.mobile:hover{
 .footer__inner {
     display: flex;
     justify-content: space-between;
+    gap: 16px;
 }
 .footer__title {
     font-weight: 700;

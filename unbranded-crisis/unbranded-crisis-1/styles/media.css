@@ -93,7 +93,8 @@
     .faq__box-content{
         padding: 10px 14px 10px 18px;
     }
-    a {
+    a,
+    button {
         padding: 7px 15px;
     }
     .help__title {

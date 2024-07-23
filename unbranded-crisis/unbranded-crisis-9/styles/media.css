@@ -196,6 +196,9 @@
     .footer{
         padding: 26px 0;
     }
+    .footer__content {
+      max-width: 100%;
+    }
     .footer__inner{
         flex-direction: column;
         align-items: center;
@@ -204,10 +207,12 @@
         font-size: 24px;
         text-align: center;
         margin-bottom: 7px;
+        text-align: center;
     }
     .footer__text{
         font-size: 16px;
         margin-bottom: 40px;
+        text-align: center;
     }
     .footer__form-submit{
         display: block;
@@ -215,8 +220,3 @@
     }
 }
 
-@media (max-width: 1100px) {
-}
-
-@media (max-width: 360px) {
-}

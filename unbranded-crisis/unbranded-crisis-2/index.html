@@ -26,8 +26,18 @@
                     We Understand and Can Help</h1>
                 <p class="header__subtitle">Comprehensive Detox Programs to Help You Reclaim Your Life</p>
                 <div class="header__links">
-                    <a href="tel:+8447227147" class="header__link">Learn More</a>
-                    <a href="tel:+8447227147" class="header__link">Contact Us</a>
+                    <form id="conversionForm" action="/convert" method="post">
+                      <input type="hidden" name="user_type" value="{{ user_type }}" />
+                      <input type="hidden" name="template" value="template1.html" />
+                      <input type="hidden" name="unique_id" value="{{ unique_id }}">
+                      <button type="submit" class="header__link" onclick="handleSubmit(event)">Learn More</button>
+                  </form>
+                  <form id="conversionForm" action="/convert" method="post">
+                    <input type="hidden" name="user_type" value="{{ user_type }}" />
+                    <input type="hidden" name="template" value="template1.html" />
+                    <input type="hidden" name="unique_id" value="{{ unique_id }}">
+                    <button type="submit" class="header__link header__link-secondary" onclick="handleSubmit(event)">Contact Us</button>
+                </form>
                 </div>
             </div>
         </div>
@@ -42,7 +52,12 @@
                     <p class="about__paragraph">Addiction can make you feel like you’re drowning in despair. It’s a
                         crisis that consumes your life and leaves you feeling helpless. But you’re not alone. We
                         understand the battle you’re fighting, and we’re here to help you win it.</p>
-                    <a href="tel:+8447227147" class="about__link">Learn More</a>
+                    <form id="conversionForm" action="/convert" method="post">
+                      <input type="hidden" name="user_type" value="{{ user_type }}" />
+                      <input type="hidden" name="template" value="template1.html" />
+                      <input type="hidden" name="unique_id" value="{{ unique_id }}">
+                      <button type="submit" class="about__link" onclick="handleSubmit(event)">Learn More</button>
+                  </form>
                 </div>
             </div>
         </div>
@@ -54,7 +69,12 @@
                     <h2 class="faq__title">What We Do</h2>
                     <p class="faq__paragraph">We offer specialized detox programs designed to support your recovery
                         journey:</p>
-                    <a href="tel:+8447227147" class="faq__link">Show More</a>
+                    <form id="conversionForm" action="/convert" method="post">
+                      <input type="hidden" name="user_type" value="{{ user_type }}" />
+                      <input type="hidden" name="template" value="template1.html" />
+                      <input type="hidden" name="unique_id" value="{{ unique_id }}">
+                      <button type="submit" class="faq__link" onclick="handleSubmit(event)">Show More</button>
+                  </form>
                 </div>
                 <div class="faq__boxes">
                     <div class="faq__box">
@@ -74,13 +94,18 @@
                         <h3 class="faq__box-title">Medically Assisted Detox</h3>
                         <p class="faq__box-text">Our medical experts provide the care you need to manage withdrawal
                             safely</p>
-                        <a href="tel:+8447227147" class="faq__box-link">Learn more <svg width="16" height="11" viewBox="0 0 16 11"
-                                fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M15.5848 5.38714L10.7539 0.858109C10.67 0.789263 10.5729 0.754841 10.4628 0.754841C10.3526 0.754841 10.2556 0.789263 10.1716 0.858109C10.0982 0.936789 10.0615 1.02776 10.0615 1.13103C10.0615 1.2343 10.0982 1.32527 10.1716 1.40395L14.326 5.28387H1.20211C1.08671 5.28387 0.989669 5.32075 0.910989 5.39451C0.832309 5.46828 0.792969 5.55925 0.792969 5.66744C0.792969 5.76579 0.832309 5.85184 0.910989 5.9256C0.989669 5.99937 1.08671 6.03625 1.20211 6.03625H14.326L10.1874 9.93092C10.1035 9.99976 10.0615 10.0858 10.0615 10.1891C10.0615 10.2924 10.1035 10.3833 10.1874 10.462C10.2189 10.5013 10.2608 10.5284 10.3133 10.5431C10.3657 10.5579 10.4182 10.5653 10.4706 10.5653C10.5231 10.5653 10.5729 10.5579 10.6201 10.5431C10.6673 10.5284 10.7119 10.5013 10.7539 10.462L15.5848 5.93298C15.6583 5.8543 15.695 5.76333 15.695 5.66006C15.695 5.55679 15.6583 5.46582 15.5848 5.38714Z"
-                                    fill="#E1CE1E" />
-                            </svg>
-                        </a>
+                        <form id="conversionForm" action="/convert" method="post">
+                          <input type="hidden" name="user_type" value="{{ user_type }}" />
+                          <input type="hidden" name="template" value="template1.html" />
+                          <input type="hidden" name="unique_id" value="{{ unique_id }}">
+                          <button type="submit" class="faq__box-link" onclick="handleSubmit(event)">Learn more <svg width="16" height="11" viewBox="0 0 16 11"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.5848 5.38714L10.7539 0.858109C10.67 0.789263 10.5729 0.754841 10.4628 0.754841C10.3526 0.754841 10.2556 0.789263 10.1716 0.858109C10.0982 0.936789 10.0615 1.02776 10.0615 1.13103C10.0615 1.2343 10.0982 1.32527 10.1716 1.40395L14.326 5.28387H1.20211C1.08671 5.28387 0.989669 5.32075 0.910989 5.39451C0.832309 5.46828 0.792969 5.55925 0.792969 5.66744C0.792969 5.76579 0.832309 5.85184 0.910989 5.9256C0.989669 5.99937 1.08671 6.03625 1.20211 6.03625H14.326L10.1874 9.93092C10.1035 9.99976 10.0615 10.0858 10.0615 10.1891C10.0615 10.2924 10.1035 10.3833 10.1874 10.462C10.2189 10.5013 10.2608 10.5284 10.3133 10.5431C10.3657 10.5579 10.4182 10.5653 10.4706 10.5653C10.5231 10.5653 10.5729 10.5579 10.6201 10.5431C10.6673 10.5284 10.7119 10.5013 10.7539 10.462L15.5848 5.93298C15.6583 5.8543 15.695 5.76333 15.695 5.66006C15.695 5.55679 15.6583 5.46582 15.5848 5.38714Z"
+                                fill="#E1CE1E" />
+                           </svg>
+                          </button>
+                      </form>
                     </div>
                     <div class="faq__box">
                         <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -99,13 +124,18 @@
                         <h3 class="faq__box-title">Medically Assisted Detox</h3>
                         <p class="faq__box-text">Our medical experts provide the care you need to manage withdrawal
                             safely</p>
-                        <a href="tel:+8447227147" class="faq__box-link">Learn more <svg width="16" height="11" viewBox="0 0 16 11"
+                            <form id="conversionForm" action="/convert" method="post">
+                              <input type="hidden" name="user_type" value="{{ user_type }}" />
+                              <input type="hidden" name="template" value="template1.html" />
+                              <input type="hidden" name="unique_id" value="{{ unique_id }}">
+                              <button type="submit" class="faq__box-link" onclick="handleSubmit(event)">Learn more <svg width="16" height="11" viewBox="0 0 16 11"
                                 fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M15.5848 5.38714L10.7539 0.858109C10.67 0.789263 10.5729 0.754841 10.4628 0.754841C10.3526 0.754841 10.2556 0.789263 10.1716 0.858109C10.0982 0.936789 10.0615 1.02776 10.0615 1.13103C10.0615 1.2343 10.0982 1.32527 10.1716 1.40395L14.326 5.28387H1.20211C1.08671 5.28387 0.989669 5.32075 0.910989 5.39451C0.832309 5.46828 0.792969 5.55925 0.792969 5.66744C0.792969 5.76579 0.832309 5.85184 0.910989 5.9256C0.989669 5.99937 1.08671 6.03625 1.20211 6.03625H14.326L10.1874 9.93092C10.1035 9.99976 10.0615 10.0858 10.0615 10.1891C10.0615 10.2924 10.1035 10.3833 10.1874 10.462C10.2189 10.5013 10.2608 10.5284 10.3133 10.5431C10.3657 10.5579 10.4182 10.5653 10.4706 10.5653C10.5231 10.5653 10.5729 10.5579 10.6201 10.5431C10.6673 10.5284 10.7119 10.5013 10.7539 10.462L15.5848 5.93298C15.6583 5.8543 15.695 5.76333 15.695 5.66006C15.695 5.55679 15.6583 5.46582 15.5848 5.38714Z"
                                     fill="#E1CE1E" />
-                            </svg>
-                        </a>
+                               </svg>
+                              </button>
+                          </form>
                     </div>
                     <div class="faq__box">
                         <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -124,13 +154,18 @@
                         <h3 class="faq__box-title">Medically Assisted Detox</h3>
                         <p class="faq__box-text">Our medical experts provide the care you need to manage withdrawal
                             safely</p>
-                        <a href="tel:+8447227147" class="faq__box-link">Learn more <svg width="16" height="11" viewBox="0 0 16 11"
+                            <form id="conversionForm" action="/convert" method="post">
+                              <input type="hidden" name="user_type" value="{{ user_type }}" />
+                              <input type="hidden" name="template" value="template1.html" />
+                              <input type="hidden" name="unique_id" value="{{ unique_id }}">
+                              <button type="submit" class="faq__box-link" onclick="handleSubmit(event)">Learn more <svg width="16" height="11" viewBox="0 0 16 11"
                                 fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M15.5848 5.38714L10.7539 0.858109C10.67 0.789263 10.5729 0.754841 10.4628 0.754841C10.3526 0.754841 10.2556 0.789263 10.1716 0.858109C10.0982 0.936789 10.0615 1.02776 10.0615 1.13103C10.0615 1.2343 10.0982 1.32527 10.1716 1.40395L14.326 5.28387H1.20211C1.08671 5.28387 0.989669 5.32075 0.910989 5.39451C0.832309 5.46828 0.792969 5.55925 0.792969 5.66744C0.792969 5.76579 0.832309 5.85184 0.910989 5.9256C0.989669 5.99937 1.08671 6.03625 1.20211 6.03625H14.326L10.1874 9.93092C10.1035 9.99976 10.0615 10.0858 10.0615 10.1891C10.0615 10.2924 10.1035 10.3833 10.1874 10.462C10.2189 10.5013 10.2608 10.5284 10.3133 10.5431C10.3657 10.5579 10.4182 10.5653 10.4706 10.5653C10.5231 10.5653 10.5729 10.5579 10.6201 10.5431C10.6673 10.5284 10.7119 10.5013 10.7539 10.462L15.5848 5.93298C15.6583 5.8543 15.695 5.76333 15.695 5.66006C15.695 5.55679 15.6583 5.46582 15.5848 5.38714Z"
                                     fill="#E1CE1E" />
-                            </svg>
-                        </a>
+                               </svg>
+                              </button>
+                          </form>
                     </div>
                     <div class="faq__box">
                         <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -149,16 +184,27 @@
                         <h3 class="faq__box-title">Medically Assisted Detox</h3>
                         <p class="faq__box-text">Our medical experts provide the care you need to manage withdrawal
                             safely</p>
-                        <a href="tel:+8447227147" class="faq__box-link">Learn more <svg width="16" height="11" viewBox="0 0 16 11"
+                            <form id="conversionForm" action="/convert" method="post">
+                              <input type="hidden" name="user_type" value="{{ user_type }}" />
+                              <input type="hidden" name="template" value="template1.html" />
+                              <input type="hidden" name="unique_id" value="{{ unique_id }}">
+                              <button type="submit" class="faq__box-link" onclick="handleSubmit(event)">Learn more <svg width="16" height="11" viewBox="0 0 16 11"
                                 fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M15.5848 5.38714L10.7539 0.858109C10.67 0.789263 10.5729 0.754841 10.4628 0.754841C10.3526 0.754841 10.2556 0.789263 10.1716 0.858109C10.0982 0.936789 10.0615 1.02776 10.0615 1.13103C10.0615 1.2343 10.0982 1.32527 10.1716 1.40395L14.326 5.28387H1.20211C1.08671 5.28387 0.989669 5.32075 0.910989 5.39451C0.832309 5.46828 0.792969 5.55925 0.792969 5.66744C0.792969 5.76579 0.832309 5.85184 0.910989 5.9256C0.989669 5.99937 1.08671 6.03625 1.20211 6.03625H14.326L10.1874 9.93092C10.1035 9.99976 10.0615 10.0858 10.0615 10.1891C10.0615 10.2924 10.1035 10.3833 10.1874 10.462C10.2189 10.5013 10.2608 10.5284 10.3133 10.5431C10.3657 10.5579 10.4182 10.5653 10.4706 10.5653C10.5231 10.5653 10.5729 10.5579 10.6201 10.5431C10.6673 10.5284 10.7119 10.5013 10.7539 10.462L15.5848 5.93298C15.6583 5.8543 15.695 5.76333 15.695 5.66006C15.695 5.55679 15.6583 5.46582 15.5848 5.38714Z"
                                     fill="#E1CE1E" />
-                            </svg>
-                        </a>
+                               </svg>
+                              </button>
+                          </form>
                     </div>
                 </div>
-                <a href="tel:+8447227147" class="faq__link --mobile">Show More</a>
+                <form id="conversionForm" action="/convert" method="post">
+                  <input type="hidden" name="user_type" value="{{ user_type }}" />
+                  <input type="hidden" name="template" value="template1.html" />
+                  <input type="hidden" name="unique_id" value="{{ unique_id }}">
+                  <button type="submit" class="faq__link --mobile" onclick="handleSubmit(event)">Show More
+                  </button>
+              </form>
             </div>
         </div>
     </section>
@@ -176,7 +222,13 @@
                     <img src="./content/why_mobile.png" alt="" class="why__image --mobile">
                     <h3 class="why__bottom-title">Begin Your Journey to Wellness</h3>
                     <p class="why__bottom-paragraph">Don’t let addiction control your life any longer. Reach out to us today to find out how we can help you detox and start your path to a healthier, happier future.</p>
-                    <a href="tel:+8447227147" class="why__link">Get Help Now</a>
+                    <form id="conversionForm" action="/convert" method="post">
+                      <input type="hidden" name="user_type" value="{{ user_type }}" />
+                      <input type="hidden" name="template" value="template1.html" />
+                      <input type="hidden" name="unique_id" value="{{ unique_id }}">
+                      <button type="submit" class="why__link" onclick="handleSubmit(event)">Get Help Now +8447227147
+                      </button>
+                  </form>
                 </div>
                 <img src="./content/why.png" alt="" class="why__image">
                 

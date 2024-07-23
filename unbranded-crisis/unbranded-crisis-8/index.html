@@ -250,13 +250,20 @@
                         <button type="submit" class="button footerButton" onclick="handleSubmit(event)">Call Now Today</button>
                     </form>
                 </div>
-                <form action="" class="footer__form">
-                    <input type="text" name="" id="" class="footer__form-input" placeholder="Full Name">
-                    <input type="text" name="" id="" class="footer__form-input" placeholder="Your Phone">
-                    <input type="text" name="" id="" class="footer__form-input" placeholder="Your Email">
-                    <textarea class="footer__form-input msg" placeholder="Message" name="" id=""></textarea>
-                    <input type="submit" value="Submit" class="footer__form-submit">
+                <div class="footer__form-container">
+                  <h2 class="footer__title">Verify your insurance</h2>
+                  <form action="" class="footer__form">
+                    <input type="text" name="name_of_submission" id="name_of_submission" class="footer__form-input" placeholder="Full Name">
+                    <input type="tel" name="phone_number_of_submission" id="phone_number_of_submission" class="footer__form-input" placeholder="Your Phone">
+                    <input type="email" name="email_address_of_submission" id="email_address_of_submission" class="footer__form-input" placeholder="Your Email">
+                    <input type="text" name="insurance_company" id="insurance_company" class="footer__form-input" placeholder="Insurance Company">
+                    <input type="text" name="policy_id_number" id="policy_id_number" class="footer__form-input" placeholder="Policy ID Number">
+                    <input type="text" name="group_number" id="group_number" class="footer__form-input" placeholder="Group Number">
+                    <input type="date" name="date_of_birth" id="date_of_birth" class="footer__form-input" placeholder="Date of Birth">
+                    <textarea class="footer__form-input msg" name="additional_information" id="additional_information" placeholder="Additional Information"></textarea>
+                    <button type="submit" value="Submit" class="footer__form-submit">Submit</button>
                 </form>
+                </div>
             </div>
         </div>
     </footer>

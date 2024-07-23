@@ -26,7 +26,8 @@ p {
     margin: 0;
     padding: 0;
 }
-a {
+a,
+button {
     transition: .4s all linear;
     background: #6637ee;
     border-radius: 20px;
@@ -39,7 +40,8 @@ a {
     text-decoration: none;
     width: fit-content;
 }
-a:hover{
+a:hover,
+button:hover {
     background: #8800f8;
 }
 .header {

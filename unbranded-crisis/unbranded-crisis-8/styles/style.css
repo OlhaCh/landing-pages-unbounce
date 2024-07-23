@@ -378,6 +378,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 16px;
 }
 .footer__content {
     max-width: 476px;
@@ -402,8 +403,12 @@ p {
     border-radius: 50px;
     padding: 14px 36px;
 }
+.footer__form-container {
+  max-width: 576px;
+  width: 100%;
+}
+
 .footer__form {
-    max-width: 576px;
     width: 100%;
 }
 .footer__form-input {

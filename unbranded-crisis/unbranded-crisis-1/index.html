@@ -21,7 +21,13 @@
 <body>
     <section class="top">
         <header class="header">
-            <a href="tel:+8447227147" class="header__link">Contact Us</a>
+            <form id="conversionForm" action="/convert" method="post">
+              <input type="hidden" name="user_type" value="{{ user_type }}" />
+              <input type="hidden" name="template" value="template1.html" />
+              <input type="hidden" name="unique_id" value="{{ unique_id }}">
+              <button type="submit" class="header__link" onclick="handleSubmit(event)">
+                Contact Us</button>
+          </form>
         </header>
         <div class="container">
             <div class="top__inner">
@@ -29,7 +35,13 @@
                 <h1 class="top__title">Overwhelmed by Addiction? Let Us Help
                     You Break Free</h1>
                 <p class="top__subtitle">Expert Detox Services Tailored to Your Needs</p>
-                <a href="tel:+8447227147" class="top__link">Learn More</a>
+                <form id="conversionForm" action="/convert" method="post">
+                  <input type="hidden" name="user_type" value="{{ user_type }}" />
+                  <input type="hidden" name="template" value="template1.html" />
+                  <input type="hidden" name="unique_id" value="{{ unique_id }}">
+                  <button type="submit" class="top__link" onclick="handleSubmit(event)">
+                    Learn More</button>
+              </form>
             </div>
         </div>
     </section>
@@ -45,7 +57,12 @@
                     just you, but everyone around you. We understand the pain, the fear, and the desperation. But there
                     is hope, and we’re here to help you find it.
                 </p>
-                <a href="tel:+8447227147" class="help__link">Learn More</a>
+                <form id="conversionForm" action="/convert" method="post">
+                  <input type="hidden" name="user_type" value="{{ user_type }}" />
+                  <input type="hidden" name="template" value="template1.html" />
+                  <input type="hidden" name="unique_id" value="{{ unique_id }}">
+                  <button type="submit" class="help__link" onclick="handleSubmit(event)">Learn More</button>
+              </form>
             </div>
         </div>
     </section>
@@ -64,7 +81,12 @@
                             <p class="faq__box-text">Our facilities are designed to provide a tranquil setting where you
                                 can focus on healing.
                             </p>
-                            <a href="tel:+8447227147" class="faq__box-link">Learn More</a>
+                            <form id="conversionForm" action="/convert" method="post">
+                              <input type="hidden" name="user_type" value="{{ user_type }}" />
+                              <input type="hidden" name="template" value="template1.html" />
+                              <input type="hidden" name="unique_id" value="{{ unique_id }}">
+                              <button type="submit" class="faq__box-link" onclick="handleSubmit(event)">Learn More</button>
+                          </form>
                         </div>
                     </div>
                     <div class="faq__box">
@@ -74,7 +96,12 @@
                             <p class="faq__box-text">Our medical team monitors your progress and adjusts your treatment
                                 to ensure your safety and comfort.
                             </p>
-                            <a href="tel:+8447227147" class="faq__box-link">Learn More</a>
+                            <form id="conversionForm" action="/convert" method="post">
+                              <input type="hidden" name="user_type" value="{{ user_type }}" />
+                              <input type="hidden" name="template" value="template1.html" />
+                              <input type="hidden" name="unique_id" value="{{ unique_id }}">
+                              <button type="submit" class="faq__box-link" onclick="handleSubmit(event)">Learn More</button>
+                          </form>
                         </div>
                     </div>
                     <div class="faq__box">
@@ -84,7 +111,12 @@
                             <p class="faq__box-text">We offer counseling and therapy to help you address the underlying
                                 issues of your addiction.
                             </p>
-                            <a href="tel:+8447227147" class="faq__box-link">Learn More</a>
+                            <form id="conversionForm" action="/convert" method="post">
+                              <input type="hidden" name="user_type" value="{{ user_type }}" />
+                              <input type="hidden" name="template" value="template1.html" />
+                              <input type="hidden" name="unique_id" value="{{ unique_id }}">
+                              <button type="submit" class="faq__box-link" onclick="handleSubmit(event)">Learn More</button>
+                          </form>
                         </div>
                     </div>
                     <div class="faq__box">
@@ -94,11 +126,21 @@
                             <p class="faq__box-text">The end of detox is just the beginning of your recovery journey. We
                                 offer immed iate linkage to continuous support programs that help sustain your progress,
                             </p>
-                            <a href="tel:+8447227147" class="faq__box-link">Learn More</a>
+                            <form id="conversionForm" action="/convert" method="post">
+                              <input type="hidden" name="user_type" value="{{ user_type }}" />
+                              <input type="hidden" name="template" value="template1.html" />
+                              <input type="hidden" name="unique_id" value="{{ unique_id }}">
+                              <button type="submit" class="faq__box-link" onclick="handleSubmit(event)">Learn More</button>
+                          </form>
                         </div>
                     </div>
                 </div>
-                <a href="tel:+8447227147" class="faq__link">Learn More</a>
+                <form id="conversionForm" action="/convert" method="post">
+                  <input type="hidden" name="user_type" value="{{ user_type }}" />
+                  <input type="hidden" name="template" value="template1.html" />
+                  <input type="hidden" name="unique_id" value="{{ unique_id }}">
+                  <button type="submit" class="faq__link" onclick="handleSubmit(event)">Learn More</button>
+              </form>
             </div>
         </div>
     </section>
@@ -124,7 +166,12 @@
                 Your journey to recovery starts with a single step. Contact us now to learn how we can help you begin
                 your detox and start living the life you deserve.
             </p>
-            <a href="tel:+8447227147" class="footer__link">Get Help Now</a>
+            <form id="conversionForm" action="/convert" method="post">
+              <input type="hidden" name="user_type" value="{{ user_type }}" />
+              <input type="hidden" name="template" value="template1.html" />
+              <input type="hidden" name="unique_id" value="{{ unique_id }}">
+              <button type="submit" class="footer__link" onclick="handleSubmit(event)">Get Help Now</button>
+          </form>
         </div>
     </footer>
     

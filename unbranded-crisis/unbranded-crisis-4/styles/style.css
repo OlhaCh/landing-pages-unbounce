@@ -26,7 +26,8 @@ p {
     margin: 0;
     padding: 0;
 }
-a {
+a,
+button {
     transition: .4s all linear;
     font-family: "Palanquin", sans-serif;
     font-weight: 500;
@@ -41,7 +42,8 @@ a {
     text-decoration: none;
     width: fit-content;
 }
-a:hover{
+a:hover,
+button:hover {
     background: #00a2ff;
 }
 .header__link:hover{

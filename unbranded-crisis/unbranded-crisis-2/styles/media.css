@@ -69,7 +69,7 @@
     .header__link{
         font-size: 10px;
     }
-    .header__link:last-of-type{
+    .header__link.header__link-secondary{
         font-size: 10px;
     }
     .header{

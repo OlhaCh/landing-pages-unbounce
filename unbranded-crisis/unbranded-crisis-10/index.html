@@ -274,13 +274,20 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__inner">
-                <form action="" class="header__form footer__form">
-                    <h2 class="header__form-title">Contact Us</h2>
-                    <input type="text" class="header__form-input" placeholder="Name">
-                    <input type="text" class="header__form-input" placeholder="Email">
-                    <input type="text" class="header__form-input" placeholder="Phone Number">
-                    <input type="submit" value="Send" class="header__form-submit">
-                </form>
+              <div class="footer__form-container">
+                <h2 class="header__form-title">Verify your insurance</h2>
+                <form action="" class="footer__form">
+                  <input type="text" name="name_of_submission" id="name_of_submission" class="header__form-input" placeholder="Name">
+                  <input type="email" name="email_address_of_submission" id="email_address_of_submission" class="header__form-input" placeholder="Email">
+                  <input type="tel" name="phone_number_of_submission" id="phone_number_of_submission" class="header__form-input" placeholder="Phone Number">
+                  <input type="text" name="insurance_company" id="insurance_company" class="header__form-input" placeholder="Insurance Company">
+                  <input type="text" name="policy_id_number" id="policy_id_number" class="header__form-input" placeholder="Policy ID Number">
+                  <input type="text" name="group_number" id="group_number" class="header__form-input" placeholder="Group Number">
+                  <input type="date" name="date_of_birth" id="date_of_birth" class="header__form-input" placeholder="Date of Birth">
+                  <textarea class="header__form-input msg" name="additional_information" id="additional_information" placeholder="Additional Information"></textarea>
+                  <input type="submit" value="Send" class="header__form-submit">
+              </form>
+              </div>
             </div>
         </div>
     </footer>

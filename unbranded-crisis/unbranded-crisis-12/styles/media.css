@@ -23,6 +23,19 @@
         margin-left: 0px;
         margin-top: 22px;
     }
+    .footer__inner {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer__content,
+  .footer__form-container {
+    max-width: initial;
+  }
+  .footer__form-submit{
+    margin: 0 auto;
+    display: block;
+}
 }
 @media (max-width: 768px) {
     .text{
@@ -40,15 +53,12 @@
         background: #29b6f1;
         margin: 0 auto;
     }
-    .footer__inner {
-        flex-direction: column;
-        align-items: center;
-    }
     .footer__title {
         text-align: center;
         font-size: 24px;
         margin-bottom: 16px;
     }
+
     .footer__text {
         text-align: center;
         font-size: 14px;
@@ -56,10 +66,6 @@
     }
     .footer__content{
         margin-bottom: 12px;
-    }
-    .footer__form-submit{
-        margin: 0 auto;
-        display: block;
     }
     .faq__box-title {
         padding: 7px 17px;

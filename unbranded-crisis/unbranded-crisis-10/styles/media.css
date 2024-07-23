@@ -4,6 +4,15 @@
     }
 }
 @media (max-width: 1000px) {
+  .footer__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer__form-container {
+  max-width: initial;
+  padding: 20px 40px;
+}
     .why__image {
         display: none;
     }
@@ -60,11 +69,6 @@
     .footer {
         padding: 25px 0 35px;
         background-position: right;
-    }
-    .footer__inner {
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
     .footer__form > .header__form-input::placeholder {
         color: #fff;

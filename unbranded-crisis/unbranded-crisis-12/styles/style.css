@@ -407,6 +407,8 @@ input[type="submit"] {
 .footer__inner {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 16px;
 }
 .footer__title {
     font-weight: 700;
@@ -415,18 +417,22 @@ input[type="submit"] {
     color: #fff;
     margin-bottom: 10px;
 }
+
+.footer__title.footer__form-title {
+  margin-bottom: 24px;
+}
 .footer__text {
     font-size: 24px;
     line-height: 133%;
     color: #fff;
 }
 .footer__content {
-    max-width: 624px;
+    max-width: 500px;
     width: 100%;
 }
-.footer__form {
-    max-width: 480px;
-    width: 100%;
+.footer__form-container {
+   max-width: 580px;
+   width: 100%;
 }
 .footer__form-input {
     border-radius: 12px;

@@ -358,6 +358,7 @@ input[type="submit"] {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 16px
 }
 .footer__content {
     max-width: 618px;
@@ -377,7 +378,7 @@ input[type="submit"] {
     margin-bottom: 40px;
 }
 
-.footer__form {
+.footer__form-container {
     max-width: 618px;
     width: 100%;
 }

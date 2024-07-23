@@ -30,7 +30,8 @@ p {
     margin: 0;
     padding: 0;
 }
-a {
+a,
+button {
     font-weight: 400;
     font-size: 14px;
     color: var(--color-white);
@@ -42,7 +43,8 @@ a {
     width: fit-content;
     transition: .6s all linear;
 }
-a:hover{
+a:hover,
+button:hover {
     background-color: #e24000;
 }
 .top {

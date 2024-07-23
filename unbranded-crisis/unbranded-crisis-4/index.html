@@ -30,7 +30,13 @@
                     <p class="header__subtitle">
                         Are you in crisis? Our dedicated team provides immediate support and a path to recovery.
                     </p>
-                    <a href="tel:+8447227147" class="header__link">Get Immediate Help</a>
+                    <form id="conversionForm" action="/convert" method="post">
+                      <input type="hidden" name="user_type" value="{{ user_type }}" />
+                      <input type="hidden" name="template" value="template1.html" />
+                      <input type="hidden" name="unique_id" value="{{ unique_id }}">
+                      <button type="submit" class="header__link" onclick="handleSubmit(event)">Get Immediate Help
+                      </button>
+                  </form>
                 </div>
                 <img src="./content/header.png" alt="" class="header__image">
             </div>
@@ -45,7 +51,13 @@
                     <p class="subtitle">Feeling overwhelmed and in crisis due to mental health or addiction? We
                         understand the urgency and are here to provide immediate, compassionate care. Our team is ready
                         to support you through this critical time with the expertise you need.</p>
-                    <a href="tel:+8447227147" class="help__link">Learn More About Our Crisis Interwention</a>
+                    <form id="conversionForm" action="/convert" method="post">
+                      <input type="hidden" name="user_type" value="{{ user_type }}" />
+                      <input type="hidden" name="template" value="template1.html" />
+                      <input type="hidden" name="unique_id" value="{{ unique_id }}">
+                      <button type="submit" class="help__link" onclick="handleSubmit(event)">Learn More About Our Crisis Interwention
+                      </button>
+                  </form>
                 </div>
             </div>
         </div>
@@ -104,7 +116,13 @@
                     </div>
                 </div>
                 <p class="program__paragraph">Our programs are tailored to help you regain control and find peace.</p>
-                <a href="tel:+8447227147" class="program__link">Discover Our Programs</a>
+                <form id="conversionForm" action="/convert" method="post">
+                  <input type="hidden" name="user_type" value="{{ user_type }}" />
+                  <input type="hidden" name="template" value="template1.html" />
+                  <input type="hidden" name="unique_id" value="{{ unique_id }}">
+                  <button type="submit" class="program__link" onclick="handleSubmit(event)">Discover Our Programs
+                  </button>
+              </form>
             </div>
         </div>
     </section>
@@ -387,7 +405,13 @@
                         <p class="why__box-text">A place to heal without fear or judgment.</p>
                     </div>
                 </div>
-                <a href="tel:+8447227147" class="why__link">Find Out More</a>
+                <form id="conversionForm" action="/convert" method="post">
+                  <input type="hidden" name="user_type" value="{{ user_type }}" />
+                  <input type="hidden" name="template" value="template1.html" />
+                  <input type="hidden" name="unique_id" value="{{ unique_id }}">
+                  <button type="submit" class="why__link" onclick="handleSubmit(event)">Find Out More
+                  </button>
+              </form>
             </div>
         </div>
     </section>
@@ -399,7 +423,13 @@
                 <p class="subtitle">Our crisis intervention team is composed of dedicated professionals ready to support
                     you with care and compassion. Meet the experts who will help guide you through this challenging
                     time.</p>
-                <a href="tel:+8447227147" class="team__link">Meet Our Experts</a>
+                <form id="conversionForm" action="/convert" method="post">
+                  <input type="hidden" name="user_type" value="{{ user_type }}" />
+                  <input type="hidden" name="template" value="template1.html" />
+                  <input type="hidden" name="unique_id" value="{{ unique_id }}">
+                  <button type="submit" class="team__link" onclick="handleSubmit(event)">Meet Our Experts
+                  </button>
+              </form>
             </div>
         </div>
     </section>
@@ -453,7 +483,13 @@
                         <p class="journey__box-text">Begin your recovery journey immediately.</p>
                     </div>
                 </div>
-                <a href="tel:+8447227147" class="journey__link">Get Immediate Help</a>
+                <form id="conversionForm" action="/convert" method="post">
+                  <input type="hidden" name="user_type" value="{{ user_type }}" />
+                  <input type="hidden" name="template" value="template1.html" />
+                  <input type="hidden" name="unique_id" value="{{ unique_id }}">
+                  <button type="submit" class="journey__link" onclick="handleSubmit(event)">Get Immediate Help
+                  </button>
+              </form>
             </div>
         </div>
     </section>
@@ -463,7 +499,13 @@
                 <h2 class="footer__title">Contact Us</h2>
                 <p class="footer__subtitle">If you are in crisis, don't hesitate to reach out. We're here to provide the
                     support and care you need right now.</p>
-                <a href="tel:+8447227147" class="footer__link">Call Now Today</a>
+                <form id="conversionForm" action="/convert" method="post">
+                  <input type="hidden" name="user_type" value="{{ user_type }}" />
+                  <input type="hidden" name="template" value="template1.html" />
+                  <input type="hidden" name="unique_id" value="{{ unique_id }}">
+                  <button type="submit" class="footer__link" onclick="handleSubmit(event)">Call Now Today
+                  </button>
+              </form>
                 <p class="footer__bottom"><b>Haven Health Management</b> © 2024 All rights reserved.</p>
             </div>
         </div>
