@@ -403,7 +403,7 @@ h4 {
     display: none;
 }
 
-.footer__form {
+.footer__form-container {
     padding: 34px 36px;
     max-width: 563px;
     width: 100%;
