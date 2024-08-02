@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>unbranded-crisis-15</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.min.css?v=20240730132902">
+</head>
+
+<body>
+	<div class="wrapper">
+		<main class="page">
+			<section class="page__hero hero">
+	<div class="hero__container">
+		<div class="hero__content">
+			<h1 class="hero__title title title_big">Find Peace and Support</h1>
+			<div class="hero__text text">
+				<p>Immediate Help for Mental Health and Addiction</p>
+			</div>
+			<form id="conversionForm" action="/convert" method="post">
+				<input type="hidden" name="user_type" value="{{ user_type }}" />
+				<input type="hidden" name="template" value="template1.html" />
+				<input type="hidden" name="unique_id" value="{{ unique_id }}">
+				<button type="submit" class="button button_main" onclick="handleSubmit(event)">Contact Us </button>
+			</form>
+		</div>
+	</div>
+	<picture><source srcset="./img/hero-image.webp" type="image/webp"><img class="hero__bg" src="./img/hero-image.jpg" alt="girl"></picture>
+</section>
+			<section class="page__about-us about-us">
+	<div class="about-us__container">
+		<div class="about-us__content">
+			<h2 class="about-us__title">We're Here for You</h2>
+			<div class="about-us__text text">
+				<p>When you're in crisis, immediate help can provide the lifeline you need. Our dedicated team offers support and care to help you overcome mental health and addiction challenges.
+				</p>
+			</div>
+		</div>
+		<div class="about-us__image ibg">
+			<picture><source srcset="./img/girl.webp" type="image/webp"><img src="./img/girl.jpg" alt="girl"></picture>
+		</div>
+	</div>
+</section>
+			<section class="page__programs programs">
+	<div class="programs__body">
+		<picture>
+			<source srcset="./img/bg-mobile.jpg" type="image/jpg" media="(max-width: 767.98px)">
+			<img class="programs__bg" src="./img/bg.jpg" alt="background">
+		</picture>
+		<div class="programs__content">
+			<h2 class="programs__title">Our Immediate Care</h2>
+			<div class="programs__text text">
+				<p>
+					We provide compassionate, immediate care through a 24/7 Crisis Line available whenever you need us. Personalized treatment plans are tailored to your specific needs, ensuring that your care is effective and suited to your
+					situation. Our confidential environment ensures your privacy and comfort are our top priorities.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="programs__container">
+		<ul class="programs__list">
+			<li class="programs__item item-programs">
+				<div class="item-programs__icon ibg">
+					<img src="./img/icons/01.svg" alt="head icon">
+				</div>
+				<h3 class="item-programs__title">We Understand</h3>
+				<div class="item-programs__text">
+					<p>Facing a mental health or addiction crisis can be incredibly isolating and scary. Seeking help is a brave and important step. We're here to offer the understanding and support you need to move forward</p>
+				</div>
+			</li>
+			<li class="programs__item item-programs">
+				<div class="item-programs__icon ibg">
+					<img src="./img/icons/02.svg" alt="dagger icon">
+				</div>
+				<h3 class="item-programs__title">Journey to Recovery</h3>
+				<div class="item-programs__text">
+					<p>Our approach focuses on holistic healing, addressing all aspects of your well-being: mind, body, and spirit. We utilize proven, evidence-based treatments to ensure effective recovery and provide continuous support to help you
+						maintain progress.</p>
+				</div>
+
+			</li>
+			<li class="programs__item item-programs">
+				<div class="item-programs__icon ibg">
+					<img src="./img/icons/03.svg" alt="horse icon">
+				</div>
+				<h3 class="item-programs__title">Easy and Fast Admissions</h3>
+				<div class="item-programs__text">
+					<p>Our admissions process is designed to be quick and hassle-free. You can connect with an admissions counselor right away, get quick and easy verification of your insurance, and receive assistance with arranging travel to our
+						facility.</p>
+				</div>
+
+			</li>
+		</ul>
+	</div>
+</section>
+			<section class="page__expect expect">
+	<div class="expect__container">
+		<div class="expect__content">
+			<h2 class="expect__title">What to Expect</h2>
+			<div class="expect__text text">
+				<p>When you reach out, you will experience an immediate connection with a professional who will listen and understand your needs. We conduct a comprehensive assessment and develop a personalized action plan for your recovery.
+					Continuous follow-ups will support your journey and help you stay on track.</p>
+			</div>
+		</div>
+		<div class="expect__image-wrapp">
+			<div class="expect__image ibg ibg_contain">
+				<picture><source srcset="./img/girl-2.webp" type="image/webp"><img src="./img/girl-2.jpg" alt="girl"></picture>
+			</div>
+		</div>
+	</div>
+</section>
+		</main>
+		<footer class="footer">
+	<div class="footer__container">
+		<div class="footer__form-wrapper">
+			<h3 class="footer__form-title title">Verify Your Insurance</h3>
+			<form id="insuranceForm" action="/convert" method="post" class="form">
+
+	<label class="sr-only" for="name">Name</label>
+	<input id="name" placeholder="Full Name" autocomplete="off" type="text" name="name" class="form__input input">
+
+
+	<label class="sr-only" for="phone">Phone number</label>
+	<input id="phone" placeholder="Your Phone" autocomplete="off" type="tel" name="phone" class="form__input input">
+
+
+	<label class="sr-only" for="email">Email</label>
+	<input id="email" placeholder="Your Email" autocomplete="off" type="email" name="email" class="form__input input">
+
+
+	<label class="sr-only" for="insurance_company">Insurance Company</label>
+	<input id="insurance_company" placeholder="Insurance Company" autocomplete="off" type="text" name="insurance_company" class="form__input input">
+
+
+	<label class="sr-only" for="policy_id_number">Policy ID Number</label>
+	<input id="policy_id_number" placeholder="Policy ID Number" autocomplete="off" type="text" name="policy_id_number" class="form__input input">
+
+
+	<label class="sr-only" for="group_number">Group Number</label>
+	<input id="group_number" placeholder="Group Number" autocomplete="off" type="text" name="group_number" class="form__input input">
+
+
+	<label class="sr-only" for="date_of_birth">Date</label>
+	<input id="date_of_birth" placeholder="mm/dd/yyyy" autocomplete="off" type="text" name="date_of_birth" class="form__input input">
+
+	<label class="sr-only" for="additional_information">Additional Information</label>
+	<textarea id="additional_information" autocomplete="off" data-autoheight name="additional_information" placeholder="Additional Information" class="form__input input"></textarea>
+
+	<input type="hidden" name="user_type" value="{{ user_type }}" />
+	<input type="hidden" name="template" value="template1.html" />
+	<input type="hidden" name="unique_id" value="{{ unique_id }}">
+
+	<button class="form__send button" onclick="handleSubmit(event)" type="submit">
+		Submit
+	</button>
+</form>
+		</div>
+
+		<div class="footer__content">
+			<div class="footer__body">
+				<h2 class="footer__title">Contact Us Now</h2>
+				<div class="footer__text text">
+					<p>Please fill out the form or call today to get immediate support:</p>
+				</div>
+				<form id="conversionForm" action="/convert" method="post">
+					<input type="hidden" name="user_type" value="{{ user_type }}" />
+					<input type="hidden" name="template" value="template1.html" />
+					<input type="hidden" name="unique_id" value="{{ unique_id }}">
+					<button type="submit" class="footer__link" onclick="handleSubmit(event)">
+
+						<i class="footer__link-icon ibg">
+							<picture><source srcset="./img/icons/phone.webp" type="image/webp"><img src="./img/icons/phone.png" alt="phone icon"></picture>
+						</i>
+						<span class="footer__link-body">
+							<span class="footer__link-text">Call Now</span>
+							<span class="footer__link-phone">844-722-7147</span>
+						</span>
+
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</footer>
+	</div>
+	<script src="./js/app.js?v=20240730132902"></script>
+</body>
+
+</html>

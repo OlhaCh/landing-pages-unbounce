@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>unbranded-crisis-18</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.min.css?v=20240730154510">
+</head>
+
+<body>
+	<div class="wrapper">
+		<main class="page">
+			<section class="page__hero hero">
+	<div class="hero__container">
+		<div class="hero__content">
+			<div class="hero__label">Healing Starts Here</div>
+			<h1 class="hero__title title title_main">Immediate Help for Mental Health and Addiction</h1>
+			<form id="conversionForm" class="hero__button" action="/convert" method="post">
+				<input type="hidden" name="user_type" value="{{ user_type }}" />
+				<input type="hidden" name="template" value="template1.html" />
+				<input type="hidden" name="unique_id" value="{{ unique_id }}">
+				<button type="submit" class="button" onclick="handleSubmit(event)"><span>Contact Us</span></button>
+			</form>
+		</div>
+	</div>
+	<picture><source srcset="./img/hero-image.webp" type="image/webp"><img class="hero__bg" src="./img/hero-image.jpg" alt="girl"></picture>
+</section>
+			<section class="page__about about">
+	<div class="about__container">
+		<h2 class="about__title title">We're Here for You</h2>
+		<div class="about__text text">
+			<p>When facing a crisis, having immediate support can make all the difference. Our compassionate team is here to help you navigate mental health and addiction challenges and start your journey to recovery.</p>
+		</div>
+	</div>
+</section>
+			<div class="page__blocks">
+				<section class="page__block block">
+	<div class="block__container">
+		<div class="block__content">
+			<h2 class="block__title title">Understanding Your Pain</h2>
+			<div class="block__text text">
+				<p>Mental health and addiction struggles can feel overwhelming and isolating. It's important to recognize that seeking help is a courageous step. We're here to provide the understanding and support you need.
+				</p>
+			</div>
+		</div>
+		<div class="block__image ibg">
+			<picture><source srcset="./img/man.webp" type="image/webp"><img src="./img/man.jpg" alt="man"></picture>
+		</div>
+	</div>
+</section>
+				<section class="page__block block">
+	<div class="block__container">
+		<div class="block__content">
+			<h2 class="block__title title">Our Support Services</h2>
+			<div class="block__text text">
+				<p>We offer comprehensive, immediate care, including a 24/7 Crisis Line where you can speak with a caring professional any time, day or night. Our customized treatment plans are tailored to your unique needs, and our confidential
+					environment ensures your privacy and comfort.
+				</p>
+			</div>
+		</div>
+		<div class="block__image ibg">
+			<picture><source srcset="./img/woman-life-coach-in-headset-conducts-online-consultation-by-video-call-on-laptop-in-bedroom-at-home.webp" type="image/webp"><img src="./img/woman-life-coach-in-headset-conducts-online-consultation-by-video-call-on-laptop-in-bedroom-at-home.jpg" alt="woman life coach in headset conducts online consultation by video call on laptop in bedroom at home"></picture>
+		</div>
+	</div>
+</section>
+			</div>
+			<section class="page__programs programs">
+	<div class="programs__container">
+		<div class="programs__image ibg">
+			<picture><source srcset="./img/girl.webp" type="image/webp"><img src="./img/girl.jpg" alt="girl"></picture>
+		</div>
+		<div class="programs__content">
+			<h2 class="programs__title title">Journey to Recovery</h2>
+			<div class="programs__text text">
+				<p>Our approach focuses on holistic healing, addressing your mind, body, and spirit. We utilize proven treatments that are evidence-based and effective, and provide ongoing support to help you maintain progress and achieve lasting
+					recovery.</p>
+			</div>
+			<ul class="programs__list">
+				<li class="programs__item item-program">
+					<div class="item-program__body">
+						<div class="item-program__icon ibg ibg_contain">
+							<picture><source srcset="./img/icons/physical-therapy.webp" type="image/webp"><img src="./img/icons/physical-therapy.png" alt="physical therapy icon"></picture>
+						</div>
+						<h3 class="item-program__title">Holistic Healing</h3>
+					</div>
+				</li>
+				<li class="programs__item item-program">
+					<div class="item-program__body">
+						<div class="item-program__icon ibg ibg_contain">
+							<picture><source srcset="./img/icons/time-management.webp" type="image/webp"><img src="./img/icons/time-management.png" alt="time management icon"></picture>
+						</div>
+						<h3 class="item-program__title">Mind</h3>
+					</div>
+				</li>
+				<li class="programs__item item-program">
+					<div class="item-program__body">
+						<div class="item-program__icon ibg ibg_contain">
+							<picture><source srcset="./img/icons/squats.webp" type="image/webp"><img src="./img/icons/squats.png" alt="squats icon"></picture>
+						</div>
+						<h3 class="item-program__title">Body</h3>
+					</div>
+				</li>
+				<li class="programs__item item-program">
+					<div class="item-program__body">
+						<div class="item-program__icon ibg ibg_contain">
+							<picture><source srcset="./img/icons/health-sources.webp" type="image/webp"><img src="./img/icons/health-sources.png" alt="health sources icon"></picture>
+						</div>
+						<h3 class="item-program__title">Spirit</h3>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
+			<section class="page__expect expect">
+	<div class="expect__container">
+		<ul class="expect__list">
+			<li class="expect__item item-expect">
+				<h3 class="item-expect__title">Easy & Fast Admissions</h3>
+				<div class="item-expect__text text">
+					<p>Our admissions process is quick and straightforward. You can connect with an admissions counselor right away, get fast and easy verification of your insurance, and receive assistance with arranging travel to our facility.</p>
+				</div>
+			</li>
+			<li class="expect__item item-expect">
+				<h3 class="item-expect__title">What to Expect</h3>
+				<div class="item-expect__text text">
+					<p>When you reach out, you will experience an immediate connection with a professional who will listen and understand your needs. We conduct a comprehensive assessment and develop a personalized action plan for your recovery.
+						Continuous follow-ups will support your journey and help you stay on track.</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<picture><source srcset="./img/successful-mature-financier-business-coach-teacher-working-inside-office-with-laptop.webp" type="image/webp"><img class="expect__bg" src="./img/successful-mature-financier-business-coach-teacher-working-inside-office-with-laptop.jpg" alt="successful mature financier business coach teacher working inside office with laptop"></picture>
+</section>
+		</main>
+		<footer class="footer">
+	<div class="footer__container">
+		<div class="footer__contact contact">
+			<div class="contact__header">
+				<h2 class="contact__title">Get Help Today</h2>
+				<div class="contact__text text">
+					<p>Start Your Journey to Recovery</p>
+				</div>
+			</div>
+			<div class="contact__content">
+				<div class="contact__icon">
+					<picture><source srcset="./img/icons/phone.webp" type="image/webp"><img src="./img/icons/phone.png" alt="phone"></picture>
+				</div>
+				<a href="tel:8447227147" class="contact__phone">(844) 722-7147</a>
+			</div>
+
+		</div>
+		<div class="footer__form">
+			<h2 class="footer__form-title title">Verify Your Insurance</h2>
+			<form id="insuranceForm" action="/convert" method="post" class="form">
+
+	<label class="sr-only" for="name">Name</label>
+	<input id="name" placeholder="Full Name" autocomplete="off" type="text" name="name" class="form__input input">
+
+
+	<label class="sr-only" for="phone">Phone number</label>
+	<input id="phone" placeholder="Your Phone" autocomplete="off" type="tel" name="phone" class="form__input input">
+
+
+	<label class="sr-only" for="email">Email</label>
+	<input id="email" placeholder="Your Email" autocomplete="off" type="email" name="email" class="form__input input">
+
+
+	<label class="sr-only" for="insurance_company">Insurance Company</label>
+	<input id="insurance_company" placeholder="Insurance Company" autocomplete="off" type="text" name="insurance_company" class="form__input input">
+
+
+	<label class="sr-only" for="policy_id_number">Policy ID Number</label>
+	<input id="policy_id_number" placeholder="Policy ID Number" autocomplete="off" type="text" name="policy_id_number" class="form__input input">
+
+
+	<label class="sr-only" for="group_number">Group Number</label>
+	<input id="group_number" placeholder="Group Number" autocomplete="off" type="text" name="group_number" class="form__input input">
+
+
+	<label class="sr-only" for="date_of_birth">Date</label>
+	<input id="date_of_birth" placeholder="mm/dd/yyyy" autocomplete="off" type="text" name="date_of_birth" class="form__input input">
+
+	<label class="sr-only" for="additional_information">Additional Information</label>
+	<textarea id="additional_information" autocomplete="off" data-autoheight name="additional_information" placeholder="Additional Information" class="form__input input"></textarea>
+
+	<input type="hidden" name="user_type" value="{{ user_type }}" />
+	<input type="hidden" name="template" value="template1.html" />
+	<input type="hidden" name="unique_id" value="{{ unique_id }}">
+
+	<button class="form__send button" onclick="handleSubmit(event)" type="submit">
+		<span>Submit</span>
+	</button>
+</form>
+		</div>
+	</div>
+	<picture><source srcset="./img/image.webp" type="image/webp"><img class="footer__bg" src="./img/image.jpg" alt="girl"></picture>
+</footer>
+	</div>
+	<script src="./js/app.js?v=20240730154510"></script>
+</body>
+
+</html>

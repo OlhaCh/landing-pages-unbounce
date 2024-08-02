@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>unbranded-crisis-16</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.min.css?v=20240730154336">
+</head>
+
+<body>
+	<div class="wrapper">
+		<main class="page">
+			<section class="page__hero hero">
+	<div class="hero__container">
+		<div class="hero__content">
+			<h1 class="hero__title title title_big">Find Comfort and Care Now</h1>
+			<div class="hero__text text">
+				<p>Immediate Help for Mental Health and Addiction</p>
+			</div>
+			<div class="hero__buttons">
+				<form id="conversionForm" class="hero__button" action="/convert" method="post">
+					<input type="hidden" name="user_type" value="{{ user_type }}" />
+					<input type="hidden" name="template" value="template1.html" />
+					<input type="hidden" name="unique_id" value="{{ unique_id }}">
+					<button type="submit" class="button" onclick="handleSubmit(event)">Read More</button>
+				</form>
+				<form id="conversionForm" class="hero__button hero__button_contact" action="/convert" method="post">
+					<input type="hidden" name="user_type" value="{{ user_type }}" />
+					<input type="hidden" name="template" value="template1.html" />
+					<input type="hidden" name="unique_id" value="{{ unique_id }}">
+					<button type="submit" class="button button_transparent" onclick="handleSubmit(event)">Contact</button>
+				</form>
+			</div>
+
+		</div>
+	</div>
+	<picture><source srcset="./img/hero-image.webp" type="image/webp"><img class="hero__bg" src="./img/hero-image.jpg" alt="girl"></picture>
+</section>
+			<section class="page__about-us about-us">
+	<div class="about-us__container">
+		<div class="about-us__content">
+			<h2 class="about-us__title title">We're Here for You</h2>
+			<div class="about-us__text text">
+				<p>During a crisis, immediate help is essential. Our compassionate team is dedicated to providing the support you need to navigate mental health and addiction challenges and begin your journey to recovery.
+				</p>
+			</div>
+		</div>
+		<div class="about-us__image ibg">
+			<picture><source srcset="./img/medium-shot-woman-wearing-headphones.webp" type="image/webp"><img src="./img/medium-shot-woman-wearing-headphones.jpg" alt="medium shot woman wearing headphones"></picture>
+		</div>
+	</div>
+</section>
+			<section class="page__baner baner baner_first">
+	<div class="baner__container">
+		<div class="baner__body">
+			<h2 class="baner__title title title_white">We Understand</h2>
+			<div class="baner__text text">
+				<p>Struggling with mental health or addiction can feel isolating and overwhelming. Seeking help is a courageous and necessary step. We offer the empathy, understanding, and support you need during this difficult time.
+				</p>
+			</div>
+		</div>
+	</div>
+	<picture><source srcset="./img/image.webp" type="image/webp"><img class="baner__bg" src="./img/image.jpg" alt="girl"></picture>
+</section>
+			<section class="page__programs programs">
+	<div class="programs__container">
+		<ul class="programs__list">
+			<li class="programs__item item-programs">
+				<div class="item-programs__icon ibg">
+					<picture><source srcset="./img/icons/technical-support.webp" type="image/webp"><img src="./img/icons/technical-support.png" alt="technical support"></picture>
+				</div>
+				<h3 class="item-programs__title title">Immediate Help</h3>
+				<div class="item-programs__text">
+					<p>Our services include a 24/7 Crisis Line that is always available when you need us. Personalized Care Plans are tailored to meet your unique needs, ensuring that your treatment is as effective as possible. Confidentiality is a
+						priority for us, so you can feel secure knowing your privacy and comfort are our top concerns.
+					</p>
+				</div>
+			</li>
+			<li class="programs__item item-programs">
+				<div class="item-programs__icon ibg">
+					<picture><source srcset="./img/icons/clinic.webp" type="image/webp"><img src="./img/icons/clinic.png" alt="clinic icon"></picture>
+				</div>
+				<h3 class="item-programs__title title">Healing Together</h3>
+				<div class="item-programs__text">
+					<p>We support your journey with a holistic approach that addresses every aspect of your well-being. Our proven treatments use effective, evidence-based methods to help you recover. We provide ongoing care to ensure continuous
+						support throughout your recovery process.
+					</p>
+				</div>
+			</li>
+			<li class="programs__item item-programs">
+				<div class="item-programs__icon ibg">
+					<picture><source srcset="./img/icons/technical-support.webp" type="image/webp"><img src="./img/icons/technical-support.png" alt="technical support"></picture>
+				</div>
+				<h3 class="item-programs__title title">Easy and Fast Admissions</h3>
+				<div class="item-programs__text">
+					<p>Our admissions process is simple and quick. You can speak with an admissions counselor immediately, get fast verification of your insurance, and receive assistance with travel logistics to our facility
+					</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+</section>
+			<section class="page__baner baner baner_second">
+	<div class="baner__container">
+		<div class="baner__body">
+			<h2 class="baner__title title title_white">What to Expect</h2>
+			<div class="baner__text text">
+				<p>When you reach out, you will experience an immediate response from a professional. We conduct a comprehensive assessment to understand your needs and develop a clear action plan for your recovery. Continuous support with ongoing
+					follow-ups will help you stay on track and achieve your recovery goals.
+				</p>
+			</div>
+		</div>
+	</div>
+	<picture><source srcset="./img/bg_banner.webp" type="image/webp"><img class="baner__bg" src="./img/bg_banner.jpg" alt="girl"></picture>
+</section>
+			<section class="page__call call">
+	<div class="call__container">
+		<div class="call__image ibg">
+			<picture><source srcset="./img/consultant.webp" type="image/webp"><img src="./img/consultant.jpg" alt="consultant"></picture>
+		</div>
+		<div class="call__content">
+			<div class="call__top">
+				<h2 class="call__title title title_small title_white">Reach Out for Help</h2>
+				<div class="call__text text">
+					<p>Start your journey to recovery today. Contact us for immediate support. </p>
+				</div>
+				<form id="conversionForm" action="/convert" method="post">
+					<input type="hidden" name="user_type" value="{{ user_type }}" />
+					<input type="hidden" name="template" value="template1.html" />
+					<input type="hidden" name="unique_id" value="{{ unique_id }}">
+					<button type="submit" class="button" onclick="handleSubmit(event)">Call Us</button>
+				</form>
+			</div>
+			<div class="call__button">
+				<i class="call__icon ibg">
+					<picture><source srcset="./img/icons/phone.webp" type="image/webp"><img src="./img/icons/phone.png" alt="phone"></picture>
+				</i>
+				<div class="call__body">
+					<p class="call__text-button">Call Now</p>
+					<a href="tel:8447227147" class="call__number">(844) 722-7147</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+		</main>
+		<footer class="footer">
+	<div class="footer__container">
+		<div class="footer__form-header">
+			<h3 class="footer__form-title title title_white">Verify Your Insurance</h3>
+			<p class="footer__form-text">Please fill out the form below to get immediate support:</p>
+		</div>
+		<form id="insuranceForm" action="/convert" method="post" class="form">
+
+	<label class="sr-only" for="name">Name</label>
+	<input id="name" placeholder="Full Name" autocomplete="off" type="text" name="name" class="form__input input">
+
+
+	<label class="sr-only" for="phone">Phone number</label>
+	<input id="phone" placeholder="Your Phone" autocomplete="off" type="tel" name="phone" class="form__input input">
+
+
+	<label class="sr-only" for="email">Email</label>
+	<input id="email" placeholder="Your Email" autocomplete="off" type="email" name="email" class="form__input input">
+
+
+	<label class="sr-only" for="insurance_company">Insurance Company</label>
+	<input id="insurance_company" placeholder="Insurance Company" autocomplete="off" type="text" name="insurance_company" class="form__input input">
+
+
+	<label class="sr-only" for="policy_id_number">Policy ID Number</label>
+	<input id="policy_id_number" placeholder="Policy ID Number" autocomplete="off" type="text" name="policy_id_number" class="form__input input">
+
+
+	<label class="sr-only" for="group_number">Group Number</label>
+	<input id="group_number" placeholder="Group Number" autocomplete="off" type="text" name="group_number" class="form__input input">
+
+
+	<label class="sr-only" for="date_of_birth">Date</label>
+	<input id="date_of_birth" placeholder="mm/dd/yyyy" autocomplete="off" type="text" name="date_of_birth" class="form__input input">
+
+	<label class="sr-only" for="additional_information">Additional Information</label>
+	<textarea id="additional_information" autocomplete="off" data-autoheight name="additional_information" placeholder="Additional Information" class="form__input input"></textarea>
+
+	<input type="hidden" name="user_type" value="{{ user_type }}" />
+	<input type="hidden" name="template" value="template1.html" />
+	<input type="hidden" name="unique_id" value="{{ unique_id }}">
+
+	<button class="form__send button" onclick="handleSubmit(event)" type="submit">
+		Submit
+	</button>
+</form>
+	</div>
+	<picture><source srcset="./img/girl.webp" type="image/webp"><img class="footer__bg" src="./img/girl.jpg" alt="girl"></picture>
+</footer>
+	</div>
+	<script src="./js/app.js?v=20240730154336"></script>
+</body>
+
+</html>
