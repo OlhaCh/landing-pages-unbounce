@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>landing-1</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.min.css?v=20240805202213">
+</head>
+
+<body>
+	<div class="wrapper">
+		<main class="page">
+			<section class="page__hero hero">
+	<div class="hero__container">
+		<div class="hero__content">
+			<h1 class="hero__title title title_dark title_main">
+				Are You in Crisis? <br>
+				We Can Help
+			</h1>
+			<div class="hero__text text">
+				<p>Immediate support for mental health and addiction crises. <br> Find peace and safety with our expert care.</p>
+			</div>
+			<form id="conversionForm" action="/convert" method="post">
+				<input type="hidden" name="user_type" value="{{ user_type }}" />
+				<input type="hidden" name="template" value="template1.html" />
+				<input type="hidden" name="unique_id" value="{{ unique_id }}">
+				<button type="submit" class="button" onclick="handleSubmit(event)"><span>get Help Now</span></button>
+			</form>
+		</div>
+		<div class="hero__image ibg">
+			<picture><source srcset="./img/hero-image.webp" type="image/webp"><img src="./img/hero-image.jpg" alt="doctors"></picture>
+		</div>
+	</div>
+</section>
+			<section class="page__your-crisis your-crisis">
+	<div class="your-crisis__container">
+		<div class="your-crisis__heading heading">
+			<h2 class="heading__title title title_white">Immediate Support for your <span>Crisis</span></h2>
+		</div>
+		<ul class="your-crisis__list">
+			<li class="your-crisis__item card _hover-white">
+				<div class="card__icon square square_top">
+					<img src="./img/icons/hours-24.svg" alt="hours-24 icon">
+				</div>
+				<h3 class="card__title">You’re not alone</h3>
+				<p class="card__text">If you’re feeling overwhelmed by a mental health crisis or addiction.</p>
+			</li>
+			<li class="your-crisis__item card _hover-white">
+				<div class="card__icon square square_top">
+					<img src="./img/icons/healtcare.svg" alt="healtcare icon">
+				</div>
+				<h3 class="card__title">Support and Care</h3>
+				<p class="card__text">Our dedication team is here to provide the immediate support and care you need </p>
+			</li>
+			<li class="your-crisis__item card _hover-white">
+				<div class="card__icon square square_top">
+					<img src="./img/icons/rewind-time-circle.svg" alt="rewind time icon">
+				</div>
+				<h3 class="card__title">Difficult Time</h3>
+				<p class="card__text">We understand how critical it is to get help right away, and we’re ready to guide you .</p>
+			</li>
+		</ul>
+		<form id="conversionForm" action="/convert" method="post">
+			<input type="hidden" name="user_type" value="{{ user_type }}" />
+			<input type="hidden" name="template" value="template1.html" />
+			<input type="hidden" name="unique_id" value="{{ unique_id }}">
+			<button type="submit" class="button" onclick="handleSubmit(event)"><span>Learn More</span></button>
+		</form>
+	</div>
+</section>
+			<section class="page__care care">
+	<div class="care__container">
+		<div class="care__heading heading">
+			<h2 class="heading__title title">Immediate and comprehensive <span>Care</span></h2>
+			<p class="heading__text">Our approach focuses on stabilizing your crisis situation quickly and effectively.</p>
+		</div>
+		<ul class="care__list">
+			<li class="care__item card card_second _hover-light-blue">
+				<div class="card__top">
+					<div class="card__icon square square_30">
+						<img src="./img/icons/healtcare.svg" alt="healtcare icon">
+					</div>
+					<h3 class="card__title">Expert Care</h3>
+				</div>
+				<p class="card__text">Compassionate professionals ready to help.</p>
+			</li>
+			<li class="your-crisis__item card card_second _hover-light-blue">
+				<div class="card__top">
+					<div class="card__icon square square_30">
+						<img src="./img/icons/hours-24.svg" alt="hours 24 icon">
+					</div>
+					<h3 class="card__title">Crisis Intervention</h3>
+				</div>
+				<p class="card__text">Immediate support and stabilization.</p>
+			</li>
+			<li class="your-crisis__item card card_second _hover-light-blue">
+				<div class="card__top">
+					<div class="card__icon square square_30">
+						<img src="./img/icons/check.svg" alt="check icon">
+					</div>
+					<h3 class="card__title">Safe Environment</h3>
+				</div>
+				<p class="card__text">A secure place to regain control.</p>
+			</li>
+		</ul>
+	</div>
+</section>
+			<section class="page__programs programs">
+	<div class="programs__container">
+		<div class="programs__heading heading">
+			<h2 class="heading__title title">Our <span>Crisis Programs</span></h2>
+			<p class="heading__text">We offer specialized programs designed to provide immediate relief and ongoing support:</p>
+		</div>
+		<div class="programs__wrapper">
+			<div class="programs__body">
+				<ul class="programs__list">
+					<li class="programs__item card card_programs">
+						<h3 class="card__title">Emergency Intervention</h3>
+						<p class="card__text">Rapid response to mental health and addiction crises.</p>
+					</li>
+					<li class="programs__item card card_programs">
+						<h3 class="card__title">Impatient Treatment</h3>
+						<p class="card__text">Intensive care for severe cases.</p>
+					</li>
+					<li class="programs__item card card_programs">
+						<h3 class="card__title">Counseling and Therapy</h3>
+						<p class="card__text">Professional support to address underlying issues.</p>
+					</li>
+				</ul>
+				<form id="conversionForm" action="/convert" method="post">
+					<input type="hidden" name="user_type" value="{{ user_type }}" />
+					<input type="hidden" name="template" value="template1.html" />
+					<input type="hidden" name="unique_id" value="{{ unique_id }}">
+					<button type="submit" class="button" onclick="handleSubmit(event)"><span>Discover Our Programs</span></button>
+				</form>
+			</div>
+			<picture><source srcset="./img/image.webp" type="image/webp"><img class="programs__bg" src="./img/image.jpg" alt="image"></picture>
+		</div>
+	</div>
+</section>
+			<section class="page__testimonials testimonials">
+	<div class="testimonials__container">
+		<div class="testimonials__heading heading">
+			<h2 class="heading__title title">Real Stories of <span>Recovery</span></h2>
+		</div>
+		<div class="testimonials__slider swiper">
+			<div class="testimonials__wrapper swiper-wrapper">
+				<div class="testimonials__slide slide-testimonial swiper-slide">
+	<div class="slide-testimonial__top">
+		<div class="slide-testimonial__profile profile">
+			<div class="profile__avatar ibg">
+				<picture><source srcset="./img/testimonials/avatar-1.webp" type="image/webp"><img src="./img/testimonials/avatar-1.jpg" alt="John S."></picture>
+			</div>
+			<div class="profile__body">
+				<span class="profile__name">John S.</span>
+				<span class="profile__day">3 days ago</span>
+			</div>
+		</div>
+		<div class="slide-testimonial__rating rating">
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+		</div>
+	</div>
+	<blockquote class="slide-testimonial__quote">
+		Life-saving support during my substance use crisis. Highly recommended.
+	</blockquote>
+</div><div class="testimonials__slide slide-testimonial swiper-slide">
+	<div class="slide-testimonial__top">
+		<div class="slide-testimonial__profile profile">
+			<div class="profile__avatar ibg">
+				<picture><source srcset="./img/testimonials/avatar-2.webp" type="image/webp"><img src="./img/testimonials/avatar-2.jpg" alt="Ann L."></picture>
+			</div>
+			<div class="profile__body">
+				<span class="profile__name">Ann L.</span>
+				<span class="profile__day">3 days ago</span>
+			</div>
+		</div>
+		<div class="slide-testimonial__rating rating">
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+		</div>
+	</div>
+	<blockquote class="slide-testimonial__quote">
+		Your courage in seeking help during a challenging time is truly commendable. Keep up the great work!
+	</blockquote>
+</div><div class="testimonials__slide slide-testimonial swiper-slide">
+	<div class="slide-testimonial__top">
+		<div class="slide-testimonial__profile profile">
+			<div class="profile__avatar ibg">
+				<picture><source srcset="./img/testimonials/avatar-3.webp" type="image/webp"><img src="./img/testimonials/avatar-3.jpg" alt="Ethan K."></picture>
+			</div>
+			<div class="profile__body">
+				<span class="profile__name">Ethan K.</span>
+				<span class="profile__day">5 days ago</span>
+			</div>
+		</div>
+		<div class="slide-testimonial__rating rating">
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+		</div>
+	</div>
+	<blockquote class="slide-testimonial__quote">
+		The team was amazing! They helped me regain control during a mental health crisis. I will forever be grateful.
+	</blockquote>
+</div><div class="testimonials__slide slide-testimonial swiper-slide">
+	<div class="slide-testimonial__top">
+		<div class="slide-testimonial__profile profile">
+			<div class="profile__avatar ibg">
+				<picture><source srcset="./img/testimonials/avatar-4.webp" type="image/webp"><img src="./img/testimonials/avatar-4.jpg" alt="Melissa S."></picture>
+			</div>
+			<div class="profile__body">
+				<span class="profile__name">Melissa S.</span>
+				<span class="profile__day">6 days ago</span>
+			</div>
+		</div>
+		<div class="slide-testimonial__rating rating">
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+		</div>
+	</div>
+	<blockquote class="slide-testimonial__quote">
+		Fast, effective, and understanding. Their crisis care played a vital role in my recovery journey. Thank you!
+	</blockquote>
+</div><div class="testimonials__slide slide-testimonial swiper-slide">
+	<div class="slide-testimonial__top">
+		<div class="slide-testimonial__profile profile">
+			<div class="profile__avatar ibg">
+				<picture><source srcset="./img/testimonials/avatar-5.webp" type="image/webp"><img src="./img/testimonials/avatar-5.jpg" alt="Liam M."></picture>
+			</div>
+			<div class="profile__body">
+				<span class="profile__name">Liam M.</span>
+				<span class="profile__day">3 days ago</span>
+			</div>
+		</div>
+		<div class="slide-testimonial__rating rating">
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+		</div>
+	</div>
+	<blockquote class="slide-testimonial__quote">
+		Invaluable support during my substance use crisis. I highly recommend them.
+	</blockquote>
+</div><div class="testimonials__slide slide-testimonial swiper-slide">
+	<div class="slide-testimonial__top">
+		<div class="slide-testimonial__profile profile">
+			<div class="profile__avatar ibg">
+				<picture><source srcset="./img/testimonials/avatar-6.webp" type="image/webp"><img src="./img/testimonials/avatar-6.jpg" alt="Sarah M."></picture>
+			</div>
+			<div class="profile__body">
+				<span class="profile__name">Sarah M.</span>
+				<span class="profile__day">3 days ago</span>
+			</div>
+		</div>
+		<div class="slide-testimonial__rating rating">
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+		</div>
+	</div>
+	<blockquote class="slide-testimonial__quote">
+		The team was incredible! They helped me regain control during a mental health crisis. I will be forever grateful.
+	</blockquote>
+</div><div class="testimonials__slide slide-testimonial swiper-slide">
+	<div class="slide-testimonial__top">
+		<div class="slide-testimonial__profile profile">
+			<div class="profile__avatar ibg">
+				<picture><source srcset="./img/testimonials/avatar-7.webp" type="image/webp"><img src="./img/testimonials/avatar-7.jpg" alt="Noah C."></picture>
+			</div>
+			<div class="profile__body">
+				<span class="profile__name">Noah C.</span>
+				<span class="profile__day">5 days ago</span>
+			</div>
+		</div>
+		<div class="slide-testimonial__rating rating">
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+		</div>
+	</div>
+	<blockquote class="slide-testimonial__quote">
+		Quick, effective, and compassionate. Their crisis care was essential to my recovery journey. Thank you!
+	</blockquote>
+</div><div class="testimonials__slide slide-testimonial swiper-slide">
+	<div class="slide-testimonial__top">
+		<div class="slide-testimonial__profile profile">
+			<div class="profile__avatar ibg">
+				<picture><source srcset="./img/testimonials/avatar-8.webp" type="image/webp"><img src="./img/testimonials/avatar-8.jpg" alt="Emil H."></picture>
+			</div>
+			<div class="profile__body">
+				<span class="profile__name">Emil H.</span>
+				<span class="profile__day">6 days ago</span>
+			</div>
+		</div>
+		<div class="slide-testimonial__rating rating">
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+		</div>
+	</div>
+	<blockquote class="slide-testimonial__quote">
+		Invaluable support during my substance use crisis. I highly recommend them.
+	</blockquote>
+</div><div class="testimonials__slide slide-testimonial swiper-slide">
+	<div class="slide-testimonial__top">
+		<div class="slide-testimonial__profile profile">
+			<div class="profile__avatar ibg">
+				<picture><source srcset="./img/testimonials/avatar-9.webp" type="image/webp"><img src="./img/testimonials/avatar-9.jpg" alt="Michael H."></picture>
+			</div>
+			<div class="profile__body">
+				<span class="profile__name">Michael H.</span>
+				<span class="profile__day">3 days ago</span>
+			</div>
+		</div>
+		<div class="slide-testimonial__rating rating">
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+		</div>
+	</div>
+	<blockquote class="slide-testimonial__quote">
+		Their professionalism and empathy provided me with the strength I needed to overcome my challenges. Outstanding service!
+	</blockquote>
+</div><div class="testimonials__slide slide-testimonial swiper-slide">
+	<div class="slide-testimonial__top">
+		<div class="slide-testimonial__profile profile">
+			<div class="profile__avatar ibg">
+				<picture><source srcset="./img/testimonials/avatar-10.webp" type="image/webp"><img src="./img/testimonials/avatar-10.jpg" alt="Sam C."></picture>
+			</div>
+			<div class="profile__body">
+				<span class="profile__name">Sam C.</span>
+				<span class="profile__day">7 days ago</span>
+			</div>
+		</div>
+		<div class="slide-testimonial__rating rating">
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+		</div>
+	</div>
+	<blockquote class="slide-testimonial__quote">
+		The support I received was life-changing. They truly care and go above and beyond to help.
+	</blockquote>
+</div><div class="testimonials__slide slide-testimonial swiper-slide">
+	<div class="slide-testimonial__top">
+		<div class="slide-testimonial__profile profile">
+			<div class="profile__avatar ibg">
+				<picture><source srcset="./img/testimonials/avatar-11.webp" type="image/webp"><img src="./img/testimonials/avatar-11.jpg" alt="Liam M."></picture>
+			</div>
+			<div class="profile__body">
+				<span class="profile__name">Liam M.</span>
+				<span class="profile__day">4 days ago</span>
+			</div>
+		</div>
+		<div class="slide-testimonial__rating rating">
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+		</div>
+	</div>
+	<blockquote class="slide-testimonial__quote">
+		Thanks to their dedicated team, I found hope and healing during one of the darkest times in my life. Eternally grateful!
+	</blockquote>
+</div><div class="testimonials__slide slide-testimonial swiper-slide">
+	<div class="slide-testimonial__top">
+		<div class="slide-testimonial__profile profile">
+			<div class="profile__avatar ibg">
+				<picture><source srcset="./img/testimonials/avatar-12.webp" type="image/webp"><img src="./img/testimonials/avatar-12.jpg" alt="Arthur R."></picture>
+			</div>
+			<div class="profile__body">
+				<span class="profile__name">Arthur R.</span>
+				<span class="profile__day">8 days ago</span>
+			</div>
+		</div>
+		<div class="slide-testimonial__rating rating">
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+			<div class="rating__item">
+				<img src="./img/icons/star.svg" alt="star icon">
+			</div>
+		</div>
+	</div>
+	<blockquote class="slide-testimonial__quote">
+		Their unwavering support and understanding made all the difference in my recovery. I can't thank them enough!
+	</blockquote>
+</div>
+			</div>
+			<div class="testimonials__pagination pagination"></div>
+		</div>
+	</div>
+</section>
+			<section class="page__choose-us choose-us">
+	<div class="choose-us__container">
+		<div class="choose-us__heading heading">
+			<h2 class="heading__title title ">Why <span>Choose us?</span></h2>
+		</div>
+		<div class="choose-us__wrapper">
+			<ul class="choose-us__list">
+				<li class="choose-us__item card card_choose-us">
+					<div class="card__icon square square_24 square_top">
+						1
+					</div>
+					<h4 class="card__title">24/7 Availability</h4>
+					<p class="card__text">Always here when you need us most.</p>
+				</li>
+				<li class="choose-us__item card card_choose-us">
+					<div class="card__icon square square_24 square_top">
+						2
+					</div>
+					<h4 class="card__title">Immediate Admission</h4>
+					<p class="card__text">No waiting, just help.</p>
+				</li>
+				<li class="choose-us__item card card_choose-us">
+					<div class="card__icon square square_24 square_top">
+						3
+					</div>
+					<h4 class="card__title">Compassionate Staff</h4>
+					<p class="card__text">Experts who care deeply about your recovery.</p>
+				</li>
+				<li class="choose-us__item card card_choose-us">
+					<div class="card__icon square square_24 square_top">
+						4
+					</div>
+					<h4 class="card__title">Safe and Secure Environment</h4>
+					<p class="card__text">A place to heal without judgement.</p>
+				</li>
+			</ul>
+			<div class="choose-us__body">
+				<div class="choose-us__content">
+					<h4 class="choose-us__title title title_dark title_small-mobile">Meet Our Crisis Experts</h4>
+					<div class="choose-us__text text">
+						<p>Our team of professionals is skilled in managing crises with empathy and proficiency. Meet the committed individuals who will guide you through this difficult period.</p>
+					</div>
+					<form id="conversionForm" action="/convert" method="post">
+						<input type="hidden" name="user_type" value="{{ user_type }}" />
+						<input type="hidden" name="template" value="template1.html" />
+						<input type="hidden" name="unique_id" value="{{ unique_id }}">
+						<button type="submit" class="button" onclick="handleSubmit(event)"><span>get Help Now</span></button>
+					</form>
+				</div>
+				<div class="choose-us__image ibg">
+					<picture><source srcset="./img/doctors.webp" type="image/webp"><img src="./img/doctors.jpg" alt="doctors"></picture>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+			<section class="page__journey journey">
+	<div class="journey__container">
+		<div class="journey__heading heading">
+			<h2 class="heading__title title title_white">Start your <span>Recovery Journey</span></h2>
+			<p class="heading__text">
+				Starting your recovery journey is simple. Here's what you can expect from our admissions process.
+			</p>
+		</div>
+		<div class="journey__body">
+			<div class="journey__content">
+				<ul class="journey__list">
+					<li class="journey__item card card_journey _hover-white">
+						<div class="card__top">
+							<div class="card__icon square square_24">
+								<img src="./img/icons/task-list-square.svg" alt="task list square icon">
+							</div>
+							<h3 class="card__title">Confidential Assessment</h3>
+						</div>
+						<p class="card__text">Understand your immediate needs.</p>
+					</li>
+					<li class="journey__item card card_journey _hover-white">
+						<div class="card__top">
+							<div class="card__icon square square_24">
+								<img src="./img/icons/calendar-time.svg" alt="calendar icon">
+							</div>
+							<h3 class="card__title">Immediate Admission</h3>
+						</div>
+						<p class="card__text">Get admitted without delay.</p>
+					</li>
+					<li class="journey__item card card_journey _hover-white">
+						<div class="card__top">
+							<div class="card__icon square square_24">
+								<img src="./img/icons/start-up.svg" alt="start up icon">
+							</div>
+							<h3 class="card__title">Begin Treatment</h3>
+						</div>
+						<p class="card__text">Start your journey to recovery now.</p>
+					</li>
+				</ul>
+			</div>
+			<div class="journey__form-wrapper">
+				<div class="journey__heading heading">
+					<h2 class="heading__title title title_white">Let’s <span>Get In touch</span></h2>
+					<p class="heading__text">
+						If you or someone you care about is in crisis, reach out to us right away.
+						We're here to help you find safety and begin your journey to recovery.
+					</p>
+				</div>
+				<!--data-dev is used to simulate forming a form. Need to be changed to data-ajax -->
+<form id="insuranceForm" action="/convert" data-dev method="post" class="contact-us__form form">
+	<div class="form__row">
+		<div class="form__line">
+			<input id="full_name" data-required data-error="Please enter your full name." autocomplete="off" type="text" name="full_name" class="form__input input">
+			<label class="form__label" for="full_name">Full Name*</label>
+		</div>
+		<div class="form__line">
+			<input id="phone" data-required="phone" data-error="Phone required. Please enter your phone." autocomplete="off" type="text" name="phone" class="form__input input input_phone">
+			<label class="form__label" for="phone">Phone*</label>
+		</div>
+	</div>
+	<div class="form__line">
+		<input id="email" data-required="email" data-error="Please use name@domain.com format for the emailror" autocomplete="off" type="text" name="email" class="form__input input">
+		<label class="form__label" for="email">Email*</label>
+	</div>
+	<div class="form__row">
+		<div class="form__line">
+			<input id="insurance_company" data-required data-error="Insurance Company  required. Please enter your insurance company." autocomplete="off" type="text" name="insurance_company" class="form__input input">
+			<label class="form__label" for="insurance_company">Insurance Company*</label>
+		</div>
+		<div class="form__line">
+			<input id="policy_id_number" data-required="minLength10" data-numeric-only maxlength="10" autocomplete="off" type="text" name="policy_id_number" class="form__input input">
+			<label class="form__label" for="policy_id_number">Policy ID Number*</label>
+			<span class="form__text">Enter 10 digit numbers</span>
+		</div>
+	</div>
+	<div class="form__row">
+		<div class="form__line">
+			<input id="date_of_birth" data-required="date" data-error="Please enter in MM/DD/YY format." autocomplete="off" type="text" name="date_of_birth" class="form__input input input_date">
+			<label class="form__label" for="date_of_birth">Date of birth*</label>
+		</div>
+		<div class="form__line">
+			<input id="group_number" maxlength="5" data-required="minLength5" data-numeric-only autocomplete="off" type="text" name="group_number" class="form__input input">
+			<label class="form__label" for="group_number">Group number*</label>
+			<span class="form__text">Enter 5 digit numbers</span>
+		</div>
+	</div>
+	<div class="form__line">
+		<textarea id="message" autocomplete="off" maxlength="200" name="message" class="form__input input"></textarea>
+		<label class="form__label form__label_message" for="message">Add a message</label>
+	</div>
+	<input type="hidden" name="user_type" value="{{ user_type }}" />
+	<input type="hidden" name="template" value="template1.html" />
+	<input type="hidden" name="unique_id" value="{{ unique_id }}">
+	<button class="form__send button" onclick="handleSubmit(event)" type="submit">
+		<span>get Help Now</span>
+	</button>
+</form>
+			</div>
+		</div>
+	</div>
+</section>
+
+		</main>
+		<footer class="footer">
+	<div class="footer__container">
+		<p class="footer__text">Haven Health Management © 2024 All rights reserved.</p>
+	</div>
+</footer>
+	</div>
+	<script src="./js/app.js?v=20240805202213"></script>
+</body>
+
+</html>
