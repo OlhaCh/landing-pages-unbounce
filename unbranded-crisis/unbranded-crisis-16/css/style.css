@@ -180,6 +180,11 @@ h3 {
   display: grid;
   align-items: center;
 }
+
+.about-us__btn {
+  margin-top: 16px;
+}
+
 .about-us__image {
   padding-bottom: 147.7832512315%;
   border-radius: 15.3125rem 0 1.5625rem 0;
@@ -609,6 +614,20 @@ textarea.input {
 .treatment {
   padding: 4.375rem 0;
   background-color: var(--blue-color);
+}
+.invalid.form__input {
+  border: 1px solid var(--orange-color);
+}
+.error-message {
+  color: var(--orange-color);
+  font-size: 12px;
+  display: block;
+  margin-left: 16px;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 @media (max-width: 61.99875em) and (min-width: 61.99875em){
   .item-programs__title {

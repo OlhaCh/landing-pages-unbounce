@@ -6,6 +6,8 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>unbranded-crisis-16</title>
 	<link rel="stylesheet" type="text/css" href="./css/style.min.css?v=20240730154336">
+  <script src="script.js" defer></script>
+  <script async src="//165722.cctm.xyz/t.js"></script>
 </head>
 
 <body>
@@ -23,13 +25,7 @@
 					<input type="hidden" name="user_type" value="{{ user_type }}" />
 					<input type="hidden" name="template" value="template1.html" />
 					<input type="hidden" name="unique_id" value="{{ unique_id }}">
-					<button type="submit" class="button" onclick="handleSubmit(event)">Read More</button>
-				</form>
-				<form id="conversionForm" class="hero__button hero__button_contact" action="/convert" method="post">
-					<input type="hidden" name="user_type" value="{{ user_type }}" />
-					<input type="hidden" name="template" value="template1.html" />
-					<input type="hidden" name="unique_id" value="{{ unique_id }}">
-					<button type="submit" class="button button_transparent" onclick="handleSubmit(event)">Contact</button>
+					<button type="submit" class="button" onclick="handleSubmit(event)">Start Your Recovery</button>
 				</form>
 			</div>
 
@@ -45,6 +41,14 @@
 				<p>During a crisis, immediate help is essential. Our compassionate team is dedicated to providing the support you need to navigate mental health and addiction challenges and begin your journey to recovery.
 				</p>
 			</div>
+      <div class="about-us__btn">
+        <form id="conversionForm" class="hero__button" action="/convert" method="post">
+          <input type="hidden" name="user_type" value="{{ user_type }}" />
+          <input type="hidden" name="template" value="template1.html" />
+          <input type="hidden" name="unique_id" value="{{ unique_id }}">
+          <button type="submit" class="button" onclick="handleSubmit(event)">Begin Your Path to Recovery</button>
+        </form>
+      </div>
 		</div>
 		<div class="about-us__image ibg">
 			<picture><source srcset="./img/medium-shot-woman-wearing-headphones.webp" type="image/webp"><img src="./img/medium-shot-woman-wearing-headphones.jpg" alt="medium shot woman wearing headphones"></picture>
@@ -110,6 +114,14 @@
 					follow-ups will help you stay on track and achieve your recovery goals.
 				</p>
 			</div>
+      <div class="about-us__btn">
+        <form id="conversionForm" class="hero__button" action="/convert" method="post">
+          <input type="hidden" name="user_type" value="{{ user_type }}" />
+          <input type="hidden" name="template" value="template1.html" />
+          <input type="hidden" name="unique_id" value="{{ unique_id }}">
+          <button type="submit" class="button" onclick="handleSubmit(event)">Reach Out Today</button>
+        </form>
+      </div>
 		</div>
 	</div>
 	<picture><source srcset="./img/bg_banner.webp" type="image/webp"><img class="baner__bg" src="./img/bg_banner.jpg" alt="girl"></picture>
@@ -153,46 +165,64 @@
 			<h3 class="footer__form-title title title_white">Verify Your Insurance</h3>
 			<p class="footer__form-text">Please fill out the form below to get immediate support:</p>
 		</div>
-		<form id="insuranceForm" action="/convert" method="post" class="form">
+    <form id="insuranceForm" action="/convert" method="post" class="form" data-form-target="insurance-form">
 
-	<label class="sr-only" for="name">Name</label>
-	<input id="name" placeholder="Full Name" autocomplete="off" type="text" name="name" class="form__input input">
-
-
-	<label class="sr-only" for="phone">Phone number</label>
-	<input id="phone" placeholder="Your Phone" autocomplete="off" type="tel" name="phone" class="form__input input">
-
-
-	<label class="sr-only" for="email">Email</label>
-	<input id="email" placeholder="Your Email" autocomplete="off" type="email" name="email" class="form__input input">
-
-
-	<label class="sr-only" for="insurance_company">Insurance Company</label>
-	<input id="insurance_company" placeholder="Insurance Company" autocomplete="off" type="text" name="insurance_company" class="form__input input">
-
-
-	<label class="sr-only" for="policy_id_number">Policy ID Number</label>
-	<input id="policy_id_number" placeholder="Policy ID Number" autocomplete="off" type="text" name="policy_id_number" class="form__input input">
-
-
-	<label class="sr-only" for="group_number">Group Number</label>
-	<input id="group_number" placeholder="Group Number" autocomplete="off" type="text" name="group_number" class="form__input input">
-
-
-	<label class="sr-only" for="date_of_birth">Date</label>
-	<input id="date_of_birth" placeholder="mm/dd/yyyy" autocomplete="off" type="text" name="date_of_birth" class="form__input input">
-
-	<label class="sr-only" for="additional_information">Additional Information</label>
-	<textarea id="additional_information" autocomplete="off" data-autoheight name="additional_information" placeholder="Additional Information" class="form__input input"></textarea>
-
-	<input type="hidden" name="user_type" value="{{ user_type }}" />
-	<input type="hidden" name="template" value="template1.html" />
-	<input type="hidden" name="unique_id" value="{{ unique_id }}">
-
-	<button class="form__send button" onclick="handleSubmit(event)" type="submit">
-		Submit
-	</button>
-</form>
+      <div class="input-group">
+        <label class="sr-only" for="name">Name</label>
+        <input id="name" placeholder="Full Name" autocomplete="off" type="text" name="name" class="form__input input">
+        <span class="error-message"></span>
+      </div>
+    
+      <div class="input-group">
+        <label class="sr-only" for="phone">Phone number</label>
+        <input id="phone" placeholder="Your Phone" autocomplete="off" type="tel" name="phone" class="form__input input">
+        <span class="error-message"></span>
+      </div>
+    
+      <div class="input-group">
+        <label class="sr-only" for="email">Email</label>
+        <input id="email" placeholder="Your Email" autocomplete="off" type="email" name="email" class="form__input input">
+        <span class="error-message"></span>
+      </div>
+    
+      <div class="input-group">
+        <label class="sr-only" for="insurance_company">Insurance Company</label>
+        <input id="insurance_company" placeholder="Insurance Company" autocomplete="off" type="text" name="insurance_company" class="form__input input">
+        <span class="error-message"></span>
+      </div>
+    
+      <div class="input-group">
+        <label class="sr-only" for="policy_id_number">Policy ID Number</label>
+        <input id="policy_id_number" placeholder="Policy ID Number" autocomplete="off" type="text" name="policy_id_number" class="form__input input">
+        <span class="error-message"></span>
+      </div>
+    
+      <div class="input-group">
+        <label class="sr-only" for="group_number">Group Number</label>
+        <input id="group_number" placeholder="Group Number" autocomplete="off" type="text" name="group_number" class="form__input input">
+        <span class="error-message"></span>
+      </div>
+    
+      <div class="input-group">
+        <label class="sr-only" for="date_of_birth">Date</label>
+        <input id="date_of_birth" placeholder="mm/dd/yyyy" autocomplete="off" type="text" name="date_of_birth" class="form__input input">
+        <span class="error-message"></span>
+      </div>
+    
+      <div class="input-group">
+        <label class="sr-only" for="additional_information">Additional Information</label>
+        <textarea id="additional_information" autocomplete="off" data-autoheight name="additional_information" placeholder="Additional Information" class="form__input input"></textarea>
+        <span class="error-message"></span>
+      </div>
+    
+      <input type="hidden" name="user_type" value="{{ user_type }}">
+      <input type="hidden" name="template" value="template1.html">
+      <input type="hidden" name="unique_id" value="{{ unique_id }}">
+    
+      <button class="form__send button button_green" type="submit">
+        Submit
+      </button>
+    </form>
 	</div>
 	<picture><source srcset="./img/girl.webp" type="image/webp"><img class="footer__bg" src="./img/girl.jpg" alt="girl"></picture>
 </footer>

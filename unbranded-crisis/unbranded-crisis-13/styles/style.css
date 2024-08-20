@@ -389,7 +389,7 @@ input[type="submit"] {
     font-size: 14px;
     line-height: 143%;
     color: #646464;
-    margin-bottom: 12px;
+    border: 1px solid transparent;
     outline: none;
     border: none;
     display: block;
@@ -435,4 +435,22 @@ input[type="submit"] {
     line-height: 163%;
     text-align: center;
     color: #191414;
+}
+
+.invalid .footer__form-input {
+  border: 1px solid red;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  display: block;
+  margin-left: 16px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
 }

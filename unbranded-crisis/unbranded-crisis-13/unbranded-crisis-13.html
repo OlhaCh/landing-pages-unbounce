@@ -8,11 +8,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Prata&display=swap" rel="stylesheet">
-
-
   <link rel="stylesheet" href="./styles/normalize.css">
   <link rel="stylesheet" href="./styles/style.css">
   <link rel="stylesheet" href="./styles/media.css">
+  <script src="script.js" defer></script>
+  <script async src="//165722.cctm.xyz/t.js"></script>
 </head>
 
 <body>
@@ -48,8 +48,7 @@
           <input type="hidden" name="user_type" value="{{ user_type }}" />
           <input type="hidden" name="template" value="template1.html" />
           <input type="hidden" name="unique_id" value="{{ unique_id }}">
-          <button type="submit" class="button" onclick="handleSubmit(event)">Learn More About Our Crisis
-            Intervention</button>
+          <button type="submit" class="button" onclick="handleSubmit(event)">Immediate Support Available</button>
         </form>
       </div>
     </div>
@@ -373,14 +372,14 @@
       <div class="meet__inner">
         <img src="./content/meet.png" alt="" class="meet__image">
         <div class="meet__content">
-          <h2 class="title">Meet Our Crisis Experts</h2>
+          <h2 class="title">Talk to Our Crisis Experts</h2>
           <p class="text">Our team of professionals is trained to handle crises with compassion and expertise.
             Meet the dedicated individuals who will support you through this challenging time.</p>
           <form id="conversionForm" action="/convert" method="post">
             <input type="hidden" name="user_type" value="{{ user_type }}" />
             <input type="hidden" name="template" value="template1.html" />
             <input type="hidden" name="unique_id" value="{{ unique_id }}">
-            <button type="submit" class="button" onclick="handleSubmit(event)">Meet Our Team</button>
+            <button type="submit" class="button" onclick="handleSubmit(event)">Talk with an Expert</button>
           </form>
         </div>
       </div>
@@ -488,21 +487,44 @@
         </div>
         <div class="footer__form-container">
           <h2 class="footer__title">Verify Insurance</h2>
-          <form id="insuranceForm" action="/convert" method="post" class="footer__form">
-            <input type="text" name="name" id="name" class="footer__form-input" placeholder="Full Name">
-            <input type="tel" name="phone" id="phone" class="footer__form-input" placeholder="Your Phone">
-            <input type="email" name="email" id="email" class="footer__form-input" placeholder="Your Email">
-            <input type="text" name="insurance_company" id="insurance_company" class="footer__form-input" placeholder="Insurance Company">
-            <input type="text" name="policy_id_number" id="policy_id_number" class="footer__form-input" placeholder="Policy ID Number">
-            <input type="text" name="group_number" id="group_number" class="footer__form-input" placeholder="Group Number">
-            <input type="date" name="date_of_birth" id="date_of_birth" class="footer__form-input" placeholder="Date of Birth">
-            <textarea class="footer__form-input msg" name="additional_information" id="additional_information" placeholder="Additional Information"></textarea>
-            <!-- Hidden fields for conversion tracking -->
-             <input type="hidden" name="user_type" value="{{ user_type }}">
-             <input type="hidden" name="template" value="template1.html">
-             <input type="hidden" name="unique_id" value="{{ unique_id }}">
-             <button type="submit" class="footer__form-submit" onclick="handleSubmit(event)">Submit</button>
-          </form>
+          <form id="insuranceForm" action="/convert" method="post" class="footer__form" data-form-target="insurance-form">
+            <div class="input-group">
+                <input type="text" name="name" id="name" class="footer__form-input" placeholder="Full Name">
+                <span class="error-message"></span>
+            </div>
+            <div class="input-group">
+                <input type="tel" name="phone" id="phone" class="footer__form-input" placeholder="Your Phone">
+                <span class="error-message"></span>
+            </div>
+            <div class="input-group">
+                <input type="email" name="email" id="email" class="footer__form-input" placeholder="Your Email">
+                <span class="error-message"></span>
+            </div>
+            <div class="input-group">
+                <input type="text" name="insurance_company" id="insurance_company" class="footer__form-input" placeholder="Insurance Company">
+                <span class="error-message"></span>
+            </div>
+            <div class="input-group">
+                <input type="text" name="policy_id_number" id="policy_id_number" class="footer__form-input" placeholder="Policy ID Number">
+                <span class="error-message"></span>
+            </div>
+            <div class="input-group">
+                <input type="text" name="group_number" id="group_number" class="footer__form-input" placeholder="Group Number">
+                <span class="error-message"></span>
+            </div>
+            <div class="input-group">
+                <input type="date" name="date_of_birth" id="date_of_birth" class="footer__form-input" placeholder="Date of Birth">
+                <span class="error-message"></span>
+            </div>
+            <div class="input-group">
+                <textarea class="footer__form-input msg" name="additional_information" id="additional_information" placeholder="Additional Information"></textarea>
+                <span class="error-message"></span>
+            </div>
+            <input type="hidden" name="user_type" value="{{ user_type }}">
+            <input type="hidden" name="template" value="template1.html">
+            <input type="hidden" name="unique_id" value="{{ unique_id }}">
+            <button type="submit" class="footer__form-submit">Submit</button>
+        </form>
         </div>
       </div>
     </div>

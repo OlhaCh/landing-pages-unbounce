@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/media.css">
+    <script src="script.js" defer></script>
+    <script async src="//165722.cctm.xyz/t.js"></script>
 </head>
 
 <body>
@@ -27,17 +29,11 @@
                     <p class="header__text">Our team provides immediate care and support to help you regain stability
                         and start your recovery.</p>
                 </div>
-                <form action="" class="header__form">
-                    <input type="text" class="header__form-input" placeholder="Name">
-                    <input type="text" class="header__form-input" placeholder="Email">
-                    <input type="text" class="header__form-input" placeholder="Phone Number">
-                    <input type="submit" value="Get Help Now" class="header__form-submit">
-                </form>
-                <form id="conversionForm" action="/convert" method="post">
-                    <input type="hidden" name="user_type" value="{{ user_type }}" />
-                    <input type="hidden" name="template" value="template1.html" />
-                    <input type="hidden" name="unique_id" value="{{ unique_id }}">
-                    <button type="submit" class="button mobile" onclick="handleSubmit(event)">Get Help Now</button>
+                <form action="" class="header__form" id="conversionForm" action="/convert" method="post">
+                  <input type="hidden" name="user_type" value="{{ user_type }}" />
+                  <input type="hidden" name="template" value="template1.html" />
+                  <input type="hidden" name="unique_id" value="{{ unique_id }}">
+                  <button type="submit" class="header__form-submit" onclick="handleSubmit(event)">Get Help Now</button>
                 </form>
             </div>
         </div>
@@ -80,7 +76,7 @@
                         <input type="hidden" name="user_type" value="{{ user_type }}" />
                         <input type="hidden" name="template" value="template1.html" />
                         <input type="hidden" name="unique_id" value="{{ unique_id }}">
-                        <button type="submit" class="button" onclick="handleSubmit(event)">Learn More</button>
+                        <button type="submit" class="button" onclick="handleSubmit(event)">Reach Out Today</button>
                     </form>
                 </div>
                 <img src="./content/about.png" alt="" class="about__image">
@@ -165,7 +161,7 @@
                     <input type="hidden" name="user_type" value="{{ user_type }}" />
                     <input type="hidden" name="template" value="template1.html" />
                     <input type="hidden" name="unique_id" value="{{ unique_id }}">
-                    <button type="submit" class="button" onclick="handleSubmit(event)">Read more Stories</button>
+                    <button type="submit" class="button" onclick="handleSubmit(event)">Start Your Recovery Now</button>
                 </form>
             </div>
         </div>
@@ -250,23 +246,47 @@
             <div class="footer__inner">
                 <div class="footer__content">
                     <h2 class="footer__title">Take the First Step Toward Recovery</h2>
-                    <p class="footer__text">Ready to start your journey to mental wellness? Reach out to us for a consultation and let us help you find the right treatment plan. Verify your insurance today by submitting the form to ensure you get the best possible care tailored to your needs.</p>
+                    <p class="footer__text">Ready to begin your journey to mental wellness? Connect with us for a consultation and let us guide you to the right treatment plan. Verify your insurance today by submitting the form to ensure you receive the best care tailored to your needs. We're here to support you every step of the way.</p>
                 </div>
-                <form id="insuranceForm" action="/convert" method="post" class="footer__form">
-                  <input type="text" name="name" id="name" class="footer__form-input" placeholder="Full Name">
-                  <input type="tel" name="phone" id="phone" class="footer__form-input" placeholder="Your Phone">
-                  <input type="email" name="email" id="email" class="footer__form-input" placeholder="Your Email">
-                  <input type="text" name="insurance_company" id="insurance_company" class="footer__form-input" placeholder="Insurance Company">
-                  <input type="text" name="policy_id_number" id="policy_id_number" class="footer__form-input" placeholder="Policy ID Number">
-                  <input type="text" name="group_number" id="group_number" class="footer__form-input" placeholder="Group Number">
-                  <input type="date" name="date_of_birth" id="date_of_birth" class="footer__form-input" placeholder="Date of Birth">
-                  <textarea class="footer__form-input msg" name="additional_information" id="additional_information" placeholder="Additional Information"></textarea>
-                  <!-- Hidden fields for conversion tracking -->
+                <form id="insuranceForm" action="/convert" method="post" class="footer__form" data-form-target="insurance-form">
+                  <div class="input-group">
+                      <input type="text" name="name" id="name" class="footer__form-input" placeholder="Full Name">
+                      <span class="error-message"></span>
+                  </div>
+                  <div class="input-group">
+                      <input type="tel" name="phone" id="phone" class="footer__form-input" placeholder="Your Phone">
+                      <span class="error-message"></span>
+                  </div>
+                  <div class="input-group">
+                      <input type="email" name="email" id="email" class="footer__form-input" placeholder="Your Email">
+                      <span class="error-message"></span>
+                  </div>
+                  <div class="input-group">
+                      <input type="text" name="insurance_company" id="insurance_company" class="footer__form-input" placeholder="Insurance Company">
+                      <span class="error-message"></span>
+                  </div>
+                  <div class="input-group">
+                      <input type="text" name="policy_id_number" id="policy_id_number" class="footer__form-input" placeholder="Policy ID Number">
+                      <span class="error-message"></span>
+                  </div>
+                  <div class="input-group">
+                      <input type="text" name="group_number" id="group_number" class="footer__form-input" placeholder="Group Number">
+                      <span class="error-message"></span>
+                  </div>
+                  <div class="input-group">
+                      <input type="date" name="date_of_birth" id="date_of_birth" class="footer__form-input" placeholder="Date of Birth">
+                      <span class="error-message"></span>
+                  </div>
+                  <div class="input-group">
+                      <textarea class="footer__form-input msg" name="additional_information" id="additional_information" placeholder="Additional Information"></textarea>
+                      <span class="error-message"></span>
+                  </div>
                   <input type="hidden" name="user_type" value="{{ user_type }}">
                   <input type="hidden" name="template" value="template1.html">
                   <input type="hidden" name="unique_id" value="{{ unique_id }}">
-                  <button type="submit" class="footer__form-submit" onclick="handleSubmit(event)">Submit</button>
-                </form>
+                  <button type="submit" class="footer__form-submit">Submit</button>
+              </form>
+              
             </div>
         </div>
     </footer>

@@ -14,10 +14,19 @@
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/media.css">
+    <script src="script.js" defer></script>
+    <script async src="//165722.cctm.xyz/t.js"></script>
 </head>
 
 <body>
     <header class="header">
+      <form id="conversionForm" action="/convert" method="post" class="top-btn">
+        <input type="hidden" name="user_type" value="{{ user_type }}" />
+        <input type="hidden" name="template" value="template1.html" />
+        <input type="hidden" name="unique_id" value="{{ unique_id }}">
+        <button type="submit" class="support__link" onclick="handleSubmit(event)">Call Today: (844)722-7147
+        </button>
+      </form>
         <div class="header__top">
             <img src="./content/header.png" alt="" class="header__top-image">
             <div class="container">
@@ -664,7 +673,7 @@
             <div class="team__inner">
                 <img src="./content/team.png" alt="" class="team__image">
                 <div class="team__content">
-                    <h2 class="team__title">Meet Our Crisis Experts</h2>
+                    <h2 class="team__title">Talk to Our Crisis Experts</h2>
                     <p class="team__text">Our team of crisis intervention professionals is dedicated to providing
                         compassionate care and immediate support. Meet the experts who will help you through this
                         challenging time.</p>
@@ -672,7 +681,7 @@
                       <input type="hidden" name="user_type" value="{{ user_type }}" />
                       <input type="hidden" name="template" value="template1.html" />
                       <input type="hidden" name="unique_id" value="{{ unique_id }}">
-                      <button type="submit" class="team__link" onclick="handleSubmit(event)">Meet Our Team
+                      <button type="submit" class="team__link" onclick="handleSubmit(event)">Talk with an Expert
                       </button>
                   </form>
                 </div>
@@ -759,13 +768,14 @@
                         <p class="start__box-text">Start your recovery journey immediately.</p>
                     </div>
                 </div>
-                <form id="conversionForm" action="/convert" method="post">
-                  <input type="hidden" name="user_type" value="{{ user_type }}" />
-                  <input type="hidden" name="template" value="template1.html" />
-                  <input type="hidden" name="unique_id" value="{{ unique_id }}">
-                  <button type="submit" class="start__link" onclick="handleSubmit(event)">Get Help Now
-                  </button>
-              </form>
+              <form id="conversionForm" action="/convert" method="post">
+                <input type="hidden" name="user_type" value="{{ user_type }}" />
+                <input type="hidden" name="template" value="template1.html" />
+                <input type="hidden" name="unique_id" value="{{ unique_id }}">
+                <button type="submit" class="start__link" onclick="handleInsurance(event)"
+                data-modal-target="modal-insurance-form">Verify Insurance
+                </button>
+            </form>
             </div>
         </div>
     </section>
@@ -788,6 +798,71 @@
     <footer class="footer">
         <b>Haven Health Management</b> © 2024 All rights reserved.
     </footer>
+    <div class="popup-modal" id="modal-insurance-form">
+      <form action="" class="forms insurance-modal" id="popup-form">
+        <h2>Verify Insurance</h2>
+        <div class="input-group">
+          <div class="input">
+            <label for="first-name">First Name <span class="input__required">*</span></label>
+            <input type="text" id="first-name" placeholder="Emely">
+            <span class="error-message">Please enter your first name.</span>
+          </div>
+          <div class="input">
+            <label for="last-name">Last Name <span class="input__required">*</span></label>
+            <input type="text" id="last-name" placeholder="Malfoy">
+            <span class="error-message">Please enter your last name.</span>
+          </div>
+        </div>
+        <div class="input-group">
+          <div class="input">
+            <label for="insurance-company">Insurance Company <span class="input__required">*</span></label>
+            <input type="text" id="insurance-company" placeholder="United Healthcare">
+            <span class="error-message">Insurance Company required. Please enter your insurance company.</span>
+          </div>
+          <div class="input">
+            <label for="policy-number">Insurance Policy # <span class="input__required">*</span></label>
+            <input type="number" id="policy-number" placeholder="987395182">
+            <span class="error-message">Enter a valid 10-digit policy number.</span>
+          </div>
+        </div>
+        <div class="input-group">
+          <div class="input">
+            <label for="dob">Date of Birth <span class="input__required">*</span></label>
+            <input type="date" id="dob" placeholder="Choose date">
+            <span class="error-message">Please enter your date of birth in MM/DD/YY format.</span>
+          </div>
+          <div class="input">
+            <label for="group-number">Group Number <span class="input__required">*</span></label>
+            <input type="text" id="group-number" placeholder="921621">
+            <span class="error-message">Enter a valid 5-digit group number.</span>
+          </div>
+        </div>
+        <div class="input-group">
+          <div class="input">
+            <label for="phone">Phone number <span class="input__required">*</span></label>
+            <input type="tel" id="phone" placeholder="(215) 324-3242" minlength="14" maxlength="14">
+            <span class="error-message">Please enter a valid phone number.</span>
+          </div>
+          <div class="input">
+            <label for="email">Email <span class="input__required">*</span></label>
+            <input type="email" id="email" placeholder="personal@gmail.com">
+            <span class="error-message">Please enter a valid email address.</span>
+          </div>
+        </div>
+        <div class="input">
+          <label for="message">Additional Notes</label>
+          <textarea name="message" id="message" placeholder="Write your message or question"></textarea>
+          <span class="error-message">Please enter your message.</span>
+        </div>
+        <button class="cta cta-main" type="submit" id="contact-form-btn">
+          Check Your Insurance
+        </button>
+      </form>
+      <div class="popup-modal__close">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
 </body>
 
 </html>

@@ -121,10 +121,10 @@ textarea {
 .header__form-input {
     background: rgba(255, 255, 255, 0.55);
     border-radius: 12px;
+    border: 1px solid transparent;
     padding: 23px 41px;
     width: 100%;
     display: block;
-    margin-bottom: 20px;
     font-size: 14px;
     line-height: 121%;
     letter-spacing: 0.1em;
@@ -504,4 +504,22 @@ textarea {
     justify-content: center;
     align-items: center;
     padding: 20px 0 0;
+}
+
+.invalid .header__form-input {
+  border: 1px solid red;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  display: block;
+  margin-left: 16px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
 }

@@ -412,11 +412,11 @@ h4 {
 .footer__form-input {
     border-radius: 12px;
     padding: 10px 16px;
+    border: 1px solid transparent;
     background: #fff;
     font-size: 14px;
     line-height: 143%;
     color: #646464;
-    margin-bottom: 12px;
     outline: none;
     border: none;
     display: block;
@@ -482,4 +482,22 @@ h4 {
   min-height: 100%;
   min-width: 100%;
   object-fit: cover;
+}
+
+.invalid .footer__form-input {
+  border: 1px solid red;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  display: block;
+  margin-left: 16px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
 }

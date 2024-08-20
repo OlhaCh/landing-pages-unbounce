@@ -583,6 +583,23 @@ textarea.input {
   padding: 4.375rem 0;
   background-color: var(--blue-color);
 }
+
+.invalid.form__input {
+  border: 1px solid var(--red-color);
+}
+
+.error-message {
+  color: var(--red-color);
+  font-size: 12px;
+  display: block;
+  margin-left: 16px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
 @media (max-width: 61.99875em){
   .programs:not(:last-child) {
     margin-bottom: 7.5rem;

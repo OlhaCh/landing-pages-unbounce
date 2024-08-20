@@ -10,11 +10,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Vesper+Libre:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-
-
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/media.css">
+    <script src="script.js" defer></script>
+    <script async src="//165722.cctm.xyz/t.js"></script>
 </head>
 
 <body>
@@ -46,77 +46,86 @@
                         <input type="hidden" name="user_type" value="{{ user_type }}" />
                         <input type="hidden" name="template" value="template1.html" />
                         <input type="hidden" name="unique_id" value="{{ unique_id }}">
-                        <button type="submit" class="button" onclick="handleSubmit(event)">Learn More</button>
+                        <button type="submit" class="button" onclick="handleSubmit(event)">Begin Your Path to Recovery</button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
-    <section class="care">
-        <div class="care__inner">
-            <p class="description">
-                <svg width="25" height="8" viewBox="0 0 25 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="4" cy="4" r="4" transform="matrix(-1 0 0 1 25 0)" fill="#4A2461" />
-                    <path
-                        d="M2 5.5C1.17157 5.5 0.5 4.82843 0.5 4C0.5 3.17157 1.17157 2.5 2 2.5V5.5ZM18 5.5H2V2.5H18V5.5Z"
-                        fill="url(#paint0_linear_53_4445)" />
-                    <defs>
-                        <linearGradient id="paint0_linear_53_4445" x1="18" y1="4.5" x2="2" y2="4.5"
-                            gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#4A2461" />
-                            <stop offset="1" stop-color="#4A2461" stop-opacity="0.25" />
-                        </linearGradient>
-                    </defs>
-                </svg>
-                <span>Our Services</span>
-                <svg width="25" height="8" viewBox="0 0 25 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="4" cy="4" r="4" fill="#4A2461" />
-                    <path
-                        d="M23 5.5C23.8284 5.5 24.5 4.82843 24.5 4C24.5 3.17157 23.8284 2.5 23 2.5V5.5ZM7 5.5H23V2.5H7V5.5Z"
-                        fill="url(#paint0_linear_53_4442)" />
-                    <defs>
-                        <linearGradient id="paint0_linear_53_4442" x1="7" y1="4.5" x2="23" y2="4.5"
-                            gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#4A2461" />
-                            <stop offset="1" stop-color="#4A2461" stop-opacity="0.25" />
-                        </linearGradient>
-                    </defs>
-                </svg>
-            </p>
-            <h2 class="title">Comprehensive, Holistic Care</h2>
-            <p class="text">We treat the whole person, addressing mind, body, and spirit.</p>
-            <div class="care__boxes">
-                <div class="care__box">
-                    <img src="./content/care1.png" alt="" class="care__box-image">
-                    <div class="care__box-content">
-                        <h3 class="care__box-text">Individual Therapy</h3>
-                        <div class="care__box-rect"><img src="./content/arrow.png" alt="" class="care__box-arrow"></div>
-                    </div>
-                </div>
-                <div class="care__box">
-                    <img src="./content/care2.png" alt="" class="care__box-image">
-                    <div class="care__box-content">
-                        <h3 class="care__box-text">Group Therapy</h3>
-                        <div class="care__box-rect"><img src="./content/arrow.png" alt="" class="care__box-arrow"></div>
-                    </div>
-                </div>
-                <div class="care__box">
-                    <img src="./content/care3.png" alt="" class="care__box-image">
-                    <div class="care__box-content">
-                        <h3 class="care__box-text">Holistic Therapy</h3>
-                        <div class="care__box-rect"><img src="./content/arrow.png" alt="" class="care__box-arrow"></div>
-                    </div>
-                </div>
-                <div class="care__box">
-                    <img src="./content/care4.png" alt="" class="care__box-image">
-                    <div class="care__box-content">
-                        <h3 class="care__box-text">Medical Support</h3>
-                        <div class="care__box-rect"><img src="./content/arrow.png" alt="" class="care__box-arrow"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <section class="hear">
+      <div class="container">
+          <div class="hear__inner">
+              <p class="description">
+                  <svg width="25" height="8" viewBox="0 0 25 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="4" cy="4" r="4" transform="matrix(-1 0 0 1 25 0)" fill="#4A2461" />
+                      <path
+                          d="M2 5.5C1.17157 5.5 0.5 4.82843 0.5 4C0.5 3.17157 1.17157 2.5 2 2.5V5.5ZM18 5.5H2V2.5H18V5.5Z"
+                          fill="url(#paint0_linear_53_4445)" />
+                      <defs>
+                          <linearGradient id="paint0_linear_53_4445" x1="18" y1="4.5" x2="2" y2="4.5"
+                              gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#4A2461" />
+                              <stop offset="1" stop-color="#4A2461" stop-opacity="0.25" />
+                          </linearGradient>
+                      </defs>
+                  </svg>
+                  <span>Our Testimonials</span>
+                  <svg width="25" height="8" viewBox="0 0 25 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="4" cy="4" r="4" fill="#4A2461" />
+                      <path
+                          d="M23 5.5C23.8284 5.5 24.5 4.82843 24.5 4C24.5 3.17157 23.8284 2.5 23 2.5V5.5ZM7 5.5H23V2.5H7V5.5Z"
+                          fill="url(#paint0_linear_53_4442)" />
+                      <defs>
+                          <linearGradient id="paint0_linear_53_4442" x1="7" y1="4.5" x2="23" y2="4.5"
+                              gradientUnits="userSpaceOnUse">
+                              <stop stop-color="#4A2461" />
+                              <stop offset="1" stop-color="#4A2461" stop-opacity="0.25" />
+                          </linearGradient>
+                      </defs>
+                  </svg>
+              </p>
+              <h2 class="title">Hear From Those Who've Been There</h2>
+              <div class="hear__boxes">
+                  <div class="hear__box">
+                      <img src="./content/user1.png" alt="" class="hear__box-image">
+                      <div class="hear__box-content">
+                          <div class="hear__box-stars">
+                              <img src="./content/star.png" alt="" class="hear__box-star">
+                              <img src="./content/star.png" alt="" class="hear__box-star">
+                              <img src="./content/star.png" alt="" class="hear__box-star">
+                              <img src="./content/star.png" alt="" class="hear__box-star">
+                              <img src="./content/star.png" alt="" class="hear__box-star">
+                          </div>
+                          <h3 class="hear__box-name">Evelyn K.</h3>
+                          <p class="hear__box-text">Opening up about my depression and drug use was terrifying, but
+                              the staff at the outpatient clinic created a safe space. They provided therapy,
+                              medication management, and support groups. Slowly, I'm rediscovering myself and my
+                              strength.</p>
+                      </div>
+                      <img src="./content/quote.png" alt="" class="hear__box-quote">
+                  </div>
+                  <div class="hear__box">
+                      <img src="./content/user2.png" alt="" class="hear__box-image">
+                      <div class="hear__box-content">
+                          <div class="hear__box-stars">
+                              <img src="./content/star.png" alt="" class="hear__box-star">
+                              <img src="./content/star.png" alt="" class="hear__box-star">
+                              <img src="./content/star.png" alt="" class="hear__box-star">
+                              <img src="./content/star.png" alt="" class="hear__box-star">
+                              <img src="./content/star.png" alt="" class="hear__box-star">
+                          </div>
+                          <h3 class="hear__box-name">Liam M.</h3>
+                          <p class="hear__box-text">Lost in a spiral of anxiety and alcohol, I didn't know where to
+                              turn. The rehab program here wasn't just about detox, it helped me understand the root
+                              of my problems. Today, I'm free from substances and building a healthier life. Thank
+                              you!</p>
+                      </div>
+                      <img src="./content/quote.png" alt="" class="hear__box-quote">
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
     <section class="explore">
         <div class="container">
             <div class="explore__inner">
@@ -178,80 +187,71 @@
             </div>
         </div>
     </section>
-    <section class="hear">
-        <div class="container">
-            <div class="hear__inner">
-                <p class="description">
-                    <svg width="25" height="8" viewBox="0 0 25 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="4" cy="4" r="4" transform="matrix(-1 0 0 1 25 0)" fill="#4A2461" />
-                        <path
-                            d="M2 5.5C1.17157 5.5 0.5 4.82843 0.5 4C0.5 3.17157 1.17157 2.5 2 2.5V5.5ZM18 5.5H2V2.5H18V5.5Z"
-                            fill="url(#paint0_linear_53_4445)" />
-                        <defs>
-                            <linearGradient id="paint0_linear_53_4445" x1="18" y1="4.5" x2="2" y2="4.5"
-                                gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#4A2461" />
-                                <stop offset="1" stop-color="#4A2461" stop-opacity="0.25" />
-                            </linearGradient>
-                        </defs>
-                    </svg>
-                    <span>Our Testimonials</span>
-                    <svg width="25" height="8" viewBox="0 0 25 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="4" cy="4" r="4" fill="#4A2461" />
-                        <path
-                            d="M23 5.5C23.8284 5.5 24.5 4.82843 24.5 4C24.5 3.17157 23.8284 2.5 23 2.5V5.5ZM7 5.5H23V2.5H7V5.5Z"
-                            fill="url(#paint0_linear_53_4442)" />
-                        <defs>
-                            <linearGradient id="paint0_linear_53_4442" x1="7" y1="4.5" x2="23" y2="4.5"
-                                gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#4A2461" />
-                                <stop offset="1" stop-color="#4A2461" stop-opacity="0.25" />
-                            </linearGradient>
-                        </defs>
-                    </svg>
-                </p>
-                <h2 class="title">Hear From Those Who've Been There</h2>
-                <div class="hear__boxes">
-                    <div class="hear__box">
-                        <img src="./content/user1.png" alt="" class="hear__box-image">
-                        <div class="hear__box-content">
-                            <div class="hear__box-stars">
-                                <img src="./content/star.png" alt="" class="hear__box-star">
-                                <img src="./content/star.png" alt="" class="hear__box-star">
-                                <img src="./content/star.png" alt="" class="hear__box-star">
-                                <img src="./content/star.png" alt="" class="hear__box-star">
-                                <img src="./content/star.png" alt="" class="hear__box-star">
-                            </div>
-                            <h3 class="hear__box-name">Evelyn K.</h3>
-                            <p class="hear__box-text">Opening up about my depression and drug use was terrifying, but
-                                the staff at the outpatient clinic created a safe space. They provided therapy,
-                                medication management, and support groups. Slowly, I'm rediscovering myself and my
-                                strength.</p>
-                        </div>
-                        <img src="./content/quote.png" alt="" class="hear__box-quote">
-                    </div>
-                    <div class="hear__box">
-                        <img src="./content/user2.png" alt="" class="hear__box-image">
-                        <div class="hear__box-content">
-                            <div class="hear__box-stars">
-                                <img src="./content/star.png" alt="" class="hear__box-star">
-                                <img src="./content/star.png" alt="" class="hear__box-star">
-                                <img src="./content/star.png" alt="" class="hear__box-star">
-                                <img src="./content/star.png" alt="" class="hear__box-star">
-                                <img src="./content/star.png" alt="" class="hear__box-star">
-                            </div>
-                            <h3 class="hear__box-name">Liam M.</h3>
-                            <p class="hear__box-text">Lost in a spiral of anxiety and alcohol, I didn't know where to
-                                turn. The rehab program here wasn't just about detox, it helped me understand the root
-                                of my problems. Today, I'm free from substances and building a healthier life. Thank
-                                you!</p>
-                        </div>
-                        <img src="./content/quote.png" alt="" class="hear__box-quote">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <section class="care">
+      <div class="care__inner">
+          <p class="description">
+              <svg width="25" height="8" viewBox="0 0 25 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="4" cy="4" r="4" transform="matrix(-1 0 0 1 25 0)" fill="#4A2461" />
+                  <path
+                      d="M2 5.5C1.17157 5.5 0.5 4.82843 0.5 4C0.5 3.17157 1.17157 2.5 2 2.5V5.5ZM18 5.5H2V2.5H18V5.5Z"
+                      fill="url(#paint0_linear_53_4445)" />
+                  <defs>
+                      <linearGradient id="paint0_linear_53_4445" x1="18" y1="4.5" x2="2" y2="4.5"
+                          gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#4A2461" />
+                          <stop offset="1" stop-color="#4A2461" stop-opacity="0.25" />
+                      </linearGradient>
+                  </defs>
+              </svg>
+              <span>Our Services</span>
+              <svg width="25" height="8" viewBox="0 0 25 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="4" cy="4" r="4" fill="#4A2461" />
+                  <path
+                      d="M23 5.5C23.8284 5.5 24.5 4.82843 24.5 4C24.5 3.17157 23.8284 2.5 23 2.5V5.5ZM7 5.5H23V2.5H7V5.5Z"
+                      fill="url(#paint0_linear_53_4442)" />
+                  <defs>
+                      <linearGradient id="paint0_linear_53_4442" x1="7" y1="4.5" x2="23" y2="4.5"
+                          gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#4A2461" />
+                          <stop offset="1" stop-color="#4A2461" stop-opacity="0.25" />
+                      </linearGradient>
+                  </defs>
+              </svg>
+          </p>
+          <h2 class="title">Comprehensive, Holistic Care</h2>
+          <p class="text">We treat the whole person, addressing mind, body, and spirit.</p>
+          <div class="care__boxes">
+              <div class="care__box">
+                  <img src="./content/care1.png" alt="" class="care__box-image">
+                  <div class="care__box-content">
+                      <h3 class="care__box-text">Individual Therapy</h3>
+                      <div class="care__box-rect"><img src="./content/arrow.png" alt="" class="care__box-arrow"></div>
+                  </div>
+              </div>
+              <div class="care__box">
+                  <img src="./content/care2.png" alt="" class="care__box-image">
+                  <div class="care__box-content">
+                      <h3 class="care__box-text">Group Therapy</h3>
+                      <div class="care__box-rect"><img src="./content/arrow.png" alt="" class="care__box-arrow"></div>
+                  </div>
+              </div>
+              <div class="care__box">
+                  <img src="./content/care3.png" alt="" class="care__box-image">
+                  <div class="care__box-content">
+                      <h3 class="care__box-text">Holistic Therapy</h3>
+                      <div class="care__box-rect"><img src="./content/arrow.png" alt="" class="care__box-arrow"></div>
+                  </div>
+              </div>
+              <div class="care__box">
+                  <img src="./content/care4.png" alt="" class="care__box-image">
+                  <div class="care__box-content">
+                      <h3 class="care__box-text">Medical Support</h3>
+                      <div class="care__box-rect"><img src="./content/arrow.png" alt="" class="care__box-arrow"></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
     <section class="why">
         <div class="container">
             <div class="why__inner">
@@ -413,20 +413,43 @@
             
           <div class="footer__form-container">
             <h2 class="footer__title">Verify Your Insurance and Start Your Recovery</h2>
-          <form id="insuranceForm" action="/convert" method="post" class="footer__form">
-            <input type="text" name="name" id="name" class="footer__form-input" placeholder="Full Name">
-            <input type="tel" name="phone" id="phone" class="footer__form-input" placeholder="Your Phone">
-            <input type="email" name="email" id="email" class="footer__form-input" placeholder="Your Email">
-            <input type="text" name="insurance_company" id="insurance_company" class="footer__form-input" placeholder="Insurance Company">
-            <input type="text" name="policy_id_number" id="policy_id_number" class="footer__form-input" placeholder="Policy ID Number">
-            <input type="text" name="group_number" id="group_number" class="footer__form-input" placeholder="Group Number">
-            <input type="date" name="date_of_birth" id="date_of_birth" class="footer__form-input" placeholder="Date of Birth">
-            <textarea class="footer__form-input msg" name="additional_information" id="additional_information" placeholder="Additional Information"></textarea>
-            <!-- Hidden fields for conversion tracking -->
-            <input type="hidden" name="user_type" value="{{ user_type }}">
-            <input type="hidden" name="template" value="template1.html">
-            <input type="hidden" name="unique_id" value="{{ unique_id }}">
-            <button type="submit" class="footer__form-submit" onclick="handleSubmit(event)">Submit</button>
+            <form id="insuranceForm" action="/convert" method="post" class="footer__form" data-form-target="insurance-form">
+              <div class="input-group">
+                  <input type="text" name="name" id="name" class="footer__form-input" placeholder="Full Name">
+                  <span class="error-message"></span>
+              </div>
+              <div class="input-group">
+                  <input type="tel" name="phone" id="phone" class="footer__form-input" placeholder="Your Phone">
+                  <span class="error-message"></span>
+              </div>
+              <div class="input-group">
+                  <input type="email" name="email" id="email" class="footer__form-input" placeholder="Your Email">
+                  <span class="error-message"></span>
+              </div>
+              <div class="input-group">
+                  <input type="text" name="insurance_company" id="insurance_company" class="footer__form-input" placeholder="Insurance Company">
+                  <span class="error-message"></span>
+              </div>
+              <div class="input-group">
+                  <input type="text" name="policy_id_number" id="policy_id_number" class="footer__form-input" placeholder="Policy ID Number">
+                  <span class="error-message"></span>
+              </div>
+              <div class="input-group">
+                  <input type="text" name="group_number" id="group_number" class="footer__form-input" placeholder="Group Number">
+                  <span class="error-message"></span>
+              </div>
+              <div class="input-group">
+                  <input type="date" name="date_of_birth" id="date_of_birth" class="footer__form-input" placeholder="Date of Birth">
+                  <span class="error-message"></span>
+              </div>
+              <div class="input-group">
+                  <textarea class="footer__form-input msg" name="additional_information" id="additional_information" placeholder="Additional Information"></textarea>
+                  <span class="error-message"></span>
+              </div>
+              <input type="hidden" name="user_type" value="{{ user_type }}">
+              <input type="hidden" name="template" value="template1.html">
+              <input type="hidden" name="unique_id" value="{{ unique_id }}">
+              <button type="submit" class="footer__form-submit">Submit</button>
           </form>
           </div>
         </div>

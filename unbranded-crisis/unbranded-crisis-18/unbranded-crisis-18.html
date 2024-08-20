@@ -6,6 +6,8 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>unbranded-crisis-18</title>
 	<link rel="stylesheet" type="text/css" href="./css/style.min.css?v=20240730154510">
+  <script src="script.js" defer></script>
+  <script async src="//165722.cctm.xyz/t.js"></script>
 </head>
 
 <body>
@@ -20,7 +22,7 @@
 				<input type="hidden" name="user_type" value="{{ user_type }}" />
 				<input type="hidden" name="template" value="template1.html" />
 				<input type="hidden" name="unique_id" value="{{ unique_id }}">
-				<button type="submit" class="button" onclick="handleSubmit(event)"><span>Contact Us</span></button>
+				<button type="submit" class="button" onclick="handleSubmit(event)"><span>Start Your Recovery Now</span></button>
 			</form>
 		</div>
 	</div>
@@ -153,46 +155,64 @@
 		</div>
 		<div class="footer__form">
 			<h2 class="footer__form-title title">Verify Your Insurance</h2>
-			<form id="insuranceForm" action="/convert" method="post" class="form">
+      <form id="insuranceForm" action="/convert" method="post" class="form" data-form-target="insurance-form">
 
-	<label class="sr-only" for="name">Name</label>
-	<input id="name" placeholder="Full Name" autocomplete="off" type="text" name="name" class="form__input input">
-
-
-	<label class="sr-only" for="phone">Phone number</label>
-	<input id="phone" placeholder="Your Phone" autocomplete="off" type="tel" name="phone" class="form__input input">
-
-
-	<label class="sr-only" for="email">Email</label>
-	<input id="email" placeholder="Your Email" autocomplete="off" type="email" name="email" class="form__input input">
-
-
-	<label class="sr-only" for="insurance_company">Insurance Company</label>
-	<input id="insurance_company" placeholder="Insurance Company" autocomplete="off" type="text" name="insurance_company" class="form__input input">
-
-
-	<label class="sr-only" for="policy_id_number">Policy ID Number</label>
-	<input id="policy_id_number" placeholder="Policy ID Number" autocomplete="off" type="text" name="policy_id_number" class="form__input input">
-
-
-	<label class="sr-only" for="group_number">Group Number</label>
-	<input id="group_number" placeholder="Group Number" autocomplete="off" type="text" name="group_number" class="form__input input">
-
-
-	<label class="sr-only" for="date_of_birth">Date</label>
-	<input id="date_of_birth" placeholder="mm/dd/yyyy" autocomplete="off" type="text" name="date_of_birth" class="form__input input">
-
-	<label class="sr-only" for="additional_information">Additional Information</label>
-	<textarea id="additional_information" autocomplete="off" data-autoheight name="additional_information" placeholder="Additional Information" class="form__input input"></textarea>
-
-	<input type="hidden" name="user_type" value="{{ user_type }}" />
-	<input type="hidden" name="template" value="template1.html" />
-	<input type="hidden" name="unique_id" value="{{ unique_id }}">
-
-	<button class="form__send button" onclick="handleSubmit(event)" type="submit">
-		<span>Submit</span>
-	</button>
-</form>
+        <div class="input-group">
+          <label class="sr-only" for="name">Name</label>
+          <input id="name" placeholder="Full Name" autocomplete="off" type="text" name="name" class="form__input input">
+          <span class="error-message"></span>
+        </div>
+      
+        <div class="input-group">
+          <label class="sr-only" for="phone">Phone number</label>
+          <input id="phone" placeholder="Your Phone" autocomplete="off" type="tel" name="phone" class="form__input input">
+          <span class="error-message"></span>
+        </div>
+      
+        <div class="input-group">
+          <label class="sr-only" for="email">Email</label>
+          <input id="email" placeholder="Your Email" autocomplete="off" type="email" name="email" class="form__input input">
+          <span class="error-message"></span>
+        </div>
+      
+        <div class="input-group">
+          <label class="sr-only" for="insurance_company">Insurance Company</label>
+          <input id="insurance_company" placeholder="Insurance Company" autocomplete="off" type="text" name="insurance_company" class="form__input input">
+          <span class="error-message"></span>
+        </div>
+      
+        <div class="input-group">
+          <label class="sr-only" for="policy_id_number">Policy ID Number</label>
+          <input id="policy_id_number" placeholder="Policy ID Number" autocomplete="off" type="text" name="policy_id_number" class="form__input input">
+          <span class="error-message"></span>
+        </div>
+      
+        <div class="input-group">
+          <label class="sr-only" for="group_number">Group Number</label>
+          <input id="group_number" placeholder="Group Number" autocomplete="off" type="text" name="group_number" class="form__input input">
+          <span class="error-message"></span>
+        </div>
+      
+        <div class="input-group">
+          <label class="sr-only" for="date_of_birth">Date</label>
+          <input id="date_of_birth" placeholder="mm/dd/yyyy" autocomplete="off" type="text" name="date_of_birth" class="form__input input">
+          <span class="error-message"></span>
+        </div>
+      
+        <div class="input-group">
+          <label class="sr-only" for="additional_information">Additional Information</label>
+          <textarea id="additional_information" autocomplete="off" data-autoheight name="additional_information" placeholder="Additional Information" class="form__input input"></textarea>
+          <span class="error-message"></span>
+        </div>
+      
+        <input type="hidden" name="user_type" value="{{ user_type }}">
+        <input type="hidden" name="template" value="template1.html">
+        <input type="hidden" name="unique_id" value="{{ unique_id }}">
+      
+        <button class="form__send button button_green" type="submit">
+          Submit
+        </button>
+      </form>
 		</div>
 	</div>
 	<picture><source srcset="./img/image.webp" type="image/webp"><img class="footer__bg" src="./img/image.jpg" alt="girl"></picture>

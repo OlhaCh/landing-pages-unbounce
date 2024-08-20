@@ -7,9 +7,6 @@
     .start__inner > form > button{
         display: none;
     }
-    .header__form {
-        display: none;
-    }
     .header {
         padding: 29px 0;
     }

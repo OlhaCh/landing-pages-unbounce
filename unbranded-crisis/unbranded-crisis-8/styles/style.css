@@ -418,9 +418,8 @@ p {
     font-size: 14px;
     line-height: 143%;
     color: #646464;
-    margin-bottom: 12px;
     outline: none;
-    border: none;
+    border: 1px solid transparent;
     display: block;
     width: 100%;
 }
@@ -474,4 +473,22 @@ p {
     top: 0;
     left: 0;
     padding: 20px 63px;
+}
+
+.invalid .footer__form-input {
+  border-color: red;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  display: block;
+  margin-left: 16px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
 }

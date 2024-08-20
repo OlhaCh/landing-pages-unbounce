@@ -83,7 +83,6 @@ button:hover, input[type="submit"]:hover, .button.mobile:hover{
     color: #fff;
 }
 .header__form {
-    border: 2px solid #d9a441;
     max-width: 420px;
     width: 100%;
     border-radius: 50px;
@@ -470,7 +469,7 @@ button:hover, input[type="submit"]:hover, .button.mobile:hover{
     font-size: 14px;
     line-height: 143%;
     color: #646464;
-    margin-bottom: 12px;
+    border: 1px solid transparent;
     outline: none;
     border: none;
     display: block;
@@ -497,4 +496,22 @@ button:hover, input[type="submit"]:hover, .button.mobile:hover{
     text-align: center;
     color: #fff;
     padding: 14px 36px;
+}
+
+.invalid .footer__form-input {
+  border: 1px solid red;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  display: block;
+  margin-left: 16px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
 }

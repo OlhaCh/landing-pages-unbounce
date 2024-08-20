@@ -715,6 +715,23 @@ textarea.input {
   padding: 4.375rem 0;
   background-color: var(--blue-color);
 }
+
+.invalid.form__input {
+  border: 1px solid red;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  display: block;
+  margin-left: 16px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
 @media (max-width: 63.99875em){
   .footer__content {
     justify-content: center;
