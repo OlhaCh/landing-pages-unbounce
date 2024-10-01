@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>group-4_v-1</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.min.css?v=20240927190920">
+  <script>
+    function handleSubmit(event) {
+        event.preventDefault();
+        window.location.href = 'tel:8447227147';
+    }
+</script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="tel:8447227147" class="header__call ">
+					<span> (844) 722-7147</span>
+					<i class="ibg ibg_contain">
+						<img src="./img/phone.svg" alt="phone">
+					</i>
+				</a>
+			</div>
+		</header>
+		<main class="page">
+			<section class="hero">
+				<div class="hero__container">
+					<div class="hero__content content">
+						<h1 class="content__title title title_extra-bold title_main">Take the First Step Toward a <br> <span>Life Free from <br> Addiction</span>
+						</h1>
+						<div class="content__text text">
+							<p>
+								Hope and healing are within reach. We’re here to guide you through every stage of recovery.
+							</p>
+						</div>
+						<form id="conversionForm" action="/convert" method="post">
+							<input type="hidden" name="user_type" value="{{ user_type }}">
+							<input type="hidden" name="template" value="template1.html">
+							<input type="hidden" name="unique_id" value="{{ unique_id }}">
+							<button type="submit" class="button" onclick="handleSubmit(event)">Start Your Recovery Today</button>
+						</form>
+					</div>
+				</div>
+				<div class="hero__image">
+					<picture>
+						<source srcset="./img/indian-woman-doctor-and-arms-crossed-in-hospital.webp" type="image/webp"><img fetchpriority="high" src="./img/indian-woman-doctor-and-arms-crossed-in-hospital.jpg"
+							alt="indian woman doctor and arms crossed in hospital">
+					</picture>
+				</div>
+			</section>
+			<section class="recovery">
+				<div class="recovery__body">
+					<div class="recovery__wrapper">
+						<div class="recovery__container">
+							<h2 class="recovery__title title title_600">Why Professional Treatment is Essential:</h2>
+							<div class="recovery__content">
+								<div class="recovery__text text">
+									<p>
+										Addiction is a complex disease that affects your brain, body, and emotions. Studies show that only about <strong>10% of people </strong> with a substance use disorder <strong>receive the treatment they
+											need.</strong>
+									</p>
+									<p>
+										<strong>Attempting to quit without the right support can often lead to relapse or dangerous health risks.</strong>
+									</p>
+									<p>
+										With professional help, you have a much higher chance of achieving lasting sobriety. Our team is committed to providing the <strong>care,</strong> resources, and <strong>support</strong> you need to succeed.
+									</p>
+								</div>
+								<form id="conversionForm" action="/convert" method="post">
+									<input type="hidden" name="user_type" value="{{ user_type }}">
+									<input type="hidden" name="template" value="template1.html">
+									<input type="hidden" name="unique_id" value="{{ unique_id }}">
+									<button type="submit" class="button" onclick="handleSubmit(event)">24/7 Help Available</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="benefits _section-padding">
+				<div class="benefits__container">
+					<div class="benefits__content content">
+						<h2 class="content__title title title_600">Comprehensive Addiction Treatment Programs</h2>
+						<div class="content__text text">
+							<p>We provide the tools and support you need to succeed.</p>
+						</div>
+					</div>
+					<div class="benefits__body">
+						<ul class="benefits__items">
+							<li class="benefits__item item-benefits">
+								<div class="item-benefits__icon ibg ibg_contain">
+									<picture>
+										<source srcset="./img/benefits/healthcare.webp" type="image/webp"><img width="72" height="72" src="./img/benefits/healthcare.png" alt="healthcare">
+									</picture>
+								</div>
+								<h3 class="item-benefits__title">Personalized <br>
+									Treatment Plans</h3>
+							</li>
+							<li class="benefits__item item-benefits">
+								<div class="item-benefits__icon ibg ibg_contain">
+									<picture>
+										<source srcset="./img/benefits/medical.webp" type="image/webp"><img width="72" height="72" src="./img/benefits/medical.png" alt="medical">
+									</picture>
+								</div>
+								<h3 class="item-benefits__title">Medical and <br> Therapeutic Support</h3>
+							</li>
+							<li class="benefits__item item-benefits">
+								<div class="item-benefits__icon ibg ibg_contain">
+									<picture>
+										<source srcset="./img/benefits/persons.webp" type="image/webp"><img width="72" height="72" src="./img/benefits/persons.png" alt="persons">
+									</picture>
+								</div>
+								<h3 class="item-benefits__title">Compassionate and <br> Experienced Staff</h3>
+							</li>
+						</ul>
+						<div class="benefits__image ibg">
+							<picture>
+								<source srcset="./img/nurse-preparing-patient-for-intravenous-therapy.webp" type="image/webp"><img loading="lazy" width="585" height="585" src="./img/nurse-preparing-patient-for-intravenous-therapy.jpg"
+									alt="nurse preparing patient for intravenous therapy">
+							</picture>
+						</div>
+					</div>
+				</div>
+				<div class="benefits__bg">
+					<picture>
+						<source srcset="./img/blurred-hotel-reception.webp" type="image/webp"><img src="./img/blurred-hotel-reception.jpg" alt="blurred hotel reception">
+					</picture>
+				</div>
+			</section>
+			<section class="testimonials _section-padding">
+				<div class="testimonials__container">
+					<div class="testimonials__content content">
+						<h2 class="content__title title title_600">Real Stories, <br> Real Recoveries</h2>
+						<div class="content__text text">
+							<p>Hear from those who took the step to get help and changed their lives:</p>
+						</div>
+					</div>
+				</div>
+				<div class="testimonials__body">
+					<div class="testimonials__wrapper-block">
+						<div class="testimonials__container">
+							<div class="testimonials__slider swiper">
+								<div class="testimonials__wrapper swiper-wrapper">
+									<div class="testimonials__slide slide-testimonials swiper-slide">
+										<blockquote class="slide-testimonials__quote">
+											When I first arrived, I was scared and unsure if I could do it. Now, I’m 13 months sober and feel stronger every day. This place gave me my life back.
+										</blockquote>
+										<span class="slide-testimonials__name">Jessica T.</span>
+									</div>
+									<div class="testimonials__slide slide-testimonials swiper-slide">
+										<blockquote class="slide-testimonials__quote">
+											I had tried to quit on my own many times. This facility gave me the structure, support, and tools to stay clean. I’m proud to say I’ve been sober for 18 months.
+										</blockquote>
+										<span class="slide-testimonials__name">Michael R.</span>
+									</div>
+									<div class="testimonials__slide slide-testimonials swiper-slide">
+										<blockquote class="slide-testimonials__quote">
+											The staff was like family. They cared about my recovery and gave me hope. I’ve been clean for over a year, and I couldn’t be more grateful.
+										</blockquote>
+										<span class="slide-testimonials__name">Sarah L.</span>
+									</div>
+									<div class="testimonials__slide slide-testimonials swiper-slide">
+										<blockquote class="slide-testimonials__quote">
+											This program saved my life. I was at rock bottom when I called, but now I’m thriving. I’ve been sober for two years.
+										</blockquote>
+										<span class="slide-testimonials__name">David S.</span>
+									</div>
+									<div class="testimonials__slide slide-testimonials swiper-slide">
+										<blockquote class="slide-testimonials__quote">
+											I was lost in addiction for years. Coming here was the best decision I’ve ever made. The support and care I received were incredible.
+										</blockquote>
+										<span class="slide-testimonials__name">Anna K.</span>
+									</div>
+									<div class="testimonials__slide slide-testimonials swiper-slide">
+										<blockquote class="slide-testimonials__quote">
+											I never thought I could beat my addiction, but the team here made me believe in myself. I’ve been clean for 16 months, and I feel like a new person.
+										</blockquote>
+										<span class="slide-testimonials__name">Mark P.</span>
+									</div>
+								</div>
+								<div class="testimonials__navigation navigation">
+									<button class="navigation__btn navigation__btn_prev" type="button" aria-label="The previous slide"></button>
+									<button class="navigation__btn navigation__btn_next" type="button" aria-label="The next slide"></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<form id="conversionForm" action="/convert" method="post">
+					<input type="hidden" name="user_type" value="{{ user_type }}">
+					<input type="hidden" name="template" value="template1.html">
+					<input type="hidden" name="unique_id" value="{{ unique_id }}">
+					<button type="submit" class="button" onclick="handleSubmit(event)">Call Today</button>
+				</form>
+			</section>
+			<section class="about-us _section-padding">
+				<div class="about-us__container">
+					<div class="about-us__body">
+						<div class="about-us__content content">
+							<h2 class="content__title title title_white">Taking the First Step Toward Recovery</h2>
+							<div class="content__text content__text_white text">
+								<p>
+									Getting started is easy and confidential. Call us today, and our admissions team will guide you through every step, from the initial consultation to verifying insurance and scheduling your treatment. We work with
+									most major
+									insurance providers and offer flexible payment plans.
+								</p>
+							</div>
+							<form id="conversionForm" action="/convert" method="post">
+								<input type="hidden" name="user_type" value="{{ user_type }}">
+								<input type="hidden" name="template" value="template1.html">
+								<input type="hidden" name="unique_id" value="{{ unique_id }}">
+								<button type="submit" class="button button_bx-light" onclick="handleSubmit(event)">Get Help Now</button>
+							</form>
+						</div>
+						<div class="about-us__image ibg">
+							<picture>
+								<source srcset="./img/happy-doctor-in-glasses-shaking-hands-with-young.webp" type="image/webp"><img loading="lazy" width="550" height="550" src="./img/happy-doctor-in-glasses-shaking-hands-with-young.jpg"
+									alt="happy doctor in glasses shaking hands with young">
+							</picture>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="faq _section-padding">
+				<div class="faq__body">
+					<div class="faq__wrapper">
+						<div class="faq__container">
+							<h2 class="faq__title title">Frequently Asked Questions</h2>
+							<ul class="faq__items">
+								<li class="faq__item item-faq">
+									<div class="item-faq__body">
+										<h3 class="item-faq__title">What kind of addictions do you treat?</h3>
+										<p class="item-faq__answer">We treat a wide range of addictions, including alcohol, opioids, stimulants, and prescription drug dependencies.</p>
+									</div>
+								</li>
+								<li class="faq__item item-faq">
+									<div class="item-faq__body">
+										<h3 class="item-faq__title">How long does treatment last?</h3>
+										<p class="item-faq__answer">Treatment length varies depending on individual needs, but most programs range from 30 to 90 days, with options for extended care.</p>
+									</div>
+								</li>
+								<li class="faq__item item-faq">
+									<div class="item-faq__body">
+										<h3 class="item-faq__title">Will my insurance cover treatment?</h3>
+										<p class="item-faq__answer">We accept most insurance plans and can help you verify coverage during the admissions process.</p>
+									</div>
+								</li>
+							</ul>
+							<form id="conversionForm" action="/convert" method="post">
+								<input type="hidden" name="user_type" value="{{ user_type }}">
+								<input type="hidden" name="template" value="template1.html">
+								<input type="hidden" name="unique_id" value="{{ unique_id }}">
+								<button type="submit" class="button" onclick="handleSubmit(event)">Speak to an Expert</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="get-started _section-padding">
+				<div class="get-started__container">
+					<div class="get-started__content content">
+						<h2 class="content__title title">Don’t Wait <br>
+							Another Day</h2>
+						<div class="content__text text">
+							<p>Addiction doesn’t go away on its own. The sooner you seek help, the better your chances of recovery. Call us today for a free, confidential consultation and start your journey to a healthier, happier life.</p>
+						</div>
+						<form id="conversionForm" action="/convert" method="post">
+							<input type="hidden" name="user_type" value="{{ user_type }}">
+							<input type="hidden" name="template" value="template1.html">
+							<input type="hidden" name="unique_id" value="{{ unique_id }}">
+							<button type="submit" class="button" onclick="handleSubmit(event)">Don’t Wait, Start Today</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+	<script src="./js/app.js?v=20240927190920"></script>
+</body>
+
+</html>

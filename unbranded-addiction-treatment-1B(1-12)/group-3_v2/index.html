@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>group-3_v-2</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.min.css?v=20240927150754">
+  <script>
+    function handleSubmit(event) {
+        event.preventDefault();
+        window.location.href = 'tel:8447227147';
+    }
+</script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="tel:8447227147" class="header__call ">
+					<span> (844) 722-7147</span>
+					<i class="ibg ibg_contain">
+						<img src="./img/phone.svg" alt="phone">
+					</i>
+				</a>
+			</div>
+		</header>
+		<main class="page">
+			<section class="hero">
+				<div class="hero__container">
+					<div class="hero__content content">
+						<h1 class="content__title title title_main">Find Freedom <br>
+							from Addiction
+						</h1>
+						<div class="content__text text">
+							<p>
+								Professional, compassionate care is just one call away. Begin your journey today.
+							</p>
+						</div>
+						<form id="conversionForm" action="/convert" method="post">
+							<input type="hidden" name="user_type" value="{{ user_type }}">
+							<input type="hidden" name="template" value="template1.html">
+							<input type="hidden" name="unique_id" value="{{ unique_id }}">
+							<button type="submit" class="button button_bx-light" onclick="handleSubmit(event)">Start Your Recovery Today</button>
+						</form>
+					</div>
+				</div>
+				<div class="hero__image">
+					<picture>
+						<source srcset="./img/happy-family.webp" type="image/webp"><img class="hero__image" fetchpriority="high" src="./img/happy-family.jpg" alt="happy family">
+					</picture>
+				</div>
+			</section>
+			<section class="recovery _section-padding">
+				<div class="recovery__container">
+					<div class="recovery__body _border-block _border-block_bg-light">
+						<h2 class="recovery__title title title_600">Why Professional Treatment is Essential</h2>
+						<div class="recovery__content">
+							<div class="recovery__text text">
+								<p>
+									Without the right support, addiction is a lifelong struggle. According to the National Institute on Drug Abuse, less than 10% of people who need addiction treatment actually receive it.</p>
+								<p>
+									<strong>Don’t be a statistic</strong> — seek professional care and get the help you need for lasting recovery.
+								</p>
+							</div>
+							<form id="conversionForm" action="/convert" method="post">
+								<input type="hidden" name="user_type" value="{{ user_type }}">
+								<input type="hidden" name="template" value="template1.html">
+								<input type="hidden" name="unique_id" value="{{ unique_id }}">
+								<button type="submit" class="button" onclick="handleSubmit(event)">Call to Learn More</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="benefits _section-padding">
+				<div class="benefits__container">
+					<div class="benefits__content content">
+						<h2 class="content__title title title_600">Comprehensive Addiction Treatment Programs</h2>
+						<div class="content__text text">
+							<p>We provide the tools and support you need to succeed.</p>
+						</div>
+					</div>
+					<div class="benefits__body">
+						<ul class="benefits__items">
+							<li class="benefits__item item-benefits">
+								<div class="item-benefits__icon ibg ibg_contain">
+									<picture>
+										<source srcset="./img/benefits/done.webp" type="image/webp"><img width="70" height="70" src="./img/benefits/done.png" alt="done">
+									</picture>
+								</div>
+								<h3 class="item-benefits__title">Personalized <br>
+									Treatment Plans</h3>
+							</li>
+							<li class="benefits__item item-benefits">
+								<div class="item-benefits__icon ibg ibg_contain">
+									<picture>
+										<source srcset="./img/benefits/first-aid-kit.webp" type="image/webp"><img width="70" height="70" src="./img/benefits/first-aid-kit.png" alt="first aid kit">
+									</picture>
+								</div>
+								<h3 class="item-benefits__title">Medical Detox and Rehabilitation</h3>
+							</li>
+							<li class="benefits__item item-benefits">
+								<div class="item-benefits__icon ibg ibg_contain">
+									<picture>
+										<source srcset="./img/benefits/doctor.webp" type="image/webp"><img width="70" height="70" src="./img/benefits/doctor.png" alt="doctor">
+									</picture>
+								</div>
+								<h3 class="item-benefits__title">Compassionate, 24/7 Care</h3>
+							</li>
+						</ul>
+						<div class="benefits__image ibg">
+							<picture>
+								<source srcset="./img/happy-doctor-shaking-hands-with-wife-his-senior-patient-medical-clinic.webp" type="image/webp"><img loading="lazy" width="585" height="585"
+									src="./img/happy-doctor-shaking-hands-with-wife-his-senior-patient-medical-clinic.jpg" alt="happy doctor shaking hands with wife his senior patient medical clinic">
+							</picture>
+						</div>
+					</div>
+				</div>
+				<div class="benefits__bg">
+					<picture>
+						<source srcset="./img/blurred-hotel-reception.webp" type="image/webp"><img src="./img/blurred-hotel-reception.jpg" alt="blurred hotel reception">
+					</picture>
+				</div>
+			</section>
+			<section class="testimonials _section-padding">
+				<div class="testimonials__block">
+					<div class="testimonials__container">
+						<div class="testimonials__content content">
+							<h2 class="content__title title title_600">Real Stories, <br> Real Recoveries</h2>
+							<div class="content__text text">
+								<p>Our clients share their journeys:</p>
+							</div>
+						</div>
+						<div class="testimonials__body">
+							<div class="testimonials__slider swiper">
+								<div class="testimonials__wrapper swiper-wrapper">
+									<div class="testimonials__slide slide-testimonials swiper-slide">
+										<blockquote class="slide-testimonials__quote">
+											<span class="slide-testimonials__decor slide-testimonials__decor_top"></span>
+											<span class="slide-testimonials__decor slide-testimonials__decor_bottom"></span>
+											<p>I never thought I could get sober, but this program gave me hope. I’ve been clean for 14 months now.</p>
+										</blockquote>
+										<div class="slide-testimonials__user-wrapper">
+											<div class="slide-testimonials__user user">
+												<div class="user__avarat ibg">
+													<picture>
+														<source srcset="img/testimonials/chris.webp" type="image/webp"><img loading="lazy" width="75" height="75" src="img/testimonials/chris.jpg" alt="Chris T.">
+													</picture>
+												</div>
+												<span class="user__name">Chris T.</span>
+											</div>
+										</div>
+									</div>
+									<div class="testimonials__slide slide-testimonials swiper-slide">
+										<blockquote class="slide-testimonials__quote">
+											<span class="slide-testimonials__decor slide-testimonials__decor_top"></span>
+											<span class="slide-testimonials__decor slide-testimonials__decor_bottom"></span>
+											<p>I felt supported every step of the way. The staff genuinely cared about my recovery.</p>
+										</blockquote>
+										<div class="slide-testimonials__user-wrapper">
+											<div class="slide-testimonials__user user">
+												<div class="user__avarat ibg">
+													<picture>
+														<source srcset="img/testimonials/beth.webp" type="image/webp"><img loading="lazy" width="75" height="75" src="img/testimonials/beth.jpg" alt="Beth L.">
+													</picture>
+												</div>
+												<span class="user__name">Beth L.</span>
+											</div>
+										</div>
+									</div>
+									<div class="testimonials__slide slide-testimonials swiper-slide">
+										<blockquote class="slide-testimonials__quote">
+											<span class="slide-testimonials__decor slide-testimonials__decor_top"></span>
+											<span class="slide-testimonials__decor slide-testimonials__decor_bottom"></span>
+											<p>I tried other facilities, but nothing worked until I found this one. I’ve been sober for 2 years and counting.</p>
+										</blockquote>
+										<div class="slide-testimonials__user-wrapper">
+											<div class="slide-testimonials__user user">
+												<div class="user__avarat ibg">
+													<picture>
+														<source srcset="img/testimonials/ryan.webp" type="image/webp"><img loading="lazy" width="75" height="75" src="img/testimonials/ryan.jpg" alt="Ryan F.">
+													</picture>
+												</div>
+												<span class="user__name">Ryan F.</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="testimonials__navigation navigation">
+								<button class="navigation__btn navigation__btn_prev" type="button" aria-label="The previous slide">
+									<img src="./img/arrow.svg" alt="arrow">
+								</button>
+								<button class="navigation__btn navigation__btn_next" type="button" aria-label="The next slide">
+									<img src="./img/arrow.svg" alt="arrow">
+								</button>
+							</div>
+						</div>
+						<form id="conversionForm" action="/convert" method="post">
+							<input type="hidden" name="user_type" value="{{ user_type }}">
+							<input type="hidden" name="template" value="template1.html">
+							<input type="hidden" name="unique_id" value="{{ unique_id }}">
+							<button type="submit" class="button button_bx-light" onclick="handleSubmit(event)">Become a Success Story</button>
+						</form>
+					</div>
+				</div>
+			</section>
+			<section class="about-us _section-padding">
+				<div class="about-us__container">
+					<div class="about-us__body">
+						<div class="about-us__content content">
+							<h2 class="content__title title">Taking the First Step Toward Recovery</h2>
+							<div class="content__text text">
+								<p>
+									 Recovery starts with a conversation. Call us to begin
+									your personalized treatment
+									plan today.
+								</p>
+							</div>
+							<form id="conversionForm" action="/convert" method="post">
+								<input type="hidden" name="user_type" value="{{ user_type }}">
+								<input type="hidden" name="template" value="template1.html">
+								<input type="hidden" name="unique_id" value="{{ unique_id }}">
+								<button type="submit" class="button button_white" onclick="handleSubmit(event)">Get Started Now</button>
+							</form>
+						</div>
+						<div class="about-us__image ibg">
+							<picture>
+								<source srcset="./img/happy-doctor-in-glasses-shaking-hands-with-young-boy.webp" type="image/webp"><img loading="lazy" width="550" height="550" src="./img/happy-doctor-in-glasses-shaking-hands-with-young-boy.jpg"
+									alt="happy doctor in glasses shaking hands with young boy">
+							</picture>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="faq  _section-padding">
+				<div class="faq__container">
+					<div class="faq__body _border-block">
+						<h2 class="faq__title title">Frequently Asked Questions</h2>
+						<ul class="faq__items">
+							<li class="faq__item item-faq">
+								<div class="item-faq__body">
+									<h3 class="item-faq__title">Can I continue working while in treatment?</h3>
+									<p class="item-faq__answer">Yes, we offer outpatient programs designed to fit around your work schedule.</p>
+								</div>
+							</li>
+							<li class="faq__item item-faq">
+								<div class="item-faq__body">
+									<h3 class="item-faq__title">How do I know which program is right for me?</h3>
+									<p class="item-faq__answer">Our team will help assess your needs and recommend the best treatment program for your situation.</p>
+								</div>
+							</li>
+							<li class="faq__item item-faq">
+								<div class="item-faq__body">
+									<h3 class="item-faq__title">What happens after treatment?</h3>
+									<p class="item-faq__answer">We provide aftercare support and resources to help you maintain your sobriety.</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="get-started _section-padding">
+				<div class="get-started__container">
+					<div class="get-started__content content">
+						<h2 class="content__title title">Don’t Wait <br>
+							Another Day</h2>
+						<div class="content__text text">
+							<p>Your future begins now. Make the call that can change your life.</p>
+						</div>
+						<form id="conversionForm" action="/convert" method="post">
+							<input type="hidden" name="user_type" value="{{ user_type }}">
+							<input type="hidden" name="template" value="template1.html">
+							<input type="hidden" name="unique_id" value="{{ unique_id }}">
+							<button type="submit" class="button" onclick="handleSubmit(event)">Make the <br> Change Today!</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+	<script src="./js/app.js?v=20240927150754"></script>
+</body>
+
+</html>
