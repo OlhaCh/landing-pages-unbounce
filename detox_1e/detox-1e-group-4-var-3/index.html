@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>detox-1e-group-4-var-3</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.min.css?v=20241021193250">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="tel:1234567890" class="header__call-wrapper">
+					<div class="header__call call">
+						<i class="call__icon">
+							<img src="./img/phone.svg" alt="phone">
+						</i>
+						<div class="call__body">
+							<span class="call__text">Call us Today</span>
+							<span class="call__link">(123) 456-7890</span>
+						</div>
+					</div>
+				</a>
+			</div>
+		</header>
+		<main class="page">
+			<section class="hero">
+				<div class="hero__content content content_center">
+					<h1 class="content__title title title_main">Start Detox with the Care and Support You Deserve</h1>
+					<div class="content__text text">
+						<p>
+							We make detox safe and manageable with compassionate care.
+						</p>
+					</div>
+				</div>
+				<form id="conversionForm" action="/convert" method="post">
+					<input type="hidden" name="user_type" value="{{ user_type }}">
+					<input type="hidden" name="template" value="template1.html">
+					<input type="hidden" name="unique_id" value="{{ unique_id }}">
+					<button type="submit" class="button" onclick="handleSubmit(event)">Get Immediate Care</button>
+				</form>
+				<div class="hero__image">
+					<picture>
+						<source srcset="./img/portrait-of-a-girl-against-a-background-of-people.webp" type="image/webp"><img fetchpriority="high" src="./img/portrait-of-a-girl-against-a-background-of-people.jpg"
+							alt="portrait of a girl against a background of people">
+					</picture>
+				</div>
+			</section>
+			<section class="testimonials _section-padding">
+				<div class="testimonials__container">
+					<h2 class="testimonials__title title title_center">Lived Success <br> Stories</h2>
+					<div class="testimonials__slider swiper">
+						<div class="testimonials__wrapper swiper-wrapper">
+							<div class="testimonials__slide slide-testimonials swiper-slide">
+								<div class="slide-testimonials__body">
+									<div class="slide-testimonials__stars card-rev-stars" data-rating-count="5">
+										<span class="star"></span>
+										<span class="star"></span>
+										<span class="star"></span>
+										<span class="star"></span>
+										<span class="star"></span>
+									</div>
+									<blockquote class="slide-testimonials__quote">They made detox bearable and took great care of me.</blockquote>
+								</div>
+								<span class="slide-testimonials__name">Andrea G.</span>
+							</div>
+							<div class="testimonials__slide slide-testimonials swiper-slide">
+								<div class="slide-testimonials__body">
+									<div class="slide-testimonials__stars card-rev-stars" data-rating-count="5">
+										<span class="star"></span>
+										<span class="star"></span>
+										<span class="star"></span>
+										<span class="star"></span>
+										<span class="star"></span>
+									</div>
+									<blockquote class="slide-testimonials__quote">I was so nervous about detox, but they made me feel safe the whole time.</blockquote>
+								</div>
+								<span class="slide-testimonials__name">Mark H.</span>
+							</div>
+							<div class="testimonials__slide slide-testimonials swiper-slide">
+								<div class="slide-testimonials__body">
+									<div class="slide-testimonials__stars card-rev-stars" data-rating-count="5">
+										<span class="star"></span>
+										<span class="star"></span>
+										<span class="star"></span>
+										<span class="star"></span>
+										<span class="star"></span>
+									</div>
+									<blockquote class="slide-testimonials__quote">The care was fantastic, and they helped me with both my addiction and anxiety.</blockquote>
+								</div>
+								<span class="slide-testimonials__name"> Sarah T.</span>
+							</div>
+							<div class="testimonials__slide slide-testimonials swiper-slide">
+								<div class="slide-testimonials__body">
+									<div class="slide-testimonials__stars card-rev-stars" data-rating-count="5">
+										<span class="star"></span>
+										<span class="star"></span>
+										<span class="star"></span>
+										<span class="star"></span>
+										<span class="star"></span>
+									</div>
+									<blockquote class="slide-testimonials__quote">I’m grateful for the kind and understanding staff during detox.</blockquote>
+								</div>
+								<span class="slide-testimonials__name">Lisa D.</span>
+							</div>
+							<div class="testimonials__slide slide-testimonials swiper-slide">
+								<div class="slide-testimonials__body">
+									<div class="slide-testimonials__stars card-rev-stars" data-rating-count="5">
+										<span class="star"></span>
+										<span class="star"></span>
+										<span class="star"></span>
+										<span class="star"></span>
+										<span class="star"></span>
+									</div>
+									<blockquote class="slide-testimonials__quote">I didn’t think I could do it, but their support made all the difference.</blockquote>
+								</div>
+								<span class="slide-testimonials__name">Kevin B.</span>
+							</div>
+							<div class="testimonials__slide slide-testimonials swiper-slide">
+								<div class="slide-testimonials__body">
+									<div class="slide-testimonials__stars card-rev-stars" data-rating-count="5">
+										<span class="star"></span>
+										<span class="star"></span>
+										<span class="star"></span>
+										<span class="star"></span>
+										<span class="star"></span>
+									</div>
+									<blockquote class="slide-testimonials__quote">Their dual diagnosis treatment helped me deal with my depression during detox.</blockquote>
+								</div>
+								<span class="slide-testimonials__name">Melissa J.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="about-us _section-padding">
+				<div class="about-us__container">
+					<div class="about-us__body grid-2-columns">
+						<div class="about-us__content content content_center">
+							<h2 class="content__title title">Detox: The First Step Toward Healing</h2>
+							<div class="content__text text">
+								<p>
+									Detox is a critical first step on the road to recovery. We know it can feel overwhelming, but our team is here to guide you with care and compassion. You are not alone, and we’ll make sure you feel safe and
+									supported
+									throughout.
+								</p>
+							</div>
+						</div>
+						<div class="about-us__image ibg">
+							<picture>
+								<source srcset="./img/portrait-of-a-black-man.webp" type="image/webp"><img loading="lazy" width="550" height="550" src="./img/portrait-of-a-black-man.jpg" alt="portrait of a black man">
+							</picture>
+						</div>
+					</div>
+					<form id="conversionForm" action="/convert" method="post">
+						<input type="hidden" name="user_type" value="{{ user_type }}">
+						<input type="hidden" name="template" value="template1.html">
+						<input type="hidden" name="unique_id" value="{{ unique_id }}">
+						<button type="submit" class="button" onclick="handleSubmit(event)">Make the Call Now</button>
+					</form>
+				</div>
+			</section>
+			<section class="benefits _section-padding">
+				<div class="benefits__container">
+					<div class="benefits__content content content_center">
+						<h2 class="content__title title title_white">Benefits of Detox <br> the Right Way</h2>
+						<div class="content__text content__text_white text">
+							<p>Our detox program is designed to prioritize your safety and comfort, with expert medical support available 24/7.</p>
+						</div>
+					</div>
+					<ul class="benefits__items">
+						<li class="benefits__item item-benefits">
+							<div class="item-benefits__icon">
+								<img loading="lazy" width="60" height="60" src="./img/benefits/support.svg" alt="support 24 hour">
+							</div>
+							<h3 class="item-benefits__title">24/7 medical support to manage withdrawal symptoms</h3>
+						</li>
+						<li class="benefits__item item-benefits">
+							<div class="item-benefits__icon">
+								<img loading="lazy" width="60" height="60" src="./img/benefits/caring.svg" alt="caring">
+							</div>
+							<h3 class="item-benefits__title">A calm, supportive <br> environment</h3>
+						</li>
+						<li class="benefits__item item-benefits">
+							<div class="item-benefits__icon">
+								<img loading="lazy" width="60" height="60" src="./img/benefits/heart.svg" alt="heart">
+							</div>
+							<h3 class="item-benefits__title">Dual diagnosis treatment to address both addiction and mental health needs</h3>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="call-center _section-padding">
+				<div class="call-center__container">
+					<div class="call-center__body grid-2-columns">
+						<div class="call-center__content content content_center">
+							<h2 class="content__title title">What to Expect <br> from Detox with Us</h2>
+							<div class="content__text text">
+								<p>
+									Our medical team provides constant monitoring and care during detox, ensuring your symptoms are managed and that you’re comfortable. Detox typically lasts 3-7 days, and we are there for you every step of the way.
+								</p>
+							</div>
+						</div>
+						<div class="call-center__image ibg">
+							<picture>
+								<source srcset="./img/portrait-of-a-smiling-young-girl.webp" type="image/webp"><img loading="lazy" width="550" height="550" src="./img/portrait-of-a-smiling-young-girl.jpg" alt="portrait of a smiling young girl">
+							</picture>
+						</div>
+					</div>
+					<form id="conversionForm" action="/convert" method="post">
+						<input type="hidden" name="user_type" value="{{ user_type }}">
+						<input type="hidden" name="template" value="template1.html">
+						<input type="hidden" name="unique_id" value="{{ unique_id }}">
+						<button type="submit" class="button button_dark" onclick="handleSubmit(event)">Speak to a Specialist</button>
+					</form>
+				</div>
+			</section>
+			<section class="call-now _section-padding">
+				<div class="call-now__container">
+					<div class="call-now__body grid-2-columns">
+						<div class="call-now__content content content_center">
+							<h2 class="content__title title">Start Detox with One Simple Phone Call</h2>
+							<div class="content__text text">
+								<p>
+									Calling is the easiest way to start your detox journey. Our team is ready to help 24/7, and we’ll guide you through every step of the admissions process.
+								</p>
+							</div>
+						</div>
+						<div class="call-now__image ibg">
+							<picture>
+								<source srcset="./img/a-girl-holds-a-cell-phone-in-her-hands.webp" type="image/webp"><img loading="lazy" width="550" height="550" src="./img/a-girl-holds-a-cell-phone-in-her-hands.jpg"
+									alt="a girl holds a cell phone in her hands">
+							</picture>
+						</div>
+					</div>
+					<form id="conversionForm" action="/convert" method="post">
+						<input type="hidden" name="user_type" value="{{ user_type }}">
+						<input type="hidden" name="template" value="template1.html">
+						<input type="hidden" name="unique_id" value="{{ unique_id }}">
+						<button type="submit" class="button button_dark" onclick="handleSubmit(event)">Get Started Now</button>
+					</form>
+				</div>
+			</section>
+			<section class="faq _section-padding">
+				<div class="faq__container">
+					<h2 class="faq__title title title_small">Detox Questions <br> Answered</h2>
+					<div class="faq__items">
+						<div class='faq__spoiler spoiler' data-spoiler>
+							<div class='spoiler__panel' data-spoiler-title>
+								<div class='spoiler__text'> How long does detox take?</div>
+								<span class='spoiler__plus'>
+									<i class="spoiler__icon"></i>
+								</span>
+							</div>
+							<div class='spoiler__content' data-spoiler-content>
+								<div class='spoiler__body'>
+									Detox generally takes 3-7 days, depending on individual circumstances.
+								</div>
+							</div>
+						</div>
+						<div class='faq__spoiler spoiler' data-spoiler>
+							<div class='spoiler__panel' data-spoiler-title>
+								<div class='spoiler__text'>Is detox painful?</div>
+								<span class='spoiler__plus'>
+									<i class="spoiler__icon"></i>
+								</span>
+							</div>
+							<div class='spoiler__content' data-spoiler-content>
+								<div class='spoiler__body'>
+									Detox can be uncomfortable, but our team provides medications to ease symptoms and make the process as comfortable as possible.
+								</div>
+							</div>
+						</div>
+						<div class='faq__spoiler spoiler' data-spoiler>
+							<div class='spoiler__panel' data-spoiler-title>
+								<div class='spoiler__text'>What happens after detox?</div>
+								<span class='spoiler__plus'>
+									<i class="spoiler__icon"></i>
+								</span>
+							</div>
+							<div class='spoiler__content' data-spoiler-content>
+								<div class='spoiler__body'>
+									After detox, we offer therapy and support programs to help you stay on track with your recovery.
+								</div>
+							</div>
+						</div>
+						<div class='faq__spoiler spoiler' data-spoiler>
+							<div class='spoiler__panel' data-spoiler-title>
+								<div class='spoiler__text'>Do you offer dual diagnosis treatment?</div>
+								<span class='spoiler__plus'>
+									<i class="spoiler__icon"></i>
+								</span>
+							</div>
+							<div class='spoiler__content' data-spoiler-content>
+								<div class='spoiler__body'>
+									Yes, we treat co-occurring mental health issues alongside addiction.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="get-started _section-padding">
+				<div class="get-started__container grid-2-columns">
+					<div class="get-started__content content content_center">
+						<h2 class="content__title title title_white title_small">Ready to Get Back to Your Life? <br> Contact Us Today</h2>
+						<div class="content__text content__text_white text">
+							<p>
+								Our team is here to help you start your detox safely and comfortably. Call today to take the first step.
+							</p>
+						</div>
+						<form id="conversionForm" action="/convert" method="post">
+							<input type="hidden" name="user_type" value="{{ user_type }}">
+							<input type="hidden" name="template" value="template1.html">
+							<input type="hidden" name="unique_id" value="{{ unique_id }}">
+							<button type="submit" class="button" onclick="handleSubmit(event)">Start Your Recovery Now</button>
+						</form>
+					</div>
+					<div class="get-started__image ibg">
+						<picture>
+							<source srcset="./img/a-young-girl-hugs-her-husband.webp" type="image/webp"><img loading="lazy" width="550" height="550" src="./img/a-young-girl-hugs-her-husband.jpg" alt="A young girl hugs her husband">
+						</picture>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<p class="footer__text">Copyright 2024 Detox</p>
+			</div>
+		</footer>
+	</div>
+	<script src="./js/app.js?v=20241021193250"></script>
+</body>
+
+</html>
